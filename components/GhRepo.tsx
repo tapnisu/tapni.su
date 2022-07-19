@@ -10,7 +10,7 @@ const GhRepo = ({ repo }: any) => {
 
 				<div>
 					{repo.language} {repo.stargazers_count}⭐ {repo.forks}🌿{" "}
-					{repo.open_issues} 🤔
+					{repo.open_issues}🤔
 				</div>
 			</div>
 		</>

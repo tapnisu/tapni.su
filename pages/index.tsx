@@ -45,14 +45,16 @@ const Index: NextPage = () => {
 					</span>
 
 					<span>
-						<h1 className="text-2xl">
+						<h1 className="text-3xl">
 							Hello! I am <span className="text-pink-600">Alexiy Rybin!</span>
-							<p className="text-xl text-pink-700">(tapnisu)</p>
 						</h1>
+						<p className="text-xl text-pink-700">(tapnisu)</p>
 					</span>
 				</div>
 
-				<div className="grid grid-cols-1 md:grid-cols-2">
+				<h1 className="text-3xl text-center">My projects</h1>
+
+				<div className="grid p-4 grid-cols-1 md:grid-cols-2">
 					{data?.map((repo: any) => (
 						<GhRepo repo={repo} key={repo.id} />
 					))}
