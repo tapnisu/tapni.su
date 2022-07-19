@@ -33,8 +33,8 @@ const Index: NextPage = () => {
 			</Head>
 
 			<main>
-				<div className="w-full h-screen flex flex-row flex-wrap justify-evenly items-center">
-					<span>
+				<div className="w-full h-screen flex flex-row flex-wrap content-center justify-center items-center">
+					<span className="m-4">
 						<Image
 							src="/avatar.png"
 							alt="Avatar"
@@ -44,7 +44,7 @@ const Index: NextPage = () => {
 						/>
 					</span>
 
-					<span>
+					<span className="m-4">
 						<h1 className="text-3xl">
 							Hello! I am <span className="text-pink-600">Alexiy Rybin!</span>
 						</h1>
