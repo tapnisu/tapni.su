@@ -1,6 +1,7 @@
-import GhRepo from "../components/GhRepo";
+import GhRepo from "@components/GhRepo";
 import Head from "next/head";
-import Image from "next/image";
+import Link from "next/link";
+import Navbar from "@components/NavBar";
 import type { NextPage } from "next";
 import useSwr from "swr";
 
@@ -33,16 +34,17 @@ const Index: NextPage = () => {
 			</Head>
 
 			<main>
+				<Navbar />
+
+				<a id="home"></a>
 				<div className="w-full h-screen flex flex-row flex-wrap content-center justify-center items-center">
-					<span className="m-4">
-						<Image
+					<picture>
+						<img
 							src="/avatar.png"
 							alt="Avatar"
-							width={256}
-							height={256}
-							className="rounded-full"
+							className="w-72 rounded-full m-4"
 						/>
-					</span>
+					</picture>
 
 					<span className="m-4">
 						<h1 className="text-3xl">
@@ -52,6 +54,7 @@ const Index: NextPage = () => {
 					</span>
 				</div>
 
+				<a id="projects"></a>
 				<h1 className="text-3xl text-center">My projects</h1>
 
 				<div className="grid p-4 grid-cols-1 md:grid-cols-2">
@@ -63,9 +66,9 @@ const Index: NextPage = () => {
 
 			<footer className="flex flex-row flex-wrap justify-between p-8">
 				<span className="uppercase">
-					<a href="https://github.com/tapnisu">Github</a>/
-					<a href="https://t.me/AlexiyRybin">Telegram</a>/
-					<a href="https://twitter.com/tapnisu">Twitter</a>
+					<Link href="https://github.com/tapnisu">Github</Link>/
+					<Link href="https://t.me/AlexiyRybin">Telegram</Link>/
+					<Link href="https://twitter.com/tapnisu">Twitter</Link>
 				</span>
 				Copyright © 2022 Alexiy Rybin.
 			</footer>

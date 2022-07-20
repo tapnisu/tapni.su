@@ -1,10 +1,12 @@
+import Link from "next/link";
+
 const GhRepo = ({ repo }: any) => {
 	return (
 		<>
 			<div className="bg-neutral-900 m-2 p-8 rounded-3xl min-w-fit">
-				<a href={repo.html_url}>
+				<Link href={repo.html_url}>
 					<h1>{repo.full_name}</h1>
-				</a>
+				</Link>
 
 				{repo.description}
 
