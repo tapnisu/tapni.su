@@ -1,6 +1,6 @@
+import Footer from "@components/Footer";
 import GhRepo from "@components/GhRepo";
 import Head from "next/head";
-import Link from "next/link";
 import Navbar from "@components/NavBar";
 import type { NextPage } from "next";
 import useSwr from "swr";
@@ -64,14 +64,7 @@ const Index: NextPage = () => {
 				</div>
 			</main>
 
-			<footer className="flex flex-row flex-wrap justify-between p-8">
-				<span className="uppercase">
-					<Link href="https://github.com/tapnisu">Github</Link>/
-					<Link href="https://t.me/AlexiyRybin">Telegram</Link>/
-					<Link href="https://twitter.com/tapnisu">Twitter</Link>
-				</span>
-				Copyright © 2022 Alexiy Rybin.
-			</footer>
+			<Footer />
 		</div>
 	);
 };
