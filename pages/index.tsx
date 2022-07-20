@@ -33,9 +33,8 @@ const Index: NextPage = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<main>
+			<main className="min-h-screen">
 				<Navbar />
-
 				<a id="home"></a>
 				<div className="w-full h-screen flex flex-row flex-wrap content-center justify-center items-center">
 					<picture>
@@ -56,7 +55,6 @@ const Index: NextPage = () => {
 
 				<a id="projects"></a>
 				<h1 className="text-3xl text-center">My projects</h1>
-
 				<div className="grid p-4 grid-cols-1 md:grid-cols-2">
 					{data?.map((repo: any) => (
 						<GhRepo repo={repo} key={repo.id} />
