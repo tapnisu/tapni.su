@@ -20,7 +20,7 @@ const Index: NextPage = () => {
 		]
 	};
 
-	const { data, error } = useSwr<any[]>(
+	const { data } = useSwr<any[]>(
 		`/api/ghPinned?user=${args.user}&repos=${args.repos.join("&repos=")}`,
 		fetcher
 	);
@@ -35,6 +35,7 @@ const Index: NextPage = () => {
 
 			<main className="min-h-screen">
 				<Navbar />
+
 				<a id="home"></a>
 				<div className="w-full h-screen flex flex-row flex-wrap content-center justify-center items-center">
 					<picture>
