@@ -5,7 +5,7 @@ const BlogPost = ({ post, id }: any) => {
 		<>
 			<div className="bg-neutral-900 m-2 p-8 rounded-3xl w-full h-fit">
 				<Link href={`/blog/${id}`}>
-					<h2>{post.title}</h2>
+					<h2 className="text-xl">{post.title}</h2>
 				</Link>
 
 				{post.content}
