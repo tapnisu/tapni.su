@@ -65,7 +65,7 @@ const Index: NextPage = () => {
 
 				<div className="w-full h-screen flex flex-col flex-wrap content-center justify-center items-center">
 					<h1 className="text-3xl">Check out my blog!</h1>
-					<Link href="/blog" ><button className="bg-neutral-900 p-4 m-4 rounded-3xl">Let's go</button></Link>
+					<Link href="/blog" ><button className="bg-neutral-900 p-4 m-4 rounded-3xl">Let&#39;s go</button></Link>
 				</div>
 
 			</main>
