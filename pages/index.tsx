@@ -1,7 +1,7 @@
 import Footer from "@components/Footer";
 import GhRepo from "@components/GhRepo";
 import Head from "next/head";
-import Link from "next/link"
+import Link from "next/link";
 import Navbar from "@components/NavBar";
 import type { NextPage } from "next";
 import useSwr from "swr";
@@ -49,9 +49,9 @@ const Index: NextPage = () => {
 
 					<span className="m-4">
 						<h1 className="text-3xl">
-							Hello! I am <span className="text-pink-600">Alexiy Rybin!</span>
+							Hello! I am <span className="text-yellow-100">Alexiy Rybin!</span>
 						</h1>
-						<p className="text-xl text-pink-700">(tapnisu)</p>
+						<p className="text-xl text-cyan-200">(tapnisu)</p>
 					</span>
 				</div>
 
@@ -65,9 +65,12 @@ const Index: NextPage = () => {
 
 				<div className="w-full h-screen flex flex-col flex-wrap content-center justify-center items-center">
 					<h1 className="text-3xl">Check out my blog!</h1>
-					<Link href="/blog" ><button className="bg-neutral-900 p-4 m-4 rounded-3xl">Let&#39;s go</button></Link>
+					<Link href="/blog">
+						<button className="bg-neutral-900 p-4 m-4 rounded-3xl">
+							Let&#39;s go
+						</button>
+					</Link>
 				</div>
-
 			</main>
 
 			<Footer />
