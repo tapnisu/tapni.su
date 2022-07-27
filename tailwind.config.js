@@ -5,7 +5,15 @@ module.exports = {
 		"./components/**/*.{js,ts,jsx,tsx}"
 	],
 	theme: {
-		extend: {}
+		extend: {
+			fontFamily: {
+				sans: ["JetBrains Mono"],
+				serif: ["JetBrains Mono"],
+				mono: ["JetBrains Mono"],
+				display: ["JetBrains Mono"],
+				body: ["JetBrains Mono"]
+			}
+		}
 	},
 	plugins: []
 };
