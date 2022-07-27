@@ -16,6 +16,11 @@ const Navbar = () => {
 						</Link>
 					</li>
 					<li className="inline m-4">
+						<Link href="/setup" className="m-4">
+							Setup
+						</Link>
+					</li>
+					<li className="inline m-4">
 						<Link href="/blog" className="m-4">
 							Blog
 						</Link>

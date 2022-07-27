@@ -24,7 +24,7 @@ const Blog: NextPage = () => {
 			<main>
 				<Navbar />
 
-				<div className="w-full h-screen flex flex-column flex-wrap content-center justify-center items-center">
+				<div className="w-full min-h-screen flex flex-column flex-wrap content-center justify-center items-center">
 					<div className="w-fit p-8">
 						<h1 className="text-3xl">{data?.[0].title}</h1>
 
