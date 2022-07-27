@@ -7,11 +7,11 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ["JetBrains Mono"],
-				serif: ["JetBrains Mono"],
-				mono: ["JetBrains Mono"],
-				display: ["JetBrains Mono"],
-				body: ["JetBrains Mono"]
+				sans: ["@fontsource/jetbrains-mono"],
+				serif: ["@fontsource/jetbrains-mono"],
+				mono: ["@fontsource/jetbrains-mono"],
+				display: ["@fontsource/jetbrains-mono"],
+				body: ["@fontsource/jetbrains-mono"]
 			}
 		}
 	},
