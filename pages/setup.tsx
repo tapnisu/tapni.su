@@ -30,12 +30,22 @@ const Setup: NextPage = () => {
 							<li>
 								<h3 className="text-xl">Visual Studio Code</h3>
 								<picture>
-									<img src="/vscode.png" alt="Visual Studio Code screenshot" />
+									<img
+										src="/vscode.png"
+										alt="Visual Studio Code screenshot"
+										className="m-4"
+									/>
 								</picture>
 							</li>
 							<li>
 								<h3 className="text-xl">Font: JetBrains Mono</h3>
 							</li>
+						</ul>
+
+						<h2 className="text-2xl">Keyboard</h2>
+						<h2 className="text-xl">Keychron K2</h2>
+						<ul className="list-disc">
+							<li>Swithces: Gateron Red</li>
 						</ul>
 					</div>
 				</div>
