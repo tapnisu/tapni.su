@@ -1,10 +1,16 @@
-import Footer from "@components/Footer";
-import GhRepo from "@components/GhRepo";
+import type { NextPage } from "next";
+
 import Head from "next/head";
 import Link from "next/link";
-import Navbar from "@components/NavBar";
-import type { NextPage } from "next";
+import Image from "next/image";
+
 import useSwr from "swr";
+
+import Footer from "@components/Footer";
+import GhRepo from "@components/GhRepo";
+import Navbar from "@components/NavBar";
+
+import AvatarPreview from "@public/avatar.png";
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
@@ -39,13 +45,16 @@ const Index: NextPage = () => {
 
 				<a id="home"></a>
 				<div className="w-full h-screen flex flex-row flex-wrap content-center justify-center items-center">
-					<picture>
-						<img
-							src="/avatar.png"
-							alt="Avatar"
-							className="w-72 rounded-full m-4"
+					<div className="w-72 m-4">
+						<Image
+							alt="Alexiy Rybin avatar"
+							src={AvatarPreview}
+							layout="responsive"
+							className="rounded-full"
+							priority={true}
+							placeholder='blur'
 						/>
-					</picture>
+					</div>
 
 					<span className="m-4">
 						<h1 className="text-3xl">
