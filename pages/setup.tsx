@@ -1,7 +1,12 @@
-import Footer from "@components/Footer";
-import Head from "next/head";
-import Navbar from "@components/NavBar";
 import type { NextPage } from "next";
+import Head from "next/head";
+import Image from "next/image";
+
+import Footer from "@components/Footer";
+import Navbar from "@components/NavBar";
+
+import VSCodePreview from "@public/vscode.png";
+
 
 const Setup: NextPage = () => {
 	return (
@@ -29,13 +34,13 @@ const Setup: NextPage = () => {
 						<ul className="list-disc">
 							<li>
 								<h3 className="text-xl">Visual Studio Code</h3>
-								<picture>
-									<img
-										src="/vscode.png"
+								<div className="m-4">
+									<Image
 										alt="Visual Studio Code screenshot"
-										className="m-4"
+										src={VSCodePreview}
+										layout="responsive"
 									/>
-								</picture>
+								</div>
 							</li>
 							<li>
 								<h3 className="text-xl">Font: JetBrains Mono</h3>
