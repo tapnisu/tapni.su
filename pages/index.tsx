@@ -1,16 +1,12 @@
-import type { NextPage } from "next";
-
-import Head from "next/head";
-import Link from "next/link";
-import Image from "next/image";
-
-import useSwr from "swr";
-
+import AvatarPreview from "@public/avatar.png";
 import Footer from "@components/Footer";
 import GhRepo from "@components/GhRepo";
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
 import Navbar from "@components/NavBar";
-
-import AvatarPreview from "@public/avatar.png";
+import type { NextPage } from "next";
+import useSwr from "swr";
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
@@ -52,7 +48,7 @@ const Index: NextPage = () => {
 							layout="responsive"
 							className="rounded-full"
 							priority={true}
-							placeholder='blur'
+							placeholder="blur"
 						/>
 					</div>
 
@@ -72,7 +68,7 @@ const Index: NextPage = () => {
 					))}
 				</div>
 
-				<div className="w-full h-screen flex flex-col flex-wrap content-center justify-center items-center">
+				<div className="w-full h-fit p-10 flex flex-col flex-wrap content-center justify-center items-center">
 					<h1 className="text-3xl">Check out my blog!</h1>
 					<Link href="/blog">
 						<button className="bg-neutral-900 p-4 m-4 rounded-3xl">

@@ -18,7 +18,7 @@
 		"paths": {
 			"@components/*": ["components/*"],
 			"@json/*": ["json/*"],
-			"@public/*": ["public/*"],
+			"@public/*": ["public/*"]
 		}
 	},
 	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

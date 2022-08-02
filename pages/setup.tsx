@@ -7,7 +7,6 @@ import Navbar from "@components/NavBar";
 
 import VSCodePreview from "@public/vscode.png";
 
-
 const Setup: NextPage = () => {
 	return (
 		<div className="bg-black text-white">
@@ -40,7 +39,7 @@ const Setup: NextPage = () => {
 										src={VSCodePreview}
 										layout="responsive"
 										priority={true}
-										placeholder='blur'
+										placeholder="blur"
 									/>
 								</div>
 							</li>
