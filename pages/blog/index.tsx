@@ -3,7 +3,7 @@ import Footer from "@components/Footer";
 import Head from "next/head";
 import Navbar from "@components/NavBar";
 import type { NextPage } from "next";
-import posts from "@json/blog.json";
+import posts from "@exports/posts";
 
 const Blog: NextPage = ({ data }: any) => {
 	let i = 0;
