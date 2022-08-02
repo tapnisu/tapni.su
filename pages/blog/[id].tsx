@@ -36,7 +36,11 @@ export async function getServerSideProps({ req, res }: any) {
 		"public, s-maxage=10, stale-while-revalidate=59"
 	);
 
-	const post = posts[req.url.split("/").pop()];
+	const post = posts[Number(req.url.split("/").pop())];
+	if (!post)
+		return {
+			props: { data: { post: { title: "404", content: "Not found!" } } }
+		};
 
 	return { props: { data: { post } } };
 }
