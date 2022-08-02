@@ -1,10 +1,8 @@
-import type { NextPage } from "next";
+import Footer from "@components/Footer";
 import Head from "next/head";
 import Image from "next/image";
-
-import Footer from "@components/Footer";
 import Navbar from "@components/NavBar";
-
+import type { NextPage } from "next";
 import VSCodePreview from "@public/vscode.png";
 
 const Setup: NextPage = () => {
@@ -24,9 +22,9 @@ const Setup: NextPage = () => {
 						<h1 className="text-3xl">My setup:</h1>
 						<h2 className="text-2xl">PC</h2>
 						<ul className="list-disc">
-							<li>CPU: Intel Core I5 9600K</li>
+							<li>CPU: Intel Core I9 11900KF</li>
 							<li>GPU: GTX 1660</li>
-							<li>RAM: 16Gb (2x8gb)</li>
+							<li>RAM: 64Gb (4x16gb)</li>
 						</ul>
 
 						<h2 className="text-2xl">Text editor:</h2>
