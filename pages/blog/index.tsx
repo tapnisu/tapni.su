@@ -3,13 +3,9 @@ import Footer from "@components/Footer";
 import Head from "next/head";
 import Navbar from "@components/NavBar";
 import type { NextPage } from "next";
-import useSwr from "swr";
+import posts from "@json/blog.json";
 
-const fetcher = (url: string) => fetch(url).then((res) => res.json());
-
-const Blog: NextPage = () => {
-	const { data } = useSwr<any[]>("/api/getBlog", fetcher);
-
+const Blog: NextPage = ({ data }: any) => {
 	let i = 0;
 
 	return (
@@ -25,9 +21,9 @@ const Blog: NextPage = () => {
 
 				<h1 className="pt-16 text-3xl text-center">My blog</h1>
 
-				<div className="flex flex-row flex-wrap m-4">
-					{data
-						?.map((post: any) => <BlogPost post={post} id={i} key={i++} />)
+				<div className="grid p-4 grid-cols-1 md:grid-cols-2">
+					{data.posts
+						.map((post: any) => <BlogPost post={post} id={i} key={i++} />)
 						.reverse()}
 				</div>
 			</main>
@@ -36,5 +32,14 @@ const Blog: NextPage = () => {
 		</div>
 	);
 };
+
+export async function getServerSideProps({ req, res }: any) {
+	res.setHeader(
+		"Cache-Control",
+		"public, s-maxage=10, stale-while-revalidate=59"
+	);
+
+	return { props: { data: { posts } } };
+}
 
 export default Blog;

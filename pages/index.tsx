@@ -6,28 +6,16 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@components/NavBar";
 import type { NextPage } from "next";
-import useSwr from "swr";
 
-const fetcher = (url: string) => fetch(url).then((res) => res.json());
+type Repo = {
+	name: string;
+	url: string;
+	language: string;
+	stars: number;
+	forks: number;
+};
 
-const Index: NextPage = () => {
-	const args = {
-		user: "tapnisu",
-		repos: [
-			"tapris",
-			"website",
-			"ytscc",
-			"forwarding-discord-telegram",
-			"tsukinose",
-			"mumei"
-		]
-	};
-
-	const { data } = useSwr<any[]>(
-		`/api/ghPinned?user=${args.user}&repos=${args.repos.join("&repos=")}`,
-		fetcher
-	);
-
+const Index: NextPage = ({ data }: any) => {
 	return (
 		<div className="bg-black text-white">
 			<Head>
@@ -63,7 +51,7 @@ const Index: NextPage = () => {
 				<a id="projects"></a>
 				<h1 className="text-3xl text-center">My projects</h1>
 				<div className="grid p-4 grid-cols-1 md:grid-cols-2">
-					{data?.map((repo: any) => (
+					{data.repos?.map((repo: any) => (
 						<GhRepo repo={repo} key={repo.id} />
 					))}
 				</div>
@@ -82,5 +70,26 @@ const Index: NextPage = () => {
 		</div>
 	);
 };
+
+export async function getServerSideProps({ req, res }: any) {
+	res.setHeader(
+		"Cache-Control",
+		"public, s-maxage=10, stale-while-revalidate=59"
+	);
+
+	const request = await fetch(`https://api.github.com/users/tapnisu/repos`);
+	const repos = (await request.json()).filter((repo: Repo) =>
+		[
+			"tapris",
+			"website",
+			"ytscc",
+			"forwarding-discord-telegram",
+			"tsukinose",
+			"mumei"
+		].includes(repo.name)
+	);
+
+	return { props: { data: { repos } } };
+}
 
 export default Index;
