@@ -8,7 +8,7 @@ const Blog: NextPage = ({ data }: any) => {
 	return (
 		<div className="bg-black text-white">
 			<Head>
-				<title>{data.post.title} - Blog - Alexiy Rybin</title>
+				<title>{`${data.post.title} - Blog - Alexiy Rybin`}</title>
 				<meta name="description" content={data.post.content} />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
@@ -36,13 +36,14 @@ export async function getServerSideProps({ req, res }: any) {
 		"public, s-maxage=10, stale-while-revalidate=59"
 	);
 
-	const post = posts[Number(req.url.split("/").pop())];
-	if (!post)
+	const id = Number(req.url.split("/").pop());
+
+	if (isNaN(id) || id < 0 || id >= posts.length)
 		return {
 			props: { data: { post: { title: "404", content: "Not found!" } } }
 		};
 
-	return { props: { data: { post } } };
+	return { props: { data: { post: posts[id] } } };
 }
 
 export default Blog;
