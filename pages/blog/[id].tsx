@@ -30,13 +30,13 @@ const Blog: NextPage = ({ data }: any) => {
 	);
 };
 
-export async function getServerSideProps({ req, res }: any) {
-	res.setHeader(
+export async function getServerSideProps(context: any) {
+	context.res.setHeader(
 		"Cache-Control",
 		"public, s-maxage=10, stale-while-revalidate=59"
 	);
 
-	const id = Number(req.url.split("/").pop());
+	const id = context.params.id;
 
 	if (isNaN(id) || id < 0 || id >= posts.length)
 		return {

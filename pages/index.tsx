@@ -71,8 +71,8 @@ const Index: NextPage = ({ data }: any) => {
 	);
 };
 
-export async function getServerSideProps({ req, res }: any) {
-	res.setHeader(
+export async function getServerSideProps(context: any) {
+	context.res.setHeader(
 		"Cache-Control",
 		"public, s-maxage=10, stale-while-revalidate=59"
 	);
