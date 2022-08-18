@@ -1,11 +1,11 @@
-import AvatarPreview from "@public/avatar.png";
 import Footer from "@components/Footer";
 import GhRepo from "@components/GhRepo";
+import Navbar from "@components/NavBar";
+import AvatarPreview from "@public/avatar.png";
+import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import Navbar from "@components/NavBar";
-import type { NextPage } from "next";
 
 type Repo = {
 	name: string;
@@ -43,9 +43,9 @@ const Index: NextPage = ({ data }: any) => {
 					<span className="m-4">
 						<h1 className="text-3xl">
 							Hello!
-							<br />I am <span className="text-yellow-100">Alexiy Rybin!</span>
+							<br />I am <span className="text-red-200">Alexiy Rybin!</span>
 						</h1>
-						<p className="text-xl text-cyan-200">(tapnisu)</p>
+						<p className="text-xl text-sky-200">(tapnisu)</p>
 					</span>
 				</div>
 
