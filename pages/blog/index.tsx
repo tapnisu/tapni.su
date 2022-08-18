@@ -1,9 +1,9 @@
 import BlogPost from "@components/BlogPost";
 import Footer from "@components/Footer";
-import Head from "next/head";
 import Navbar from "@components/NavBar";
-import type { NextPage } from "next";
 import posts from "@exports/posts";
+import type { NextPage } from "next";
+import Head from "next/head";
 
 const Blog: NextPage = ({ data }: any) => {
 	let i = 0;
