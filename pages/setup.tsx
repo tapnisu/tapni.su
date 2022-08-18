@@ -23,7 +23,7 @@ const Setup: NextPage = () => {
 						<h2 className="text-2xl">PC</h2>
 						<ul className="list-disc">
 							<li>CPU: Intel Core I9 11900KF</li>
-							<li>GPU: GTX 1660</li>
+							<li>GPU: RTX 3080 12 GB</li>
 							<li>RAM: 64Gb (4x16gb)</li>
 						</ul>
 
