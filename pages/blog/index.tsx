@@ -9,7 +9,7 @@ const Blog: NextPage = ({ data }: any) => {
 	let i = 0;
 
 	return (
-		<div className=" bg-black text-white">
+		<div className="bg-black text-white">
 			<Head>
 				<title>Blog - Alexiy Rybin</title>
 				<meta name="description" content="Blog for my personal website!" />
