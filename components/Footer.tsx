@@ -12,13 +12,10 @@ const Footer = () => {
 						Discord
 					</Link>{" "}
 					/ {""}
-					<Link href="mailto:alexiy.rybin@gmail.com">Email</Link> /
+					<Link href="mailto:alexiy.rybin@gmail.com">Email</Link> /{" "}
+					<Link href="https://github.com/tapnisu/website">Repo</Link>
 				</span>
-				<span>
-					<Link href="https://github.com/tapnisu/website">Website Github</Link>{" "}
-					/ {""}
-					Copyright © 2022 Alexiy Rybin
-				</span>
+				<span>Copyright © 2022 Alexiy Rybin</span>
 			</footer>
 		</>
 	);
