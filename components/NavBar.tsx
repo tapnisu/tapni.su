@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const Navbar = () => {
+const NavbarBase = () => {
 	return (
 		<>
 			<nav className="backdrop-blur-sm bg-black/30 w-full">
@@ -31,18 +31,18 @@ const Navbar = () => {
 	);
 };
 
-const Navbara = () => {
+const Navbar = () => {
 	return (
 		<>
 			<div className="opacity-0 w-full">
-				<Navbar />
+				<NavbarBase />
 			</div>
 
 			<div className="fixed w-full z-10">
-				<Navbar />
+				<NavbarBase />
 			</div>
 		</>
 	);
 };
 
-export default Navbara;
+export default Navbar;
