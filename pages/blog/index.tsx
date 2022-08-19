@@ -1,6 +1,6 @@
 import BlogPost from "@components/BlogPost";
 import Footer from "@components/Footer";
-import Navbar from "@components/NavBar";
+import Navbar from "@components/Navbar";
 import posts from "@exports/posts";
 import type { NextPage } from "next";
 import Head from "next/head";
@@ -16,19 +16,21 @@ const Blog: NextPage = ({ data }: any) => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<main className="min-h-screen">
+			<main className="min-h-screen flex flex-col justify-between">
 				<Navbar />
 
-				<h1 className="pt-16 text-3xl text-center">My blog</h1>
+				<div>
+					<h1 className="pt-16 text-3xl text-center">My blog</h1>
 
-				<div className="grid p-4 grid-cols-1 md:grid-cols-2">
-					{data.posts
-						.map((post: any) => <BlogPost post={post} id={i} key={i++} />)
-						.reverse()}
+					<div className="grid p-4 grid-cols-1 md:grid-cols-2">
+						{data.posts
+							.map((post: any) => <BlogPost post={post} id={i} key={i++} />)
+							.reverse()}
+					</div>
 				</div>
-			</main>
 
-			<Footer />
+				<Footer />
+			</main>
 		</div>
 	);
 };

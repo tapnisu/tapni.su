@@ -22,3 +22,9 @@ html {
 ::-webkit-scrollbar-thumb:hover {
 	background: #404040;
 }
+
+@responsive {
+	.effect-3d {
+		text-shadow: 0.075em 0.075em #ff0000, -0.075em -0.075em #00ffff;
+	}
+}

@@ -3,15 +3,15 @@ import Link from "next/link";
 const Navbar = () => {
 	return (
 		<>
-			<nav className="fixed backdrop-blur-sm bg-black/30 w-full p-4 z-10">
+			<nav className="backdrop-blur-sm bg-black/30 w-full">
 				<ul>
-					<li className="inline m-4">
+					<li className="inline-block m-4">
 						<Link href="/#home" className="m-4">
 							Home
 						</Link>
 					</li>
 					<li className="inline m-4">
-						<Link href="/#projects" className="m-4">
+						<Link href="/projects" className="m-4">
 							Projects
 						</Link>
 					</li>
@@ -31,4 +31,18 @@ const Navbar = () => {
 	);
 };
 
-export default Navbar;
+const Navbara = () => {
+	return (
+		<>
+			<div className="opacity-0 w-full">
+				<Navbar />
+			</div>
+
+			<div className="fixed w-full z-10">
+				<Navbar />
+			</div>
+		</>
+	);
+};
+
+export default Navbara;

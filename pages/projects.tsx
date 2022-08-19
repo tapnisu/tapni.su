@@ -1,9 +1,8 @@
 import Footer from "@components/Footer";
+import GhRepo from "@components/GhRepo";
 import Navbar from "@components/Navbar";
-import AvatarPreview from "@public/avatar.png";
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 
 type Repo = {
 	name: string;
@@ -13,11 +12,11 @@ type Repo = {
 	forks: number;
 };
 
-const Index: NextPage = ({ data }: any) => {
+const Projects: NextPage = ({ data }: any) => {
 	return (
 		<div className="bg-black text-white">
 			<Head>
-				<title>Alexiy Rybin</title>
+				<title>Projects - Alexiy Rybin</title>
 				<meta name="description" content="My personal website!" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
@@ -25,25 +24,13 @@ const Index: NextPage = ({ data }: any) => {
 			<main className="min-h-screen flex flex-col justify-between">
 				<Navbar />
 
-				<div className="w-full flex flex-row flex-wrap content-center justify-center items-center">
-					<div className="w-72 m-4">
-						<Image
-							alt="Alexiy Rybin avatar"
-							src={AvatarPreview}
-							layout="responsive"
-							className="rounded-full"
-							priority={true}
-							placeholder="blur"
-						/>
+				<div>
+					<h1 className="text-3xl text-center">My projects</h1>
+					<div className="grid p-4 grid-cols-1 md:grid-cols-2">
+						{data.repos?.map((repo: any) => (
+							<GhRepo repo={repo} key={repo.id} />
+						))}
 					</div>
-
-					<span className="m-4">
-						<h1 className="text-3xl">
-							Hello!
-							<br />I am <span className="effect-3d">Alexiy Rybin!</span>
-						</h1>
-						<p className="text-xl effect-3d">(tapnisu)</p>
-					</span>
 				</div>
 
 				<Footer />
@@ -73,4 +60,4 @@ export async function getServerSideProps(context: any) {
 	return { props: { data: { repos } } };
 }
 
-export default Index;
+export default Projects;
