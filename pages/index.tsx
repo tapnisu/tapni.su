@@ -5,15 +5,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 
-type Repo = {
-	name: string;
-	url: string;
-	language: string;
-	stars: number;
-	forks: number;
-};
-
-const Index: NextPage = ({ data }: any) => {
+const Index: NextPage = () => {
 	return (
 		<div className="bg-black text-white">
 			<Head>
@@ -51,26 +43,5 @@ const Index: NextPage = ({ data }: any) => {
 		</div>
 	);
 };
-
-export async function getServerSideProps(context: any) {
-	context.res.setHeader(
-		"Cache-Control",
-		"public, s-maxage=10, stale-while-revalidate=59"
-	);
-
-	const request = await fetch(`https://api.github.com/users/tapnisu/repos`);
-	const repos = (await request.json()).filter((repo: Repo) =>
-		[
-			"tapris",
-			"website",
-			"ytscc",
-			"forwarding-discord-telegram",
-			"tsukinose",
-			"mumei"
-		].includes(repo.name)
-	);
-
-	return { props: { data: { repos } } };
-}
 
 export default Index;
