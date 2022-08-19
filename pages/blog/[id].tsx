@@ -1,5 +1,5 @@
 import Footer from "@components/Footer";
-import Navbar from "@components/Navbar";
+import Nav from "@components/Nav";
 import posts from "@exports/posts";
 import type { NextPage } from "next";
 import Head from "next/head";
@@ -14,7 +14,7 @@ const Blog: NextPage = ({ data }: any) => {
 			</Head>
 
 			<main className="min-h-screen flex flex-col justify-between">
-				<Navbar />
+				<Nav />
 
 				<div className="w-full flex flex-column flex-wrap content-center justify-center items-center">
 					<div className="w-fit p-8">

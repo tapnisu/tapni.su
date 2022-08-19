@@ -1,6 +1,6 @@
 import Footer from "@components/Footer";
 import GhRepo from "@components/GhRepo";
-import Navbar from "@components/Navbar";
+import Nav from "@components/Nav";
 import type { NextPage } from "next";
 import Head from "next/head";
 
@@ -22,7 +22,7 @@ const Projects: NextPage = ({ data }: any) => {
 			</Head>
 
 			<main className="min-h-screen flex flex-col justify-between">
-				<Navbar />
+				<Nav />
 
 				<div>
 					<h1 className="text-3xl text-center">My projects</h1>
