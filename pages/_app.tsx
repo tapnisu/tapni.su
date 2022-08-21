@@ -2,14 +2,6 @@ import { AnimatePresence, domAnimation, LazyMotion, m } from "framer-motion";
 import type { AppProps } from "next/app";
 import "../styles/globals.css";
 
-const pages = [
-	{ href: "/", name: "Index" },
-	{ href: "/page-one", name: "One" },
-	{ href: "/page-two", name: "Two" },
-	{ href: "/page-three", name: "Three" },
-	{ href: "/page-four", name: "Four" }
-];
-
 function MyApp({ Component, pageProps, router }: AppProps) {
 	return (
 		<div className="app-wrap bg-black">
