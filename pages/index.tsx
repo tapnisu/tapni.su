@@ -32,9 +32,9 @@ const Index: NextPage = () => {
 					<span className="m-4">
 						<h1 className="text-3xl">
 							Hello!
-							<br />I am <span className="effect-3d">Alexiy Rybin!</span>
+							<br />I am <span className="text-yellow-100">Alexiy Rybin!</span>
 						</h1>
-						<p className="text-xl effect-3d">(tapnisu)</p>
+						<p className="text-xl text-red-400">(tapnisu)</p>
 					</span>
 				</div>
 

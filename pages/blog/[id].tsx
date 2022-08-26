@@ -18,7 +18,7 @@ const Blog: NextPage = ({ data }: any) => {
 
 				<div className="w-full flex flex-column flex-wrap content-center justify-center items-center">
 					<div className="w-fit p-8">
-						<h1 className="text-3xl">{data.post.title}</h1>
+						<h1 className="text-3xl text-yellow-100">{data.post.title}</h1>
 
 						<div>{data.post.content}</div>
 					</div>
