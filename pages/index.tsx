@@ -34,7 +34,7 @@ const Index: NextPage = () => {
 							Hello!
 							<br />I am <span className="text-yellow-100">Alexiy Rybin!</span>
 						</h1>
-						<p className="text-xl text-red-400">(tapnisu)</p>
+						<p className="text-xl text-blue-300">(tapnisu)</p>
 					</span>
 				</div>
 
