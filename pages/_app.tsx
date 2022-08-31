@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
 	return (
 		<div className="app-wrap bg-black">
 			<LazyMotion features={domAnimation}>
-				<AnimatePresence exitBeforeEnter={true}>
+				<AnimatePresence mode="wait">
 					<m.div
 						key={router.route.concat("Fade Back")}
 						className="page-wrap"
