@@ -5,7 +5,9 @@ const GhRepo = ({ repo }: any) => {
 		<>
 			<div className="bg-neutral-900 m-2 p-8 rounded-3xl min-w-fit">
 				<Link href={repo.html_url}>
-					<h2 className="text-xl text-blue-300">{repo.full_name}</h2>
+					<h2 className="text-xl cursor-pointer text-blue-300">
+						{repo.full_name}
+					</h2>
 				</Link>
 
 				{repo.description}
