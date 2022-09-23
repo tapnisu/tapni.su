@@ -49,11 +49,11 @@ export async function getServerSideProps(context: any) {
 	const repos = (await request.json()).filter((repo: Repo) =>
 		[
 			"tapris",
-			"website",
-			"ytscc",
+			"tapciify",
 			"forwarding-discord-telegram",
 			"tsukinose",
-			"mumei"
+			"ytscc",
+			"website"
 		].includes(repo.name)
 	);
 
