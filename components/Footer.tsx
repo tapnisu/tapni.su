@@ -6,7 +6,7 @@ const Footer = () => {
 			<footer className="flex flex-row flex-wrap justify-between p-8">
 				<span className="uppercase">
 					<Link href="https://github.com/tapnisu">Github</Link> / {""}
-					<Link href="https://t.me/AlexiyRybin">Telegram</Link> / {""}
+					<Link href="https://t.me/tapnisu">Telegram</Link> / {""}
 					<Link href="https://twitter.com/tapnisu">Twitter</Link> / {""}
 					<Link href="https://discord.com/users/586128640136445964">
 						Discord
