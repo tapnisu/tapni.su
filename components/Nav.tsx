@@ -3,7 +3,7 @@ import Link from "next/link";
 const NavBase = () => {
 	return (
 		<>
-			<nav className="backdrop-blur-sm bg-black/30 w-full">
+			<nav className="backdrop-blur-sm bg-neutral-700/30 w-full">
 				<ul>
 					<li className="inline-block m-4">
 						<Link href="/" className="m-4">
