@@ -17,7 +17,7 @@ const Index: NextPage = () => {
 			<main className="min-h-screen flex flex-col justify-between">
 				<Nav />
 
-				<div className="w-full flex flex-row flex-wrap content-center justify-center items-center">
+				<div className="w-full flex flex-col flex-wrap content-center justify-center items-center">
 					<div className="w-72 m-4">
 						<Image
 							alt="Alexiy Rybin avatar"
@@ -30,11 +30,10 @@ const Index: NextPage = () => {
 					</div>
 
 					<span className="m-4">
-						<h1 className="text-3xl">
-							Hello!
-							<br />I am <span className="text-blue-300">Alexiy Rybin!</span>
-						</h1>
-						<p className="text-xl text-red-300">(tapnisu)</p>
+						<h1 className="text-3xl text-blue-300">Alexiy Rybin</h1>
+						<p className="text-xl">
+							Beginner programmer that makes lots of ascii arts :D
+						</p>
 					</span>
 				</div>
 
