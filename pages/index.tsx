@@ -35,7 +35,7 @@ const Index: NextPage = () => {
 					<span className="m-4">
 						<h1 className="text-3xl text-blue-300">Alexiy Rybin</h1>
 						<p className="text-xl">
-							Beginner programmer that makes lots of ascii arts :D
+							Programmer that makes lots of ascii arts :D
 						</p>
 					</span>
 				</div>
