@@ -4,6 +4,7 @@ import AvatarPreview from "@public/avatar.png";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link"
 
 const Index: NextPage = () => {
 	return (
@@ -19,14 +20,16 @@ const Index: NextPage = () => {
 
 				<div className="w-full flex flex-col flex-wrap content-center justify-center items-center">
 					<div className="w-72 m-4">
-						<Image
-							alt="Alexiy Rybin avatar"
-							src={AvatarPreview}
-							layout="responsive"
-							className="rounded-full"
-							priority={true}
-							placeholder="blur"
-						/>
+						<Link href="/avatar">
+							<Image
+								alt="Alexiy Rybin avatar"
+								src={AvatarPreview}
+								layout="responsive"
+								className="rounded-full cursor-pointer"
+								priority={true}
+								placeholder="blur"
+							/>
+						</Link>
 					</div>
 
 					<span className="m-4">
