@@ -4,7 +4,7 @@ import React from "react";
 import "../styles/globals.css";
 
 export default function RootLayout({
-	children,
+	children
 }: {
 	children: React.ReactNode;
 }) {
@@ -15,6 +15,8 @@ export default function RootLayout({
 					href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"
 					rel="stylesheet"
 				/>
+				<meta name="description" content="My personal website!" />
+				<link rel="icon" href="/favicon.ico" />
 			</head>
 
 			<body className="bg-black text-white">

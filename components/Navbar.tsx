@@ -10,6 +10,11 @@ const Navbar = () => {
 							Home
 						</Link>
 					</li>
+					<li className="inline-block m-4">
+						<Link href="/projects" className="m-4">
+							Projects
+						</Link>
+					</li>
 				</ul>
 			</nav>
 		</>
