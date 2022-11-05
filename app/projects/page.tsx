@@ -1,24 +1,27 @@
 import GithubRepo from "@components/GithubRepo";
 
 type Repo = {
-	name: string;
-	url: string;
+	id: number;
+	full_name: string;
+	description: string;
+	html_url: string;
 	language: string;
-	stars: number;
+	stargazers_count: number;
 	forks: number;
+	open_issues_count: number;
 };
 
 export default async function HomePage() {
 	const request = await fetch(`https://api.github.com/users/tapnisu/repos`);
 	const repos = (await request.json()).filter((repo: Repo) =>
 		[
-			"tapris",
-			"tapciify",
-			"forwarding-discord-telegram",
-			"tsukinose",
-			"ytscc",
-			"website"
-		].includes(repo.name)
+			"tapnisu/tapris",
+			"tapnisu/tapciify",
+			"tapnisu/forwarding-discord-telegram",
+			"tapnisu/tsukinose",
+			"tapnisu/ytscc",
+			"tapnisu/website"
+		].includes(repo.full_name)
 	);
 
 	return (
@@ -30,8 +33,17 @@ export default async function HomePage() {
 			<div>
 				<h1 className="text-3xl text-center">My projects</h1>
 				<div className="grid p-4 grid-cols-1 md:grid-cols-2">
-					{repos?.map((repo: any) => (
-						<GithubRepo repo={repo} key={repo.id} />
+					{repos?.map((repo: Repo) => (
+						<GithubRepo
+							name={repo.full_name}
+							url={repo.html_url}
+							description={repo.description}
+							language={repo.language}
+							stars={repo.stargazers_count}
+							forks={repo.forks}
+							issues={repo.open_issues_count}
+							key={repo.id}
+						/>
 					))}
 				</div>
 			</div>
