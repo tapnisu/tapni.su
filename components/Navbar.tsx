@@ -1,0 +1,19 @@
+import Link from "next/link";
+
+const Navbar = () => {
+	return (
+		<>
+			<nav className="fixed backdrop-blur-sm bg-neutral-700/30 text-white w-full">
+				<ul>
+					<li className="inline-block m-4">
+						<Link href="/" className="m-4">
+							Home
+						</Link>
+					</li>
+				</ul>
+			</nav>
+		</>
+	);
+};
+
+export default Navbar;
