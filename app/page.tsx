@@ -37,7 +37,7 @@ export default function HomePage() {
 
 			<Link href="/projects">
 				<button
-					className="bg-white text-black m-4 p-4 rounded-full hover:bg-stone-300 transition-colors"
+					className="bg-white text-black m-4 p-4 rounded-full hover:bg-neutral-300 transition-colors"
 					type="button"
 				>
 					Checkout projects
