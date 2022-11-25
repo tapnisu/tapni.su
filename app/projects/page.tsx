@@ -17,10 +17,10 @@ export default async function HomePage() {
 		[
 			"tapnisu/tapris",
 			"tapnisu/tapciify",
+			"tapnisu/rshima",
 			"tapnisu/forwarding-discord-telegram",
 			"tapnisu/tsukinose",
-			"tapnisu/ytscc",
-			"tapnisu/website"
+			"tapnisu/ytscc"
 		].includes(repo.full_name)
 	);
 
