@@ -11,7 +11,7 @@ type Repo = {
 	open_issues_count: number;
 };
 
-export default async function HomePage() {
+export default async function ProjectsPage() {
 	const request = await fetch(`https://api.github.com/users/tapnisu/repos`);
 	const repos = (await request.json()).filter((repo: Repo) =>
 		[
