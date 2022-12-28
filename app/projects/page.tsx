@@ -15,12 +15,12 @@ export default async function HomePage() {
 	const request = await fetch(`https://api.github.com/users/tapnisu/repos`);
 	const repos = (await request.json()).filter((repo: Repo) =>
 		[
-			"tapnisu/tapris",
 			"tapnisu/tapciify",
-			"tapnisu/rshima",
+			"tapnisu/shimarin",
 			"tapnisu/forwarding-discord-telegram",
-			"tapnisu/tsukinose",
-			"tapnisu/ytscc"
+			"tapnisu/tapris",
+			"tapnisu/ytscc",
+			"tapnisu/tsukinose"
 		].includes(repo.full_name)
 	);
 
