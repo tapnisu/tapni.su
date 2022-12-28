@@ -15,6 +15,11 @@ const Navbar = () => {
 							Projects
 						</Link>
 					</li>
+					<li className="inline-block m-4">
+						<Link href="/contact" className="m-4">
+							Contact
+						</Link>
+					</li>
 				</ul>
 			</nav>
 		</>
