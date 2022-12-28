@@ -11,7 +11,7 @@ const Footer = () => {
 				</li>
 				<li>
 					<Link href="https://discord.com/users/586128640136445964">
-						Discord
+						Discord (tapnisu#7384)
 					</Link>
 				</li>
 				<li>
