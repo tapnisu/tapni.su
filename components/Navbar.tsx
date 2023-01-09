@@ -1,24 +1,22 @@
-import Link from "next/link";
-
 const Navbar = () => {
 	return (
 		<>
 			<nav className="fixed backdrop-blur-sm bg-neutral-800/30 text-white w-full">
 				<ul>
 					<li className="inline-block m-4">
-						<Link href="/" className="m-4">
+						<a href="/" className="m-4">
 							Home
-						</Link>
+						</a>
 					</li>
 					<li className="inline-block m-4">
-						<Link href="/projects" className="m-4">
+						<a href="/projects" className="m-4">
 							Projects
-						</Link>
+						</a>
 					</li>
 					<li className="inline-block m-4">
-						<Link href="/contact" className="m-4">
+						<a href="/contact" className="m-4">
 							Contact
-						</Link>
+						</a>
 					</li>
 				</ul>
 			</nav>
