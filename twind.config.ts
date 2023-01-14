@@ -4,15 +4,15 @@ import * as colors from "twind/colors";
 export default {
   selfURL: import.meta.url,
   theme: {
-		extend: {
-			fontFamily: {
-				sans: ["JetBrains Mono"],
-				serif: ["JetBrains Mono"],
-				mono: ["JetBrains Mono"],
-				display: ["JetBrains Mono"],
-				body: ["JetBrains Mono"],
-			},
-		},
+    extend: {
+      fontFamily: {
+        sans: ["JetBrains Mono"],
+        serif: ["JetBrains Mono"],
+        mono: ["JetBrains Mono"],
+        display: ["JetBrains Mono"],
+        body: ["JetBrains Mono"],
+      },
+    },
     colors: {
       blue: colors.blue,
       black: colors.black,
