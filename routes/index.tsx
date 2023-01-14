@@ -1,4 +1,5 @@
 import { Head } from "$fresh/runtime.ts";
+import { Button } from "../components/Button.tsx";
 import Footer from "../components/Footer.tsx";
 import Navbar from "../components/Navbar.tsx";
 
@@ -39,6 +40,9 @@ export default function Home() {
             <br />
             Still in school :D.
           </p>
+          <a href="/projects">
+            <Button>Checkout projects</Button>
+          </a>
         </div>
 
         <Footer />
