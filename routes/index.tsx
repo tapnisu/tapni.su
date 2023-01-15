@@ -23,7 +23,7 @@ export default function Home() {
             <img
               src="/avatar.png"
               class="w-72 h-72 rounded-full"
-              alt="the fresh logo: a sliced lemon dripping with juice"
+              alt="Avatar"
             />
           </div>
 
