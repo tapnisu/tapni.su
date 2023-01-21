@@ -35,6 +35,12 @@ export default function Setup() {
               imageURL="/vscode.png"
               imageAlt="Visual Studio Code screenshot"
             />
+            <SetupCard
+              name="Windows 11"
+              description={"Bloated."}
+              imageURL="/windows11.png"
+              imageAlt="Just Windows 11 screenshot"
+            />
           </div>
         </div>
 
