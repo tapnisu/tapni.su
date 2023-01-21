@@ -28,9 +28,13 @@ export default function Setup() {
             />
             <SetupCard
               name="Keyboard: Keychron K2"
-              description={
-                "Gateron Red Switches.\nThats all."
-              }
+              description={"Gateron Red Switches.\nThats all."}
+            />
+            <SetupCard
+              name="Visual Studio Code setup"
+              description={"163 extensions.\nUses 1.793GB memory right now."}
+              imageURL="/vscode.png"
+              imageAlt="Visual Studio Code screenshot"
             />
           </div>
         </div>
