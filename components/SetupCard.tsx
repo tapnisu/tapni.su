@@ -9,12 +9,14 @@ interface SetupCardProps {
 
 const SetupCard = (
   { name, description, imageURL, imageAlt = "Image" }: SetupCardProps,
-  props: HeadProps
+  props: HeadProps,
 ) => {
   return (
     <>
       <div className="bg-gray-900 hover:bg-gray-800 transition-colors m-2 p-4 rounded-3xl">
-        {imageURL && <img src={imageURL} alt={imageAlt} class="w-full rounded-3xl p-2" />}
+        {imageURL && (
+          <img src={imageURL} alt={imageAlt} class="w-full rounded-3xl p-2" />
+        )}
 
         <h2 className="text-xl cursor-pointer text-white">{name}</h2>
 

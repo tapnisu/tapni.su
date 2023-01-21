@@ -11,7 +11,8 @@ export default function Setup() {
         <link
           href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"
           rel="stylesheet"
-        ></link>
+        >
+        </link>
       </Head>
 
       <Navbar />
@@ -22,15 +23,11 @@ export default function Setup() {
           <div className="grid p-4 grid-cols-1 md:grid-cols-2">
             <SetupCard
               name="PC"
-              description={
-                "My PC, standing on a chair\nSpecs:\nIntel Core i9 11900KF\nRAM 64GB (16GB*4)\nRTX 3080 12GB"
-              }
+              description={"My PC, standing on a chair\nSpecs:\nIntel Core i9 11900KF\nRAM 64GB (16GB*4)\nRTX 3080 12GB"}
             />
             <SetupCard
               name="Keyboard: Keychron K2"
-              description={
-                "Gateron Red Switches.\nThats all."
-              }
+              description={"Gateron Red Switches.\nThats all."}
             />
           </div>
         </div>
