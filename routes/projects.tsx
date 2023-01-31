@@ -47,7 +47,7 @@ export default function Projects({ data }: PageProps<Repo[]>) {
       <div className="bg-black text-white min-h-screen">
         <Navbar />
 
-        <div className="flex flex-col justify-center items-center font-mono">
+        <div className="flex flex-col justify-center items-center font-mono flex flex-col justify-between">
           <h1 className="text-3xl text-center">My projects</h1>
           <div className="grid p-4 grid-cols-1 md:grid-cols-2">
             {data?.map((repo: Repo) => (

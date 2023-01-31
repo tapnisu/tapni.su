@@ -14,7 +14,7 @@ export default function Setup() {
         ></link>
       </Head>
 
-      <div className="bg-black text-white min-h-screen">
+      <div className="bg-black text-white min-h-screen flex flex-col justify-between">
         <Navbar />
 
         <div className="flex flex-col justify-center items-center font-mono">

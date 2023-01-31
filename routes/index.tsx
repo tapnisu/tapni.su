@@ -15,7 +15,7 @@ export default function Home() {
         <link rel="stylesheet" href="/globals.css" type="text/css" />
       </Head>
 
-      <div className="bg-black text-white min-h-screen">
+      <div className="bg-black text-white min-h-screen flex flex-col justify-between">
         <Navbar />
         <div className="flex flex-col justify-center items-center font-mono">
           <div className="flex flex-col items-center p-2">
