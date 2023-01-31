@@ -11,7 +11,8 @@ export default function Home() {
         <link
           href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"
           rel="stylesheet"
-        ></link>
+        >
+        </link>
         <link rel="stylesheet" href="/globals.css" type="text/css" />
       </Head>
 
