@@ -41,7 +41,8 @@ export default function Projects({ data }: PageProps<Repo[]>) {
         <link
           href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"
           rel="stylesheet"
-        ></link>
+        >
+        </link>
       </Head>
 
       <div className="bg-black text-white min-h-screen">
