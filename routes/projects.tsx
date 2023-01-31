@@ -45,7 +45,7 @@ export default function Projects({ data }: PageProps<Repo[]>) {
         </link>
       </Head>
 
-      <div className="bg-black text-white min-h-screen">
+      <div className="bg-black text-white min-h-screen flex flex-col justify-between">
         <Navbar />
 
         <div className="flex flex-col justify-center items-center flex flex-col justify-between">
