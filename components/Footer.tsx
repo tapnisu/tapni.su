@@ -1,7 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-b from-transparent to-gray-900 flex flex-col items-center p-8">
-      <div className="mx-auto w-24 h-1 my-12 bg-white rounded-full"></div>
+    <footer className="bg-gradient-to-b from-transparent to-gray-900 flex flex-col items-center p-8 w-full">
       <h2 className="text-xl">Social media</h2>
       <ul className="list-disc p-4">
         <li>

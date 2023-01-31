@@ -41,14 +41,13 @@ export default function Projects({ data }: PageProps<Repo[]>) {
         <link
           href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"
           rel="stylesheet"
-        >
-        </link>
+        ></link>
       </Head>
 
-      <Navbar />
+      <div className="bg-black text-white min-h-screen">
+        <Navbar />
 
-      <div className="bg-black text-white">
-        <div className="min-h-screen flex flex-col justify-center items-center font-mono">
+        <div className="flex flex-col justify-center items-center font-mono">
           <h1 className="text-3xl text-center">My projects</h1>
           <div className="grid p-4 grid-cols-1 md:grid-cols-2">
             {data?.map((repo: Repo) => (

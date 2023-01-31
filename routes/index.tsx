@@ -11,15 +11,13 @@ export default function Home() {
         <link
           href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"
           rel="stylesheet"
-        >
-        </link>
+        ></link>
         <link rel="stylesheet" href="/globals.css" type="text/css" />
       </Head>
 
-      <Navbar />
-
-      <div className="bg-black text-white">
-        <div className="min-h-screen flex flex-col justify-center items-center font-mono">
+      <div className="bg-black text-white min-h-screen">
+        <Navbar />
+        <div className="flex flex-col justify-center items-center font-mono">
           <div className="flex flex-col items-center p-2">
             <img
               src="/avatar.png"

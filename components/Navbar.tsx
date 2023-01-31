@@ -1,7 +1,7 @@
 const Navbar = () => {
   return (
     <>
-      <nav className="fixed flex justify-center w-full">
+      <nav className="sticky flex justify-center w-full">
         <div className="bg-gray-900 text-white rounded-full m-2 p-2">
           <ul>
             <li className="inline-block m-2 mx-4">
