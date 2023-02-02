@@ -12,7 +12,8 @@ export default function Home() {
         <link
           href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"
           rel="stylesheet"
-        ></link>
+        >
+        </link>
         <link rel="stylesheet" href="/globals.css" type="text/css" />
       </Head>
 
@@ -51,15 +52,11 @@ export default function Home() {
           <div className="grid p-4 grid-cols-1 md:grid-cols-2 md:w-[768px]">
             <SetupCard
               name="Deno"
-              description={
-                "Scripting things"
-              }
+              description={"Scripting things"}
             />
             <SetupCard
               name="Fresh"
-              description={
-                "Framework for deno\nThis website uses it"
-              }
+              description={"Framework for deno\nThis website uses it"}
             />
             <SetupCard name="Rust" description="Rewrite it in Rust" />
             <SetupCard
