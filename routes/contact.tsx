@@ -18,7 +18,7 @@ export default function Contact() {
       <div className="bg-black text-white min-h-screen flex flex-col justify-between">
         <Navbar />
 
-        <div className="flex flex-col justify-center items-center font-mono">
+        <div className="flex flex-col justify-center items-center">
           <h1 className="text-3xl text-center">Contact</h1>
           <div className="grid p-4 grid-cols-1 md:grid-cols-2">
             <AccountCard

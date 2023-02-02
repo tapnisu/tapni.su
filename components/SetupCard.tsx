@@ -1,5 +1,3 @@
-import { HeadProps } from "https://deno.land/x/fresh@1.1.2/runtime.ts";
-
 interface SetupCardProps {
   name: string;
   description?: string;
@@ -7,10 +5,12 @@ interface SetupCardProps {
   imageAlt?: string;
 }
 
-const SetupCard = (
-  { name, description, imageURL, imageAlt = "Image" }: SetupCardProps,
-  props: HeadProps,
-) => {
+const SetupCard = ({
+  name,
+  description,
+  imageURL,
+  imageAlt = "Image",
+}: SetupCardProps) => {
   return (
     <>
       <div className="bg-gray-900 hover:bg-gray-800 transition-colors m-2 p-4 rounded-3xl">

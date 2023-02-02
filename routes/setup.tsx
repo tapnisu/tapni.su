@@ -30,16 +30,8 @@ export default function Setup() {
               description={"Gateron Red Switches.\nThats all."}
             />
             <SetupCard
-              name="Visual Studio Code setup"
-              description={"163 extensions.\nUses 1.793GB memory right now."}
-              imageURL="/vscode.png"
-              imageAlt="Visual Studio Code screenshot"
-            />
-            <SetupCard
-              name="Windows 11"
-              description={"Bloated."}
-              imageURL="/windows11.png"
-              imageAlt="Just Windows 11 screenshot"
+              name="Phone"
+              description={"Samsung m32."}
             />
           </div>
         </div>
