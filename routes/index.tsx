@@ -1,5 +1,5 @@
 import { Head } from "$fresh/runtime.ts";
-import { Button } from "../components/Button.tsx";
+import { Button } from "../components/FakeButton.tsx";
 import Footer from "../components/Footer.tsx";
 import Navbar from "../components/Navbar.tsx";
 import SetupCard from "../components/SetupCard.tsx";
