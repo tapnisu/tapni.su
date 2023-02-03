@@ -18,7 +18,7 @@ const SetupCard = ({
           <img src={imageURL} alt={imageAlt} class="w-full rounded-3xl p-2" />
         )}
 
-        <h2 className="text-xl cursor-pointer text-white">{name}</h2>
+        <h2 className="text-xl text-white">{name}</h2>
 
         {description && <pre>{description}</pre>}
       </div>
