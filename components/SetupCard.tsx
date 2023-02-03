@@ -20,7 +20,7 @@ const SetupCard = ({
 
         <h2 className="text-xl text-white">{name}</h2>
 
-        {description && <pre>{description}</pre>}
+        {description && <pre className="font-sans">{description}</pre>}
       </div>
     </>
   );

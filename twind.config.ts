@@ -6,11 +6,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["JetBrains Mono"],
-        serif: ["JetBrains Mono"],
+        sans: ["Comfortaa"],
+        serif: ["Comfortaa"],
         mono: ["JetBrains Mono"],
-        display: ["JetBrains Mono"],
-        body: ["JetBrains Mono"],
+        display: ["Comfortaa"],
+        body: ["Comfortaa"],
       },
     },
     colors: {

@@ -9,51 +9,46 @@ export default function Home() {
     <>
       <Head>
         <title>Tapnisu - Home</title>
-        <link
-          href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"
-          rel="stylesheet"
-        >
-        </link>
         <link rel="stylesheet" href="/globals.css" type="text/css" />
       </Head>
 
       <div className="bg-black text-white min-h-screen flex flex-col justify-between">
         <Navbar />
-        <div className="flex flex-col justify-center items-center">
-          <div className="flex flex-col items-center p-2">
-            <img
-              src="/avatar.png"
-              class="w-72 h-72 rounded-full"
-              alt="Avatar"
-            />
+        <div className="flex flex-col items-center">
+          <div className="flex flex-col justify-center items-center w-max md:bg-gray-900 md:rounded-3xl md:m-4 md:p-4">
+            <div className="flex flex-col items-center p-2">
+              <img
+                src="/avatar.png"
+                class="w-72 h-72 rounded-full"
+                alt="Avatar"
+              />
+            </div>
+
+            <h1 className="text-3xl p-2">
+              Oh, hi! I am <u>Tapnisu</u>!
+            </h1>
+
+            <p className="p-2">
+              My name is <u>Alexiy Rybin</u>.
+              <br />
+              I am 15 y.o. a developer based in Russia.
+              <br />
+              Currently using rust for my projects.
+              <br />
+              Still in school :D.
+            </p>
+
+            <a href="/projects">
+              <Button>Checkout projects</Button>
+            </a>
           </div>
-
-          <h1 className="text-3xl p-2">
-            Oh, hi! I am <u>Tapnisu</u>!
-          </h1>
-
-          <p className="p-2">
-            My name is <u>Alexiy Rybin</u>.
-            <br />
-            I am 15 y.o. a developer based in Russia.
-            <br />
-            Currently using rust for my projects.
-            <br />
-            Still in school :D.
-          </p>
-          <a href="/projects">
-            <Button>Checkout projects</Button>
-          </a>
         </div>
 
         <div className="flex flex-col justify-center items-center">
           <h2 className="text-2xl text-center">My tech stack</h2>
 
           <div className="grid p-4 grid-cols-1 md:grid-cols-2 md:w-[768px]">
-            <SetupCard
-              name="Deno"
-              description={"Scripting things"}
-            />
+            <SetupCard name="Deno" description="Scripting things" />
             <SetupCard
               name="Fresh"
               description={"Framework for deno\nThis website uses it"}

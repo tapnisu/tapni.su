@@ -8,11 +8,7 @@ export default function Contact() {
     <>
       <Head>
         <title>Tapnisu - Contact</title>
-        <link
-          href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"
-          rel="stylesheet"
-        >
-        </link>
+        <link rel="stylesheet" href="/globals.css" type="text/css" />
       </Head>
 
       <div className="bg-black text-white min-h-screen flex flex-col justify-between">
