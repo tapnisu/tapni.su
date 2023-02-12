@@ -15,32 +15,32 @@ export default function Home() {
       <div className="bg-black text-white min-h-screen flex flex-col justify-between">
         <Navbar />
         <div className="flex flex-col items-center">
-          <div className="flex flex-col justify-center items-center w-max md:bg-gray-900 md:rounded-3xl md:m-4 md:p-4">
-            <div className="flex flex-col items-center p-2">
-              <img
-                src="/avatar.png"
-                class="w-72 h-72 rounded-full"
-                alt="Avatar"
-              />
+          <div className="flex flex-col justify-center items-center w-max">
+            <img
+              src="/avatar.png"
+              class="w-72 h-72 rounded-full m-2"
+              alt="Avatar"
+            />
+
+            <div className="flex flex-col flex-wrap items-center justify-center p-2 h-full">
+              <h1 className="text-3xl">
+                Oh, hi! I am <b class="text-indigo-400">Tapnisu</b>!
+              </h1>
+
+              <p>
+                My name is <b className="text-indigo-400">Alexiy Rybin</b>.
+                <br />
+                I am 15 y.o. a developer based in Russia.
+                <br />
+                Currently using Rust for my projects.
+                <br />
+                Still in school btw
+              </p>
+
+              <a href="/projects">
+                <Button>Checkout projects</Button>
+              </a>
             </div>
-
-            <h1 className="text-3xl p-2">
-              Oh, hi! I am <u>Tapnisu</u>!
-            </h1>
-
-            <p className="p-2">
-              My name is <u>Alexiy Rybin</u>.
-              <br />
-              I am 15 y.o. a developer based in Russia.
-              <br />
-              Currently using rust for my projects.
-              <br />
-              Still in school :D.
-            </p>
-
-            <a href="/projects">
-              <Button>Checkout projects</Button>
-            </a>
           </div>
         </div>
 
