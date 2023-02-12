@@ -48,7 +48,7 @@ export default function Home() {
         <div className="flex flex-col justify-center items-center">
           <h2 className="text-2xl text-center">My tech stack</h2>
 
-          <div className="grid p-4 grid-cols-1 md:grid-cols-2 md:w-[768px]">
+          <div className="grid p-4 grid-cols-1 md:grid-cols-2">
             <SetupCard name="Deno" description="Scripting things" />
             <SetupCard
               name="Fresh"
