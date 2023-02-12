@@ -24,11 +24,11 @@ export default function Home() {
 
             <div className="flex flex-col flex-wrap items-center justify-center p-2 h-full">
               <h1 className="text-3xl">
-                Oh, hi! I am <b class="text-indigo-400">Tapnisu</b>!
+                Oh, hi! I am <b class="text-indigo-400 font-mono">Tapnisu</b>!
               </h1>
 
               <p>
-                My name is <b className="text-indigo-400">Alexiy Rybin</b>.
+                My name is <b className="text-indigo-400 font-mono">Alexiy Rybin</b>.
                 <br />
                 I am 15 y.o. a developer based in Russia.
                 <br />
