@@ -24,7 +24,8 @@ export default function Home() {
 
             <div className="flex flex-col flex-wrap items-center justify-center p-2 h-full">
               <h1 className="text-3xl">
-                Oh, hi! I am <span class="text-indigo-400 font-mono">Tapnisu</span>!
+                Oh, hi! I am{" "}
+                <span class="text-indigo-400 font-mono">Tapnisu</span>!
               </h1>
 
               <p>
