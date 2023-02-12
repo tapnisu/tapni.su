@@ -13,6 +13,6 @@ export default {
         body: ["JetBrains Mono"],
       },
     },
-    colors: colors,
+    colors: { ...colors, transparent: "transparent" },
   },
 } as Options;
