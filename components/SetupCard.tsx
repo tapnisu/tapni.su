@@ -13,7 +13,7 @@ const SetupCard = ({
 }: SetupCardProps) => {
   return (
     <>
-      <div className="bg-gray-900 m-2 p-8 rounded-3xl">
+      <div className="bg-gray-900 m-2 p-8 rounded-3xl border-2 border-gray-800">
         {imageURL && (
           <img src={imageURL} alt={imageAlt} class="w-full rounded-3xl p-2" />
         )}

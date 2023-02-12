@@ -2,8 +2,8 @@ const Navbar = () => {
   return (
     <>
       <nav className="sticky top-0 flex justify-center w-full">
-        <div className="bg-gray-900 text-white rounded-full m-2 p-1">
-          <ul>
+        <div className="bg-gray-900 text-white rounded-full m-2 border-2 border-gray-800">
+          <ul className="mx-2">
             {[
               { name: "Home", url: "/" },
               {
