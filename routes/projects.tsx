@@ -60,9 +60,9 @@ export default function Projects({ data }: PageProps<Repo[]>) {
               />
             ))}
           </div>
-
-          <Footer />
         </div>
+
+        <Footer />
       </div>
     </>
   );
