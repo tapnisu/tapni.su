@@ -12,7 +12,4 @@ export default {
     },
     colors: { ...colors, transparent: "transparent" },
   },
-  plugins: {
-    decoration: (parts) => ({ "text-decoration-color": parts.join(" ") }),
-  },
 } as Options;
