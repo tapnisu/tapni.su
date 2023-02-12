@@ -2,7 +2,7 @@ import { Head } from "$fresh/runtime.ts";
 import { Button } from "../components/FakeButton.tsx";
 import Footer from "../components/Footer.tsx";
 import Navbar from "../components/Navbar.tsx";
-import SetupCard from "../components/SetupCard.tsx";
+import SetupCard, { SetupCardProps } from "../components/SetupCard.tsx";
 
 export default function Home() {
   return (
@@ -50,16 +50,25 @@ export default function Home() {
           <h2 className="text-2xl text-center">My tech stack</h2>
 
           <div className="grid p-4 grid-cols-1 md:grid-cols-2">
-            <SetupCard name="Deno" description="Scripting things" />
-            <SetupCard
-              name="Fresh"
-              description={"Framework for deno\nThis website uses it"}
-            />
-            <SetupCard name="Rust" description="Rewrite it in Rust" />
-            <SetupCard
-              name="Tailwind CSS"
-              description={"I think it looks good\nBut it Doesn't"}
-            />
+            {[
+              { name: "Deno", description: "Scripting things" },
+              {
+                name: "Fresh",
+                description: "Framework for deno\nThis website uses it",
+              },
+              { name: "Rust", description: "Rewrite it in Rust" },
+              {
+                name: "Tailwind CSS",
+                description: "I think it looks good\nBut it Doesn't",
+              },
+            ].map((info: SetupCardProps) => (
+              <SetupCard
+                name={info.name}
+                description={info.description}
+                imageAlt={info.imageAlt}
+                imageURL={info.imageURL}
+              />
+            ))}
           </div>
         </div>
         <Footer />
