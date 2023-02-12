@@ -13,7 +13,10 @@ const Navbar = () => {
               { name: "Setup", url: "/setup" },
             ]?.map((info: { name: string; url: string }) => (
               <li className="inline-block m-2 mx-4">
-                <a href="/" className="hover:text-indigo-400 transition-colors">
+                <a
+                  href={info.url}
+                  className="hover:text-indigo-400 transition-colors"
+                >
                   {info.name}
                 </a>
               </li>
