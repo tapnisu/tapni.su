@@ -39,7 +39,7 @@ const Footer = () => {
         </ul>
       </div>
 
-      <h3 className="p-4 text-gray-400">
+      <h3 className="p-4 text-gray-400 transition-colors">
         © 2023 Alexiy Rybin. All rights reserved.<br />
         <a
           href="https://github.com/tapnisu/website"
