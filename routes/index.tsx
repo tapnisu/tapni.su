@@ -28,7 +28,8 @@ export default function Home() {
               </h1>
 
               <p>
-                My name is <b className="text-indigo-400 font-mono">Alexiy Rybin</b>.
+                My name is{" "}
+                <b className="text-indigo-400 font-mono">Alexiy Rybin</b>.
                 <br />
                 I am 15 y.o. a developer based in Russia.
                 <br />
