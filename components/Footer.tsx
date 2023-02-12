@@ -21,7 +21,15 @@ const Footer = () => {
         </ul>
       </div>
 
-      <h3 className="p-4 text-gray-400">© 2023 Alexiy Rybin. All rights reserved.<br/><a href="https://github.com/tapnisu/website" className="font-mono italic">Check website's source code {"<-"}</a></h3>
+      <h3 className="p-4 text-gray-400">
+        © 2023 Alexiy Rybin. All rights reserved.<br />
+        <a
+          href="https://github.com/tapnisu/website"
+          className="font-mono italic"
+        >
+          Check website's source code {"<-"}
+        </a>
+      </h3>
     </footer>
   );
 };
