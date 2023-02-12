@@ -23,12 +23,9 @@ export default function Setup() {
             />
             <SetupCard
               name="Keyboard: Keychron K2"
-              description={"Gateron Red Switches.\nThats all."}
+              description={"Gateron Red Switches.\nToilet paper modded btw."}
             />
-            <SetupCard
-              name="Phone"
-              description={"Samsung m32."}
-            />
+            <SetupCard name="Phone" description={"Samsung m32."} />
           </div>
         </div>
 
