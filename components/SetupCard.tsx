@@ -1,4 +1,4 @@
-interface SetupCardProps {
+export interface SetupCardProps {
   name: string;
   description?: string;
   imageURL?: string;
