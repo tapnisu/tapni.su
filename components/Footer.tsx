@@ -5,20 +5,20 @@ const Footer = () => {
         <h2 className="text-xl">Social media</h2>
         <ul className="p-4 list-circle">
           {[
-            { title: "Github: tapnisu", url: "https://github.com/tapnisu" },
+            { name: "Github: tapnisu", url: "https://github.com/tapnisu" },
             {
-              title: "Discord: (tapnisu#7384)",
+              name: "Discord: (tapnisu#7384)",
               url: "https://discord.com/users/586128640136445964",
             },
-            { title: "Twitter: @tapnisu", url: "https://twitter.com/tapnisu" },
-            { title: "Telegram: @tapnisu", url: "https://t.me/tapnisu" },
-          ]?.map((info: { title: string; url: string }) => (
+            { name: "Twitter: @tapnisu", url: "https://twitter.com/tapnisu" },
+            { name: "Telegram: @tapnisu", url: "https://t.me/tapnisu" },
+          ]?.map((info: { name: string; url: string }) => (
             <li>
               <a
                 href={info.url}
                 className="hover:text-indigo-400 transition-colors"
               >
-                {info.title}
+                {info.name}
               </a>
             </li>
           ))}
