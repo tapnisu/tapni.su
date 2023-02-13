@@ -13,8 +13,8 @@ export default function Home() {
       </Head>
 
       <div className="bg-black text-white min-h-screen flex flex-col justify-between">
-        <div className="flex flex-col items-center bg-gradient-to-b from-[#0d0e1a] to-transparent">
-          <Navbar />
+        <Navbar />
+        <div className="flex flex-col items-center">
           <div className="flex flex-col justify-center items-center w-max">
             <img
               src="/avatar.png"
