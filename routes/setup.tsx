@@ -1,7 +1,6 @@
 import { Head } from "$fresh/runtime.ts";
 import Footer from "../components/Footer.tsx";
 import Navbar from "../components/Navbar.tsx";
-import SetupCard, { SetupCardProps } from "../components/SetupCard.tsx";
 
 export default function Setup() {
   return (
@@ -15,26 +14,55 @@ export default function Setup() {
         <Navbar />
 
         <div className="flex flex-col justify-center items-center">
-          <h1 className="text-3xl text-center">My setup</h1>
-          <div className="grid p-4 grid-cols-1 md:grid-cols-2">
-            {[
-              {
-                name: "PC",
-                description:
-                  "My PC, standing on a chair\nSpecs:\nIntel Core i9 11900KF\nRAM 64GB (16GB*4)\nRTX 3080 12GB",
-              },
-              {
-                name: "Keyboard",
-                description:
-                  "Keychron K2 V2\nGateron Red Switches.\nToilet paper modded btw.",
-              },
-              {
-                name: "Phone",
-                description: "Samsung m32.",
-              },
-            ].map((info: SetupCardProps) => (
-              <SetupCard name={info.name} description={info.description} />
-            ))}
+          <div className="px-2 pl-6">
+            <h2 className="text-2xl p-2">Workstation</h2>
+            <ul className="list-circle">
+              {[
+                {
+                  name: "PC",
+                  description:
+                    "My PC, standing on a chair with Intel Core i9 11900KF, 64GB RAM (16GB*4) and RTX 3080 12GB in it.",
+                },
+                {
+                  name: "Keychron K2 V2",
+                  description:
+                    "Keyboard i type on. Gateron Red Switches and toilet paper modded.",
+                },
+                {
+                  name: "Razer Viper V2 Pro",
+                  description: "",
+                },
+              ].map((info) => (
+                <li>
+                  <h1 className="text-xl">{info.name}</h1>
+                  <h2 className="text-gray-400">{info.description}</h2>
+                </li>
+              ))}
+            </ul>
+
+            <h2 className="text-2xl p-2">Tech stack</h2>
+            <ul className="list-circle">
+              {[
+                {
+                  name:
+                    "Dynamically typed (for discord, telegram bots and websites)",
+                  description: "TypeScript & Deno",
+                },
+                {
+                  name: "Main programming language",
+                  description: "Rust",
+                },
+                {
+                  name: "Visual Studio Code as a test editor",
+                  description: "Had 167 extensions for some reason",
+                },
+              ].map((info) => (
+                <li>
+                  <h1 className="text-xl">{info.name}</h1>
+                  <h2 className="text-gray-400">{info.description}</h2>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
 
