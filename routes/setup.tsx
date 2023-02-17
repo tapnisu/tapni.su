@@ -7,6 +7,10 @@ export default function Setup() {
     <>
       <Head>
         <title>Tapnisu - Setup</title>
+        <meta
+          name="description"
+          content="My setup: workstation and tech stack"
+        />
         <link rel="stylesheet" href="/globals.css" type="text/css" />
       </Head>
 

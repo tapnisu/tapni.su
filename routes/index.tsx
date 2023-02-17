@@ -8,6 +8,7 @@ export default function Home() {
     <>
       <Head>
         <title>Tapnisu - Home</title>
+        <meta name="description" content="15 years old developer from Russia" />
         <link rel="stylesheet" href="/globals.css" type="text/css" />
       </Head>
 
@@ -31,11 +32,11 @@ export default function Home() {
                 My name is{" "}
                 <span className="text-indigo-400 font-mono">Alexiy Rybin</span>.
                 <br />
-                I am 15 y.o. a developer based in Russia.
+                I am 15 years old developer from Russia.
                 <br />
                 Currently using Rust for my projects.
                 <br />
-                Still in school btw
+                Still in school btw :D
               </p>
 
               <a href="/projects">

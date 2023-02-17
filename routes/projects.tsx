@@ -38,6 +38,7 @@ export default function Projects({ data }: PageProps<Repo[]>) {
     <>
       <Head>
         <title>Tapnisu - Projects</title>
+        <meta name="description" content="Projects made by tapnisu (me)" />
         <link rel="stylesheet" href="/globals.css" type="text/css" />
       </Head>
 
