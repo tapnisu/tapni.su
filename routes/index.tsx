@@ -16,7 +16,7 @@ export default function Home() {
         <div className="flex flex-col items-center">
           <div className="flex flex-col justify-center items-center w-max">
             <img
-              src="/avatar.png"
+              src="/avatar.webp"
               class="w-72 h-72 rounded-full m-2 border-2 border-gray-800"
               alt="Avatar"
             />
