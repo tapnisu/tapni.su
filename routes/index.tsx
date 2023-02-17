@@ -10,6 +10,10 @@ export default function Home() {
         <title>Tapnisu - Home</title>
         <meta name="description" content="15 years old developer from Russia" />
         <link rel="stylesheet" href="/globals.css" type="text/css" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Comfortaa&family=JetBrains+Mono&display=swap"
+          rel="stylesheet"
+        />
       </Head>
 
       <div className="bg-black text-white min-h-screen flex flex-col justify-between">

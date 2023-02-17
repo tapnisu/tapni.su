@@ -12,6 +12,10 @@ export default function Setup() {
           content="My setup: workstation and tech stack"
         />
         <link rel="stylesheet" href="/globals.css" type="text/css" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Comfortaa&family=JetBrains+Mono&display=swap"
+          rel="stylesheet"
+        />
       </Head>
 
       <div className="bg-black text-white min-h-screen flex flex-col justify-between">
