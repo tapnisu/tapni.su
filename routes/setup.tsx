@@ -39,7 +39,9 @@ export default function Setup() {
               ].map((info) => (
                 <li>
                   <h1 className="text-xl">{info.name}</h1>
-                  <h2 className="text-gray-800 dark:text-gray-400">{info.description}</h2>
+                  <h2 className="text-gray-800 dark:text-gray-400">
+                    {info.description}
+                  </h2>
                 </li>
               ))}
             </ul>
@@ -63,7 +65,9 @@ export default function Setup() {
               ].map((info) => (
                 <li>
                   <h1 className="text-xl">{info.name}</h1>
-                  <h2 className="text-gray-800 dark:text-gray-400">{info.description}</h2>
+                  <h2 className="text-gray-800 dark:text-gray-400">
+                    {info.description}
+                  </h2>
                 </li>
               ))}
             </ul>

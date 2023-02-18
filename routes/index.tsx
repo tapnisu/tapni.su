@@ -25,12 +25,16 @@ export default function Home() {
             <div className="flex flex-col flex-wrap items-center justify-center p-2 h-full">
               <h1 className="text-3xl">
                 Oh, hi! I am{" "}
-                <span class="text-indigo-600 dark:text-indigo-400 font-mono">Tapnisu</span>!
+                <span class="text-indigo-600 dark:text-indigo-400 font-mono">
+                  Tapnisu
+                </span>!
               </h1>
 
               <p>
                 My name is{" "}
-                <span className="text-indigo-600 dark:text-indigo-400 font-mono">Alexiy Rybin</span>.
+                <span className="text-indigo-600 dark:text-indigo-400 font-mono">
+                  Alexiy Rybin
+                </span>.
                 <br />
                 I am 15 years old developer from Russia.
                 <br />
