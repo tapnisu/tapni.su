@@ -14,7 +14,7 @@ export default function Setup() {
         <link rel="stylesheet" href="/globals.css" type="text/css" />
       </Head>
 
-      <div className="bg-black text-white min-h-screen flex flex-col justify-between">
+      <div className="bg-white text-black dark:bg-black dark:text-white min-h-screen flex flex-col justify-between">
         <Navbar />
 
         <div className="flex flex-col justify-center items-center">
@@ -39,7 +39,7 @@ export default function Setup() {
               ].map((info) => (
                 <li>
                   <h1 className="text-xl">{info.name}</h1>
-                  <h2 className="text-gray-400">{info.description}</h2>
+                  <h2 className="text-gray-800 dark:text-gray-400">{info.description}</h2>
                 </li>
               ))}
             </ul>
@@ -63,7 +63,7 @@ export default function Setup() {
               ].map((info) => (
                 <li>
                   <h1 className="text-xl">{info.name}</h1>
-                  <h2 className="text-gray-400">{info.description}</h2>
+                  <h2 className="text-gray-800 dark:text-gray-400">{info.description}</h2>
                 </li>
               ))}
             </ul>

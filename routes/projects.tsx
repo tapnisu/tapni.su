@@ -42,7 +42,7 @@ export default function Projects({ data }: PageProps<Repo[]>) {
         <link rel="stylesheet" href="/globals.css" type="text/css" />
       </Head>
 
-      <div className="bg-black text-white min-h-screen flex flex-col justify-between">
+      <div className="bg-white text-black dark:bg-black dark:text-white min-h-screen flex flex-col justify-between">
         <Navbar />
 
         <div className="flex flex-col justify-center items-center flex flex-col justify-between">

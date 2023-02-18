@@ -19,9 +19,9 @@ const GithubRepo = ({
 }: GithubRepoProps) => {
   return (
     <>
-      <div className="bg-gray-900 m-2 p-8 rounded-3xl border-2 border-gray-800">
+      <div className="bg-gray-100 dark:bg-gray-900 m-2 p-8 rounded-3xl border-2 border-gray-200 dark:border-gray-800">
         <a href={url}>
-          <h2 className="text-xl cursor-pointer text-white hover:text-indigo-400 transition-colors">
+          <h2 className="text-xl cursor-pointer text-black hover:text-indigo-600 dark:text-white dark:hover:text-indigo-400 transition-colors">
             {name}
           </h2>
         </a>

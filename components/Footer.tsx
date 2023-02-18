@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-b from-transparent to-gray-900 flex flex-row flex-wrap items-center justify-around p-8 w-full">
+    <footer className="text-gray-800 dark:text-gray-400 bg-gradient-to-b from-transparent to-indigo-300 dark:to-gray-900 flex flex-row flex-wrap items-center justify-around p-8 w-full">
       <div>
         <h2 className="text-xl">Social media</h2>
         <ul className="p-4 list-circle">
@@ -16,7 +16,7 @@ const Footer = () => {
             <li>
               <a
                 href={info.url}
-                className="hover:text-indigo-400 transition-colors"
+                className="hover:text-indigo-600 hover:dark:text-indigo-400 transition-colors"
               >
                 {info.name}
               </a>
@@ -25,12 +25,12 @@ const Footer = () => {
         </ul>
       </div>
 
-      <h3 className="p-4 text-gray-400">
+      <h3 className="p-4">
         © 2023 Alexiy Rybin. All rights reserved.
         <br />
         <a
           href="https://github.com/tapnisu/website"
-          className="font-mono italic hover:text-indigo-400 transition-colors"
+          className="font-mono italic hover:text-indigo-600 hover:dark:text-indigo-400 transition-colors"
         >
           Check website's source code {"<-"}
         </a>
