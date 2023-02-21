@@ -8,6 +8,10 @@ export default function HomePage() {
 		<>
 			<header>
 				<title>Tapnisu - Home</title>
+				<meta
+					name="description"
+					content="Website of 15 years old developer from Russia"
+				/>
 			</header>
 
 			<div className="flex flex-col items-center">

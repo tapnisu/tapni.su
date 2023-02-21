@@ -12,7 +12,7 @@ const Navbar = () => {
 								name: "Projects",
 								url: "/projects"
 							},
-							{ name: "Contact", url: "/contact" }
+							{ name: "Setup", url: "/setup" }
 						]?.map((info: { name: string; url: string }) => (
 							<li className="inline-block m-2" key={info.name}>
 								<Link
