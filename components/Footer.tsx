@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FaDiscord, FaGithub, FaTelegram, FaTwitter } from "react-icons/fa";
 
 const Footer = () => (
 	<footer className="text-neutral-800 dark:text-neutral-400 bg-gradient-to-b from-transparent to-indigo-300 dark:to-neutral-900 p-8">
@@ -9,23 +10,38 @@ const Footer = () => (
 				<h2 className="text-xl">Social media</h2>
 				<ul className="p-4 list-disc">
 					{[
-						{ name: "Github: tapnisu", url: "https://github.com/tapnisu" },
+						{
+							name: "Github: tapnisu",
+							url: "https://github.com/tapnisu",
+							icon: <FaGithub />
+						},
 						{
 							name: "Discord: (tapnisu#7384)",
-							url: "https://discord.com/users/586128640136445964"
+							url: "https://discord.com/users/586128640136445964",
+							icon: <FaDiscord />
 						},
-						{ name: "Twitter: @tapnisu", url: "https://twitter.com/tapnisu" },
-						{ name: "Telegram: @tapnisu", url: "https://t.me/tapnisu" }
-					]?.map((info: { name: string; url: string }) => (
-						<li key={info.name}>
-							<Link
-								href={info.url}
-								className="hover:text-indigo-600 hover:dark:text-indigo-400 transition-colors"
-							>
-								{info.name}
-							</Link>
-						</li>
-					))}
+						{
+							name: "Twitter: @tapnisu",
+							url: "https://twitter.com/tapnisu",
+							icon: <FaTwitter />
+						},
+						{
+							name: "Telegram: @tapnisu",
+							url: "https://t.me/tapnisu",
+							icon: <FaTelegram />
+						}
+					]?.map(
+						(info: { name: string; url: string; icon: React.ReactNode }) => (
+							<li key={info.name}>
+								<Link
+									href={info.url}
+									className="hover:text-indigo-600 hover:dark:text-indigo-400 transition-colors flex flex-row items-center"
+								>
+									{info.icon} <pre> </pre> {info.name}
+								</Link>
+							</li>
+						)
+					)}
 				</ul>
 			</div>
 
