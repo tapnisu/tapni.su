@@ -11,7 +11,10 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<head>
-				<meta name="description" content="My personal website!" />
+				<meta
+					name="description"
+					content="Website of 15 years old developer from Russia"
+				/>
 				<link rel="icon" href="/favicon.ico" />
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			</head>
