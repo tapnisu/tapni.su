@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-interface GithubRepoProps {
+export interface GithubRepoProps {
 	name: string;
 	url: string;
 	description: string;
@@ -20,19 +20,19 @@ const GithubRepo = ({
 	issues
 }: GithubRepoProps) => {
 	return (
-		<>
-			<div className="bg-neutral-900 hover:bg-neutral-800 transition-colors m-2 p-8 rounded-3xl min-w-fit">
-				<Link href={url}>
-					<h2 className="text-xl cursor-pointer text-white">{name}</h2>
-				</Link>
+		<div className="bg-gray-100 dark:bg-neutral-900 m-2 p-8 rounded-3xl border-2 border-gray-200 dark:border-neutral-800">
+			<Link href={url}>
+				<h2 className="text-xl cursor-pointer text-black hover:text-indigo-600 dark:text-white dark:hover:text-indigo-400 transition-colors">
+					{name}
+				</h2>
+			</Link>
 
-				{description}
+			{description}
 
-				<div>
-					{language} {stars}★ {forks}⸙ {issues}⚠
-				</div>
+			<div>
+				{language} {stars} ★ {forks} ⸙ {issues} ⚠
 			</div>
-		</>
+		</div>
 	);
 };
 

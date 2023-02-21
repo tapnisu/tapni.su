@@ -1,6 +1,6 @@
 import GithubRepo from "@components/GithubRepo";
 
-type Repo = {
+interface Repo {
 	id: number;
 	full_name: string;
 	description: string;
@@ -9,28 +9,29 @@ type Repo = {
 	stargazers_count: number;
 	forks: number;
 	open_issues_count: number;
-};
+}
 
 export default async function ProjectsPage() {
 	const request = await fetch(`https://api.github.com/users/tapnisu/repos`);
-	const repos = (await request.json()).filter((repo: Repo) =>
+	const repos: Repo[] = (await request.json()).filter((repo: Repo) =>
 		[
 			"tapnisu/tapciify",
-			"tapnisu/shimarin",
+			"tapnisu/website",
 			"tapnisu/forwarding-discord-telegram",
-			"tapnisu/tapris",
 			"tapnisu/ytscc",
+			"tapnisu/shimarin",
 			"tapnisu/tsukinose"
 		].includes(repo.full_name)
 	);
 
 	return (
-		<div className="min-h-screen flex flex-col justify-center items-center">
+		<>
 			<header>
 				<title>Tapnisu - Projects</title>
+				<meta name="description" content="Projects made by tapnisu (me)" />
 			</header>
 
-			<div>
+			<div className="flex flex-col justify-between items-center">
 				<h1 className="text-3xl text-center">My projects</h1>
 				<div className="grid p-4 grid-cols-1 md:grid-cols-2">
 					{repos?.map((repo: Repo) => (
@@ -47,6 +48,6 @@ export default async function ProjectsPage() {
 					))}
 				</div>
 			</div>
-		</div>
+		</>
 	);
 }
