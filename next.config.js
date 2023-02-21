@@ -6,28 +6,32 @@ const nextConfig = {
 	async redirects() {
 		return [
 			{
-				source: "/skyline",
-				destination: "/api/skyline",
+				source: "/vk",
+				destination: "https://vk.com/tapnisu",
 				permanent: true
 			},
 			{
-				source: "/cxsmxs",
-				destination: "https://cxsmxs.space/",
+				source: "/twitter",
+				destination: "https://twitter.com/tapnisu",
 				permanent: true
 			},
 			{
 				source: "/telegram",
-				destination: "https://t.me/yurionblog",
+				destination: "https://t.me/tapnisu",
 				permanent: true
 			},
 			{
 				source: "/discord",
-				destination: "https://discord.gg/JkXFQpScFj",
+				destination: "https://discord.com/users/586128640136445964",
+				permanent: true
+			},
+			{
+				source: "/github",
+				destination: "https://github.com/tapnisu",
 				permanent: true
 			}
 		];
-	},
-	output: "standalone"
+	}
 };
 
 module.exports = nextConfig;
