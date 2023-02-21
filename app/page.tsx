@@ -18,7 +18,7 @@ export default function HomePage() {
 				<div className="flex flex-col justify-center items-center">
 					<Image
 						src={Avatar}
-						className="w-72 h-72 rounded-full m-2 border-2 border-neutral-300 dark:border-neutral-800"
+						className="w-72 rounded-full m-2 border-2 border-neutral-300 dark:border-neutral-800"
 						alt="Avatar"
 						width={1684}
 						height={1688}
