@@ -3,24 +3,28 @@ import Link from "next/link";
 const Navbar = () => {
 	return (
 		<>
-			<nav className="fixed backdrop-blur-sm bg-neutral-800/30 text-white w-full">
-				<ul>
-					<li className="inline-block m-4">
-						<Link href="/" className="m-4">
-							Home
-						</Link>
-					</li>
-					<li className="inline-block m-4">
-						<Link href="/projects" className="m-4">
-							Projects
-						</Link>
-					</li>
-					<li className="inline-block m-4">
-						<Link href="/contact" className="m-4">
-							Contact
-						</Link>
-					</li>
-				</ul>
+			<nav className="sticky top-0 flex justify-center w-full">
+				<div className="bg-neutral-100 dark:bg-neutral-900 dark:text-white rounded-full m-2 border-2 border-neutral-200 dark:border-neutral-800">
+					<ul className="mx-2">
+						{[
+							{ name: "Home", url: "/" },
+							{
+								name: "Projects",
+								url: "/projects"
+							},
+							{ name: "Contact", url: "/contact" }
+						]?.map((info: { name: string; url: string }) => (
+							<li className="inline-block m-2" key={info.name}>
+								<Link
+									href={info.url}
+									className="hover:text-indigo-400 transition-colors"
+								>
+									{info.name}
+								</Link>
+							</li>
+						))}
+					</ul>
+				</div>
 			</nav>
 		</>
 	);
