@@ -1,48 +1,54 @@
-import Avatar from "@public/avatar.png";
+import Button from "@components/Button";
+import Avatar from "@public/avatar.webp";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function HomePage() {
 	return (
-		<div className="min-h-screen flex flex-col justify-center items-center">
+		<>
 			<header>
 				<title>Tapnisu - Home</title>
 			</header>
 
-			<div>
-				<div className="flex flex-col items-center p-2">
+			<div className="flex flex-col items-center">
+				<div className="flex flex-col justify-center items-center">
 					<Image
-						alt="Avatar"
 						src={Avatar}
-						className="rounded-full w-72"
-						priority={true}
-						placeholder="blur"
+						width={1684}
+						height={1688}
+						className="w-72 h-72 rounded-full m-2 border-2 border-neutral-300 dark:border-neutral-800"
+						alt="Avatar"
 					/>
+
+					<div className="flex flex-col flex-wrap items-center justify-center p-2 h-full">
+						<h1 className="text-3xl">
+							Oh, hi! I am{" "}
+							<span className="text-indigo-600 dark:text-indigo-400 font-mono">
+								Tapnisu
+							</span>
+							!
+						</h1>
+
+						<p>
+							My name is{" "}
+							<span className="text-indigo-600 dark:text-indigo-400 font-mono">
+								Alexiy Rybin
+							</span>
+							.
+							<br />
+							I am 15 years old developer from Russia.
+							<br />
+							Currently using Rust for my projects.
+							<br />
+							Still in school btw :D
+						</p>
+
+						<Link href="/projects">
+							<Button>Checkout projects</Button>
+						</Link>
+					</div>
 				</div>
-
-				<h1 className="text-2xl p-2">
-					Oh, hi! I am <u>Tapnisu</u>!
-				</h1>
-
-				<p className="p-2">
-					My name is <u>Alexiy Rybin</u>.
-					<br />
-					I am 15 y.o. a developer based in Russia.
-					<br />
-					Currently using rust for my projects.
-					<br />
-					Still in school :D.
-				</p>
 			</div>
-
-			<Link href="/projects">
-				<button
-					className="bg-white text-black m-4 p-4 rounded-full hover:bg-neutral-300 transition-colors"
-					type="button"
-				>
-					Checkout projects
-				</button>
-			</Link>
-		</div>
+		</>
 	);
 }

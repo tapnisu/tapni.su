@@ -9,20 +9,15 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html>
+		<html lang="en">
 			<head>
-				<link
-					href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"
-					rel="stylesheet"
-				/>
 				<meta name="description" content="My personal website!" />
 				<link rel="icon" href="/favicon.ico" />
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			</head>
 
-			<body className="bg-black text-white">
+			<body className="bg-white text-black dark:bg-black dark:text-white min-h-screen flex flex-col justify-between">
 				<Navbar />
-				<div className="h-16"></div>
 				{children}
 				<Footer />
 			</body>
