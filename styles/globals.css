@@ -2,7 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-	color-scheme: dark;
+* {
 	scroll-behavior: smooth;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		color-scheme: dark;
+	}
 }
