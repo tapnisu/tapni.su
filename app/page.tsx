@@ -24,6 +24,7 @@ export default function HomePage() {
 						height={1688}
 						priority={true}
 						placeholder="blur"
+						blurDataURL="/avatar_blur.webp"
 					/>
 
 					<div className="flex flex-col flex-wrap items-center justify-center p-2 h-full">
