@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Footer = () => {
 	return (
 		<footer className="text-neutral-800 dark:text-neutral-400 bg-gradient-to-b from-transparent to-indigo-300 dark:to-neutral-900 flex flex-row flex-wrap items-center justify-around p-8 w-full">
@@ -14,12 +16,12 @@ const Footer = () => {
 						{ name: "Telegram: @tapnisu", url: "https://t.me/tapnisu" }
 					]?.map((info: { name: string; url: string }) => (
 						<li key={info.name}>
-							<a
+							<Link
 								href={info.url}
 								className="hover:text-indigo-600 hover:dark:text-indigo-400 transition-colors"
 							>
 								{info.name}
-							</a>
+							</Link>
 						</li>
 					))}
 				</ul>
@@ -28,12 +30,12 @@ const Footer = () => {
 			<h3 className="p-4">
 				© 2023 Alexiy Rybin. All rights reserved.
 				<br />
-				<a
+				<Link
 					href="https://github.com/tapnisu/website"
 					className="font-mono italic hover:text-indigo-600 hover:dark:text-indigo-400 transition-colors"
 				>
 					Check website{"'"}s source code {"<-"}
-				</a>
+				</Link>
 			</h3>
 		</footer>
 	);
