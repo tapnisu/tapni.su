@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import { FaCodeBranch, FaExclamationTriangle, FaStar } from "react-icons/fa";
 export interface GithubRepoProps {
 	name: string;
 	url: string;
@@ -28,8 +28,9 @@ const GithubRepo = ({
 
 		{description}
 
-		<div>
-			{language} {stars} ★ {forks} ⸙ {issues} ⚠
+		<div className="flex flex-row items-center">
+			{language} {stars} <FaStar /> <pre> </pre> {forks} <FaCodeBranch />{" "}
+			<pre> </pre> {issues} <FaExclamationTriangle />
 		</div>
 	</div>
 );
