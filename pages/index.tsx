@@ -1,19 +1,15 @@
+import BasePageLayout from "@components/BasePageLayout";
 import Button from "@components/Button";
 import Avatar from "@public/avatar.webp";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function HomePage() {
+const HomePage = () => {
 	return (
-		<>
-			<header>
-				<title>Tapnisu - Home</title>
-				<meta
-					name="description"
-					content="Website of 15 years old developer from Russia"
-				/>
-			</header>
-
+		<BasePageLayout
+			title="Tapnisu - Home"
+			description="Website of 15 years old developer from Russia"
+		>
 			<div className="flex flex-col items-center">
 				<div className="flex flex-col justify-center items-center">
 					<Image
@@ -56,6 +52,8 @@ export default function HomePage() {
 					</div>
 				</div>
 			</div>
-		</>
+		</BasePageLayout>
 	);
-}
+};
+
+export default HomePage;

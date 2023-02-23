@@ -1,14 +1,11 @@
-export default async function SetupPage() {
-	return (
-		<>
-			<header>
-				<title>Tapnisu - Setup</title>
-				<meta
-					name="description"
-					content="My setup: workstation and tech stack"
-				/>
-			</header>
+import BasePageLayout from "@components/BasePageLayout";
 
+const SetupPage = () => {
+	return (
+		<BasePageLayout
+			title="Tapnisu - Setup"
+			description="My setup: workstation and tech stack"
+		>
 			<div className="flex flex-col justify-center items-center">
 				<div className="px-2 pl-6">
 					<h2 className="text-2xl p-2">Workstation</h2>
@@ -64,6 +61,8 @@ export default async function SetupPage() {
 					</ul>
 				</div>
 			</div>
-		</>
+		</BasePageLayout>
 	);
-}
+};
+
+export default SetupPage;

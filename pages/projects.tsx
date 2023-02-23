@@ -1,4 +1,6 @@
+import BasePageLayout from "@components/BasePageLayout";
 import GithubRepo from "@components/GithubRepo";
+import { GetServerSideProps } from "next";
 
 interface Repo {
 	id: number;
@@ -11,7 +13,12 @@ interface Repo {
 	open_issues_count: number;
 }
 
-export default async function ProjectsPage() {
+export const getServerSideProps: GetServerSideProps = async (context: any) => {
+	context.res.setHeader(
+		"Cache-Control",
+		"public, s-maxage=10, stale-while-revalidate=59"
+	);
+
 	const request = await fetch(`https://api.github.com/users/tapnisu/repos`);
 	const repos: Repo[] = (await request.json()).filter((repo: Repo) =>
 		[
@@ -24,13 +31,15 @@ export default async function ProjectsPage() {
 		].includes(repo.full_name)
 	);
 
-	return (
-		<>
-			<header>
-				<title>Tapnisu - Projects</title>
-				<meta name="description" content="Projects made by tapnisu (me)" />
-			</header>
+	return { props: { repos } };
+};
 
+const ProjectsPage = ({ repos }: { repos: Repo[] }) => {
+	return (
+		<BasePageLayout
+			title="Tapnisu - Projects"
+			description="Projects made by tapnisu (me)"
+		>
 			<div className="flex flex-col justify-between items-center">
 				<h1 className="text-3xl text-center">My projects</h1>
 				<div className="grid p-4 grid-cols-1 md:grid-cols-2">
@@ -48,6 +57,8 @@ export default async function ProjectsPage() {
 					))}
 				</div>
 			</div>
-		</>
+		</BasePageLayout>
 	);
-}
+};
+
+export default ProjectsPage;
