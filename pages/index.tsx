@@ -16,11 +16,10 @@ const HomePage = () => {
 						src={Avatar}
 						className="w-72 rounded-full m-2 border-2 border-neutral-300 dark:border-neutral-800"
 						alt="Avatar"
-						width={1684}
-						height={1688}
+						width={1024}
+						height={1024}
 						priority={true}
 						placeholder="blur"
-						blurDataURL="/avatar_blur.webp"
 					/>
 
 					<div className="flex flex-col flex-wrap items-center justify-center p-2 h-full">
