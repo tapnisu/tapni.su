@@ -36,6 +36,13 @@ const ProjectsPage = () => {
 						description:
 							"CLI tool that can let you to convert currencies without leaving your terminal",
 						language: "Rust"
+					},
+					{
+						name: "tapris-node",
+						url: "https://github.com/tapris-bot/tapris-node",
+						description:
+							"Discord.js 14 bot made in TypeScript (currently tapris)",
+						language: "TypeScript"
 					}
 				]?.map((repo: ProjectCardProps) => (
 					<ProjectCard
