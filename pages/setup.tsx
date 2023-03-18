@@ -19,7 +19,7 @@ const SetupPage = () => {
 							{
 								name: "Keychron K2 V2",
 								description:
-									"Keyboard i type on. Gateron Red Switches and toilet paper modded."
+									"Keyboard I use for coding. Gateron Red Switches and toilet paper modded."
 							},
 							{
 								name: "Razer Viper V2 Pro",
