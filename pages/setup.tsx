@@ -23,7 +23,7 @@ const SetupPage = () => {
 							},
 							{
 								name: "Razer Viper V2 Pro",
-								description: ""
+								description: "Mouse"
 							}
 						].map((info) => (
 							<>
