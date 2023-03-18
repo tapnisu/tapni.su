@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Navbar = () => (
 	<nav className="sticky top-0 flex justify-center w-full">
-		<div className="bg-main-100 dark:bg-main-900 dark:text-main-100 rounded-full m-2 border-2 border-main-200 dark:border-main-800">
+		<div className="text-black bg-main-200 dark:bg-main-800 dark:text-main-100 rounded-full m-2 shadow shadow-main-300 dark:shadow-main-700">
 			<ul className="mx-2">
 				{[
 					{ name: "Home", url: "/" },
