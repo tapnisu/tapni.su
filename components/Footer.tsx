@@ -50,7 +50,7 @@ const Footer = () => (
 				<br />
 				<Link
 					href="https://github.com/tapnisu/website"
-					className="font-mono italic hover:text-main-600 hover:dark:text-main-400 transition-colors"
+					className="font-mono italic hover:text-main-500 hover:dark:text-main-300 transition-colors"
 				>
 					Check website{"'"}s source code {"<-"}
 				</Link>
