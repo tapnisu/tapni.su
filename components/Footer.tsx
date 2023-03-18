@@ -2,8 +2,8 @@ import Link from "next/link";
 import { FaDiscord, FaGithub, FaTelegram, FaTwitter } from "react-icons/fa";
 
 const Footer = () => (
-	<footer className="text-main-800 dark:text-main-400 bg-gradient-to-b from-transparent to-main-200 dark:to-main-800 p-8">
-		<div className="mx-auto w-24 h-1 my-12 bg-main-800 dark:bg-main-400 rounded-full"></div>
+	<footer className="text-main-800 dark:text-main-200 bg-gradient-to-b from-transparent to-main-200 dark:to-main-800 p-8">
+		<div className="mx-auto w-24 h-1 my-12 bg-main-800 dark:bg-main-200 rounded-full"></div>
 
 		<div className="flex flex-row flex-wrap items-center justify-around">
 			<div>
@@ -52,7 +52,7 @@ const Footer = () => (
 					href="https://github.com/tapnisu/website"
 					className="font-mono italic hover:text-main-500 hover:dark:text-main-300 transition-colors"
 				>
-					Check website{"'"}s source code {"<-"}
+					Check website{"'"}s source code
 				</Link>
 			</h3>
 		</div>
