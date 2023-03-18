@@ -28,7 +28,7 @@ const SetupPage = () => {
 						].map((info) => (
 							<li key={info.name}>
 								<h1 className="text-xl">{info.name}</h1>
-								<h2 className="text-neutral-800 dark:text-neutral-400">
+								<h2 className="text-main-800 dark:text-main-400">
 									{info.description}
 								</h2>
 							</li>
@@ -53,7 +53,7 @@ const SetupPage = () => {
 						].map((info) => (
 							<li key={info.name}>
 								<h1 className="text-xl">{info.name}</h1>
-								<h2 className="text-neutral-800 dark:text-neutral-400">
+								<h2 className="text-main-800 dark:text-main-400">
 									{info.description}
 								</h2>
 							</li>

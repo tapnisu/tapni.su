@@ -14,7 +14,7 @@ const HomePage = () => {
 				<div className="flex flex-col justify-center items-center">
 					<Image
 						src={Avatar}
-						className="w-72 rounded-full m-2 border-2 border-neutral-300 dark:border-neutral-800"
+						className="w-72 rounded-full m-2 border-2 border-main-300 dark:border-main-800"
 						alt="Avatar"
 						width={1024}
 						height={1024}
@@ -25,7 +25,7 @@ const HomePage = () => {
 					<div className="flex flex-col flex-wrap items-center justify-center p-2 h-full">
 						<h1 className="text-3xl">
 							Oh, hi! I am{" "}
-							<span className="text-indigo-600 dark:text-indigo-400 font-mono">
+							<span className="text-main-600 dark:text-main-400 font-mono">
 								Tapnisu
 							</span>
 							!
@@ -33,7 +33,7 @@ const HomePage = () => {
 
 						<p>
 							My name is{" "}
-							<span className="text-indigo-600 dark:text-indigo-400 font-mono">
+							<span className="text-main-600 dark:text-main-400 font-mono">
 								Alexiy Rybin
 							</span>
 							.

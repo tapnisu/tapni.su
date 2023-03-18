@@ -2,8 +2,8 @@ import Link from "next/link";
 import { FaDiscord, FaGithub, FaTelegram, FaTwitter } from "react-icons/fa";
 
 const Footer = () => (
-	<footer className="text-neutral-800 dark:text-neutral-400 bg-gradient-to-b from-transparent to-indigo-300 dark:to-neutral-900 p-8">
-		<div className="mx-auto w-24 h-1 my-12 bg-neutral-800 dark:bg-white rounded-full"></div>
+	<footer className="text-main-800 dark:text-main-400 bg-gradient-to-b from-transparent to-main-200 dark:to-main-800 p-8">
+		<div className="mx-auto w-24 h-1 my-12 bg-main-800 dark:bg-main-400 rounded-full"></div>
 
 		<div className="flex flex-row flex-wrap items-center justify-around">
 			<div>
@@ -35,7 +35,7 @@ const Footer = () => (
 							<li key={info.name}>
 								<Link
 									href={info.url}
-									className="hover:text-indigo-600 hover:dark:text-indigo-400 transition-colors flex flex-row items-center"
+									className="hover:text-main-500 hover:dark:text-main-300 transition-colors flex flex-row items-center"
 								>
 									{info.icon} <pre> </pre> {info.name}
 								</Link>
@@ -50,7 +50,7 @@ const Footer = () => (
 				<br />
 				<Link
 					href="https://github.com/tapnisu/website"
-					className="font-mono italic hover:text-indigo-600 hover:dark:text-indigo-400 transition-colors"
+					className="font-mono italic hover:text-main-600 hover:dark:text-main-400 transition-colors"
 				>
 					Check website{"'"}s source code {"<-"}
 				</Link>
