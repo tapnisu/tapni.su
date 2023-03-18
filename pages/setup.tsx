@@ -7,9 +7,9 @@ const SetupPage = () => {
 			description="My setup: workstation and tech stack"
 		>
 			<div className="flex flex-col justify-center items-center">
-				<div className="px-2 pl-6">
-					<h2 className="text-2xl p-2">Workstation</h2>
-					<ul className="list-disc">
+				<div className="p-2">
+					<h2 className="text-2xl font-semibold p-2">Workstation</h2>
+					<ul className="list-disc list-inside">
 						{[
 							{
 								name: "PC",
@@ -26,17 +26,19 @@ const SetupPage = () => {
 								description: ""
 							}
 						].map((info) => (
-							<li key={info.name}>
-								<h1 className="text-xl">{info.name}</h1>
-								<h2 className="text-main-800 dark:text-main-400">
+							<>
+								<li key={info.name} className="text-xl">
+									{info.name}
+								</li>
+								<p className="text-main-800 dark:text-main-400">
 									{info.description}
-								</h2>
-							</li>
+								</p>
+							</>
 						))}
 					</ul>
 
-					<h2 className="text-2xl p-2">Tech stack</h2>
-					<ul className="list-disc">
+					<h2 className="text-2xl font-semibold p-2">Tech stack</h2>
+					<ul className="list-disc list-inside">
 						{[
 							{
 								name: "Dynamically typed (for discord, telegram bots and websites)",
@@ -51,12 +53,14 @@ const SetupPage = () => {
 								description: "Had 167 extensions for some reason"
 							}
 						].map((info) => (
-							<li key={info.name}>
-								<h1 className="text-xl">{info.name}</h1>
-								<h2 className="text-main-800 dark:text-main-400">
+							<>
+								<li key={info.name} className="text-xl">
+									{info.name}
+								</li>
+								<p className="text-main-800 dark:text-main-400">
 									{info.description}
-								</h2>
-							</li>
+								</p>
+							</>
 						))}
 					</ul>
 				</div>
