@@ -11,7 +11,7 @@ const HomePage = () => {
 			description="Website of 15 years old developer from Russia"
 		>
 			<div className="flex flex-col items-center">
-				<div className="flex flex-col justify-center items-center">
+				<div className="flex flex-row flex-wrap justify-center items-center p-2">
 					<Image
 						src={Avatar}
 						className="w-72 rounded-full m-2 border-2 border-main-300 dark:border-main-800"
