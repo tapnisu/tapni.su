@@ -33,7 +33,7 @@ const ProjectsPage = () => {
 						},
 						{
 							name: "exhrtcc",
-							url: "https://github.com/tapnisuold/exhrtcc",
+							url: "https://github.com/tapnisold/exhrtcc",
 							description:
 								"CLI tool that can let you to convert currencies without leaving your terminal",
 							language: "Rust"
