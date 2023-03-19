@@ -52,7 +52,7 @@ const HomePage = () => {
 				<div className="p-2">
 					<h1 className="text-3xl font-bold p-2">My projects</h1>
 
-					<ul className="list-inside">
+					<div>
 						{[
 							{
 								name: "tapciify",
@@ -96,24 +96,23 @@ const HomePage = () => {
 								description: string;
 								language: string;
 							}) => (
-								<>
-									<li key={repo.name} className="list-disc">
-										<Link
-											href={repo.url}
-											className="text-xl cursor-pointer text-black hover:text-main-600 dark:text-main-100 dark:hover:text-main-400 transition-colors"
-										>
-											{repo.name}
-										</Link>
-									</li>
-									<p className="text-main-800 dark:text-main-400">
+								<div key={repo.name} className="bg-main-200 dark:bg-main-800 m-4 p-4 rounded-lg">
+									<Link
+										href={repo.url}
+										className="text-xl cursor-pointer text-main-900 dark:text-main-100 hover:text-accent-500 transition-colors"
+									>
+										{repo.name}
+									</Link>
+
+									<p className="text-main-600 dark:text-main-400">
 										{repo.description}
 										<br />
 										Written in {repo.language}
 									</p>
-								</>
+								</div>
 							)
 						)}
-					</ul>
+					</div>
 				</div>
 			</div>
 		</BasePageLayout>
