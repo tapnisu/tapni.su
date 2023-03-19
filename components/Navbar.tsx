@@ -6,6 +6,10 @@ const Navbar = () => (
 			<ul className="mx-2">
 				{[
 					{ name: "Home", url: "/" },
+					{
+						name: "Projects",
+						url: "/#projects"
+					},
 					{ name: "Setup", url: "/setup" }
 				]?.map((info: { name: string; url: string }) => (
 					<li className="inline-block m-2" key={info.name}>

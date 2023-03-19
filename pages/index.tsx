@@ -48,7 +48,7 @@ const HomePage = () => {
 					</div>
 				</div>
 			</div>
-			<div className="flex flex-col justify-between items-center">
+			<div className="flex flex-col justify-between items-center" id="projects">
 				<div className="p-2">
 					<h1 className="text-3xl font-bold p-2">My projects</h1>
 
@@ -96,7 +96,10 @@ const HomePage = () => {
 								description: string;
 								language: string;
 							}) => (
-								<div key={repo.name} className="bg-main-200 dark:bg-main-800 m-4 p-4 rounded-lg">
+								<div
+									key={repo.name}
+									className="bg-main-200 dark:bg-main-800 m-4 p-4 rounded-lg"
+								>
 									<Link
 										href={repo.url}
 										className="text-xl cursor-pointer text-main-900 dark:text-main-100 hover:text-accent-500 transition-colors"
