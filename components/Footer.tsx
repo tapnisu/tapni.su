@@ -35,7 +35,7 @@ const Footer = () => (
 							<li key={info.name}>
 								<Link
 									href={info.url}
-									className="hover:text-accent-500 transition-colors flex flex-row items-center"
+									className="hover:text-accent-500 dark:hover:text-accent-400 transition-colors flex flex-row items-center"
 								>
 									{info.icon} <pre> </pre> {info.name}
 								</Link>
@@ -50,7 +50,7 @@ const Footer = () => (
 				<br />
 				<Link
 					href="https://github.com/tapnisu/website"
-					className="font-mono italic hover:text-accent-500 transition-colors"
+					className="font-mono italic hover:text-accent-500 dark:hover:text-accent-400 transition-colors"
 				>
 					Check website{"'"}s source code
 				</Link>

@@ -15,7 +15,7 @@ const Navbar = () => (
 					<li className="inline-block m-2" key={info.name}>
 						<Link
 							href={info.url}
-							className="hover:text-accent-500 transition-colors"
+							className="hover:text-accent-500 dark:hover:text-accent-400 transition-colors"
 						>
 							{info.name}
 						</Link>
