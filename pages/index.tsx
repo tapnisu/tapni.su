@@ -16,8 +16,8 @@ const HomePage = () => {
 						src={Avatar}
 						className="w-72 rounded-full m-2 border-2 border-main-300 dark:border-main-800"
 						alt="Avatar"
-						width={1024}
-						height={1024}
+						width={512}
+						height={512}
 						priority={true}
 						placeholder="blur"
 					/>
