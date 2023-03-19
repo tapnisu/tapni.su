@@ -25,7 +25,7 @@ const HomePage = () => {
 					<div className="flex flex-col flex-wrap items-center justify-center p-2 h-full">
 						<h1 className="text-3xl font-bold">
 							Oh, hi! I am{" "}
-							<span className="text-main-600 dark:text-main-400 font-mono">
+							<span className="text-accent-500 font-mono">
 								Tapnisu
 							</span>
 							!
@@ -33,7 +33,7 @@ const HomePage = () => {
 
 						<p>
 							My name is{" "}
-							<span className="text-main-600 dark:text-main-400 font-mono">
+							<span className="text-accent-500 font-mono font-semibold">
 								Alexiy Rybin
 							</span>
 							.
