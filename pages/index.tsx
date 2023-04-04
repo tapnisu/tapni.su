@@ -14,10 +14,10 @@ const HomePage = () => {
 				<div className="flex flex-row flex-wrap justify-center items-center p-2">
 					<Image
 						src={Avatar}
-						className="w-72 rounded-full m-2 border-2 border-main-300 dark:border-main-800"
+						className="w-72 rounded-full m-2 border-main-300 dark:border-main-800"
 						alt="Avatar"
-						width={512}
-						height={512}
+						width={640}
+						height={640}
 						priority={true}
 						placeholder="blur"
 					/>
@@ -25,7 +25,7 @@ const HomePage = () => {
 					<div className="flex flex-col flex-wrap items-center justify-center p-2 h-full">
 						<h1 className="text-3xl font-bold">
 							Oh, hi! I am{" "}
-							<span className="text-accent-700 dark:text-accent-400 font-mono">
+							<span className="text-accent-700 dark:text-accent-500 font-mono">
 								Tapnisu
 							</span>
 							!
@@ -33,7 +33,7 @@ const HomePage = () => {
 
 						<p>
 							My name is{" "}
-							<span className="text-accent-700 dark:text-accent-400 font-mono font-semibold">
+							<span className="text-accent-700 dark:text-accent-500 font-mono font-semibold">
 								Alexiy Rybin
 							</span>
 							.
@@ -101,16 +101,16 @@ const HomePage = () => {
 							}) => (
 								<div
 									key={repo.name}
-									className="bg-main-100 dark:bg-main-800 m-4 p-4 rounded-lg"
+									className="bg-main-100 dark:bg-main-900 m-4 p-4 rounded-xl"
 								>
 									<Link
 										href={repo.url}
-										className="text-xl cursor-pointer text-main-900 dark:text-main-50 hover:text-accent-600 dark:hover:text-accent-500 transition-colors"
+										className="text-xl cursor-pointer text-main-900 dark:text-main-100 hover:text-accent-600 dark:hover:text-accent-500 transition-colors"
 									>
 										{repo.name}
 									</Link>
 
-									<p className="text-main-800 dark:text-main-300">
+									<p className="text-main-800 dark:text-main-400">
 										{repo.description}
 										<br />
 										Written in {repo.language}

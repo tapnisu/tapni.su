@@ -30,7 +30,7 @@ const SetupPage = () => {
 								<li key={info.name} className="text-xl">
 									{info.name}
 								</li>
-								<p className="text-main-800 dark:text-main-300">
+								<p className="text-main-800 dark:text-main-400">
 									{info.description}
 								</p>
 							</>
@@ -57,7 +57,7 @@ const SetupPage = () => {
 								<li key={info.name} className="text-xl">
 									{info.name}
 								</li>
-								<p className="text-main-800 dark:text-main-300">
+								<p className="text-main-800 dark:text-main-400">
 									{info.description}
 								</p>
 							</>
