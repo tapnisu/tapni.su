@@ -101,7 +101,7 @@ const HomePage = () => {
 							}) => (
 								<div
 									key={repo.name}
-									className="bg-main-100 dark:bg-main-800 m-4 p-4 rounded-xl"
+									className="bg-main-100 dark:bg-main-900 m-4 p-4 rounded-xl"
 								>
 									<Link
 										href={repo.url}
@@ -110,7 +110,7 @@ const HomePage = () => {
 										{repo.name}
 									</Link>
 
-									<p className="text-main-800 dark:text-main-300">
+									<p className="text-main-800 dark:text-main-400">
 										{repo.description}
 										<br />
 										Written in {repo.language}

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Navbar = () => (
 	<nav className="sticky top-0 flex justify-center w-full">
-		<div className="text-accent-700 dark:text-accent-500 bg-main-50/75 dark:bg-main-900/75 backdrop-blur-sm rounded-full m-2 px-2">
+		<div className="text-accent-700 dark:text-accent-500 bg-main-50/75 dark:bg-main-950/75 backdrop-blur-sm rounded-full m-2 px-2">
 			<ul>
 				{[
 					{ name: "Home", url: "/" },
