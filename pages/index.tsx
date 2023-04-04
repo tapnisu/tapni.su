@@ -105,7 +105,7 @@ const HomePage = () => {
 								>
 									<Link
 										href={repo.url}
-										className="text-xl cursor-pointer text-main-900 dark:text-main-50 hover:text-accent-600 dark:hover:text-accent-500 transition-colors"
+										className="text-xl cursor-pointer text-main-900 dark:text-main-100 hover:text-accent-600 dark:hover:text-accent-500 transition-colors"
 									>
 										{repo.name}
 									</Link>
