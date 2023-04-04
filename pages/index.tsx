@@ -25,7 +25,10 @@ const HomePage = () => {
 					<div className="flex flex-col flex-wrap items-center justify-center p-2 h-full">
 						<h1 className="text-3xl font-bold">
 							Oh, hi! I am{" "}
-							<span className="text-accent-700 dark:text-accent-400 font-mono">Tapnisu</span>!
+							<span className="text-accent-700 dark:text-accent-400 font-mono">
+								Tapnisu
+							</span>
+							!
 						</h1>
 
 						<p>
@@ -98,16 +101,16 @@ const HomePage = () => {
 							}) => (
 								<div
 									key={repo.name}
-									className="bg-main-200 dark:bg-main-800 m-4 p-4 rounded-lg"
+									className="bg-main-100 dark:bg-main-800 m-4 p-4 rounded-lg"
 								>
 									<Link
 										href={repo.url}
-										className="text-xl cursor-pointer text-main-900 dark:text-main-100 hover:text-accent-600 dark:hover:text-accent-500 transition-colors"
+										className="text-xl cursor-pointer text-main-900 dark:text-main-50 hover:text-accent-600 dark:hover:text-accent-500 transition-colors"
 									>
 										{repo.name}
 									</Link>
 
-									<p className="text-main-600 dark:text-main-400">
+									<p className="text-main-800 dark:text-main-300">
 										{repo.description}
 										<br />
 										Written in {repo.language}
