@@ -45,7 +45,7 @@ const HomePage = () => {
 							Still in school btw :D
 						</p>
 
-						<Link href="/projects">
+						<Link href="#projects">
 							<Button>Checkout projects</Button>
 						</Link>
 					</div>
