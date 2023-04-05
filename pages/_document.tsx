@@ -1,7 +1,7 @@
 import { Head, Html, Main, NextScript } from "next/document";
 
 const Document = () => (
-	<Html lang="en" className="scroll-smooth">
+	<Html lang="en">
 		<Head>
 			<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 		</Head>
