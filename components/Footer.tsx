@@ -2,7 +2,7 @@ import Link from "next/link";
 import { FaDiscord, FaGithub, FaTelegram, FaTwitter } from "react-icons/fa";
 
 const Footer = () => (
-	<footer className="text-main-800 dark:text-main-400 bg-gradient-to-b from-transparent to-accent-100 dark:to-accent-900 p-8">
+	<footer className="text-main-800 dark:text-main-400 p-8">
 		<div className="mx-auto w-24 h-1 my-12 bg-main-800 dark:bg-main-400 rounded-full"></div>
 
 		<div className="flex flex-row flex-wrap items-center justify-around">
