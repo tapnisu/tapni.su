@@ -25,7 +25,7 @@ const Footer = () => (
 				))}
 			</div>
 
-			<h3 className="p-4">© 2023 Alexiy Rybin. All rights reserved.</h3>
+			<p className="p-4">© 2023 Alexiy Rybin. All rights reserved.</p>
 		</div>
 	</footer>
 );
