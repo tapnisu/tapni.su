@@ -17,7 +17,7 @@ const Footer = () => (
 				]?.map((info: { name: string; url: string }) => (
 					<Link
 						href={info.url}
-						className="underline underline-offset-4 italic hover:text-accent-700 dark:hover:text-accent-500 transition-colors m-2"
+						className="underline underline-offset-4 hover:text-accent-700 dark:hover:text-accent-500 transition-colors m-2"
 						key={info.name}
 					>
 						{info.name}
