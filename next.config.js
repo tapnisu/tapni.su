@@ -28,6 +28,11 @@ const nextConfig = {
 				source: "/github",
 				destination: "https://github.com/tapnisu",
 				permanent: true
+			},
+			{
+				source: "/email",
+				destination: "mailto:alexiy.rybin@gmail.com",
+				permanent: true
 			}
 		];
 	}
