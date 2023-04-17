@@ -53,7 +53,7 @@ const SetupPage = () => {
 							description: "Rust"
 						},
 						{
-							name: "Visual Studio Code as a test editor",
+							name: "Visual Studio Code as an editor",
 							description: "2 GiB memory usage"
 						}
 					].map((info) => (
