@@ -5,7 +5,7 @@ const ProjectsPage = () => {
 	return (
 		<BasePageLayout
 			title="Tapnisu - Projects"
-			description="Website of 15 years old developer from Russia"
+			description="Projects I made"
 		>
 			<h1 className="text-3xl font-bold p-2">My projects</h1>
 
