@@ -53,9 +53,6 @@ const HomePage = () => {
 					</div>
 				</div>
 			</div>
-			<div className="flex flex-col justify-between items-center" id="projects">
-				<div className="p-2"></div>
-			</div>
 		</BasePageLayout>
 	);
 };
