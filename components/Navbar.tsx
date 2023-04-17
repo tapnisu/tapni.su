@@ -8,7 +8,7 @@ const Navbar = () => (
 					{ name: "Home", url: "/" },
 					{
 						name: "Projects",
-						url: "/#projects"
+						url: "/projects"
 					},
 					{ name: "Setup", url: "/setup" }
 				]?.map((info: { name: string; url: string }) => (
