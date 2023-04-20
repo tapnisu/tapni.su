@@ -33,6 +33,11 @@ const nextConfig = {
 				source: "/email",
 				destination: "mailto:alexiy.rybin@gmail.com",
 				permanent: true
+			},
+			{
+				source: "/c",
+				destination: "/contact",
+				permanent: true
 			}
 		];
 	}
