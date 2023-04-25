@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const Navbar = () => (
-	<nav className="sticky top-0 flex justify-center md:justify-normal w-full text-accent-700 dark:text-accent-500 bg-main-50/75 dark:bg-main-950/75 backdrop-blur-sm p-2">
+	<nav className="sticky top-0 flex justify-center md:justify-normal w-full text-accent-600 bg-main-50/75 dark:bg-main-950/75 backdrop-blur-sm p-2">
 		<ul>
 			{[
 				{ name: "Home", url: "/" },
@@ -12,7 +12,7 @@ const Navbar = () => (
 				{ name: "Setup", url: "/setup" }
 			]?.map((info: { name: string; url: string }) => (
 				<li
-					className="inline-block py-2 rounded-full hover:bg-accent-700 hover:text-main-100 transition"
+					className="inline-block py-2 rounded-full hover:bg-accent-600 hover:text-main-100 transition"
 					key={info.name}
 				>
 					<Link className="p-2 px-4" href={info.url}>

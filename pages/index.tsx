@@ -22,19 +22,13 @@ const HomePage = () => {
 				/>
 
 				<div className="flex flex-col flex-wrap items-center justify-center p-2 h-full">
-					<h1 className="text-3xl font-bold">
-						Oh, hi! I am{" "}
-						<span className="text-accent-700 dark:text-accent-500">
-							Tapnisu
-						</span>
-						!
+					<h1 className="text-3xl font-semibold">
+						Oh, hi! I am <span className="text-accent-600">Tapnisu</span>!
 					</h1>
 
 					<p>
 						My name is{" "}
-						<span className="text-accent-700 dark:text-accent-500 font-semibold">
-							Alexiy Rybin
-						</span>
+						<span className="text-accent-600 font-semibold">Alexiy Rybin</span>
 						.
 						<br />
 						I am 15 years old developer from Russia.

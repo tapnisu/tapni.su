@@ -1,4 +1,3 @@
-const colors = require("tailwindcss/colors");
 const { fontFamily } = require("tailwindcss/defaultTheme");
 
 /** @type {import('tailwindcss').Config} */
@@ -25,17 +24,15 @@ module.exports = {
 				950: "#000000"
 			},
 			accent: {
-				50: "#eef2ff",
-				100: "#e0e7ff",
-				200: "#c7d2fe",
-				300: "#a5b4fc",
-				400: "#818cf8",
-				500: "#6366f1",
-				600: "#4f46e5",
-				700: "#4338ca",
-				800: "#3730a3",
-				900: "#312e81",
-				950: "#1e1b4b"
+				100: "#e1e9f2",
+				200: "#c3d4e5",
+				300: "#a5bed9",
+				400: "#87a9cc",
+				500: "#6993bf",
+				600: "#547699",
+				700: "#3f5873",
+				800: "#2a3b4c",
+				900: "#151d26"
 			}
 		},
 		extend: {

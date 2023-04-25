@@ -58,7 +58,7 @@ const ContactPage = () => {
 				]?.map((info: { name: string; url: string; icon: React.ReactNode }) => (
 					<Link href={info.url} key={info.name} className="m-2 w-full">
 						<button
-							className="text-main-50 font-semibold bg-accent-700 p-4 rounded-xl hover:bg-accent-600 transition-colors flex flex-row items-center w-full"
+							className="text-main-50 font-semibold bg-accent-600 p-4 rounded-xl hover:bg-accent-700 transition-colors flex flex-row items-center w-full"
 							type="button"
 						>
 							{info.icon} <pre> </pre> {info.name}
