@@ -2,7 +2,6 @@ const { fontFamily } = require("tailwindcss/defaultTheme");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	plugins: [require("tailwindcss-selection-variant")],
 	content: [
 		"./app/**/*.{js,ts,jsx,tsx}",
 		"./pages/**/*.{js,ts,jsx,tsx}",
@@ -41,5 +40,5 @@ module.exports = {
 			}
 		}
 	},
-	plugins: []
+	plugins: [require("tailwindcss-selection-variant")]
 };
