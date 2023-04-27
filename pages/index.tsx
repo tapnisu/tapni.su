@@ -15,9 +15,10 @@ const HomePage = () => {
 					src={Avatar}
 					className="w-72 rounded-full m-2 border-main-300 dark:border-main-800"
 					alt="Avatar"
-					width={640}
-					height={640}
-					priority={true}
+					sizes="(max-width: 768px) 100vw,
+							(max-width: 1200px) 50vw,
+							33vw"
+					priority
 					placeholder="blur"
 				/>
 

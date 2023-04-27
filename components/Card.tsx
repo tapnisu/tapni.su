@@ -16,9 +16,9 @@ const Card = (props: CardProps) => (
 				src={props.image}
 				className="w-full rounded-t-xl"
 				alt={props.title}
-				width={640}
-				height={640}
-				priority={true}
+				sizes="(max-width: 768px) 100vw,
+						(max-width: 1200px) 50vw,
+						33vw"
 				placeholder="blur"
 			/>
 		) : (
