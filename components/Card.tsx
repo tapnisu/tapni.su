@@ -18,7 +18,7 @@ const Card = (props: CardProps) => (
 				alt={props.title}
 				sizes="(max-width: 768px) 100vw,
 				(max-width: 1200px) 50vw,
-				33vw"
+				400px"
 				placeholder="blur"
 			/>
 		) : (
