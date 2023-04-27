@@ -9,13 +9,13 @@ export interface CardProps {
 	comments?: string;
 }
 
-const Card = (props: CardProps) => (
+const Card = ({ title, image, url, description, comments }: CardProps) => (
 	<div className="bg-main-100 dark:bg-main-900 m-4 rounded-xl">
-		{props.image ? (
+		{image ? (
 			<Image
-				src={props.image}
+				src={image}
 				className="w-full rounded-t-xl"
-				alt={props.title}
+				alt={title}
 				sizes="(max-width: 768px) 100vw,
 					(max-width: 1200px) 50vw,
 					400px"
@@ -26,23 +26,21 @@ const Card = (props: CardProps) => (
 		)}
 
 		<div className="p-4">
-			{props.url ? (
+			{url ? (
 				<Link
-					href={props.url}
+					href={url}
 					className="text-xl cursor-pointer text-main-900 dark:text-main-100 hover:text-accent-600 dark:hover:text-accent-500 transition-colors"
 				>
-					{props.title}
+					{title}
 				</Link>
 			) : (
-				<h2 className="text-xl text-main-900 dark:text-main-100">
-					{props.title}
-				</h2>
+				<h2 className="text-xl text-main-900 dark:text-main-100">{title}</h2>
 			)}
 
 			<p className="text-main-800 dark:text-main-400 font-sans">
-				{props.description}
+				{description}
 				<br />
-				{props.comments}
+				{comments}
 			</p>
 		</div>
 	</div>
