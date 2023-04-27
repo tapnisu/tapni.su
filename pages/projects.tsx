@@ -1,12 +1,9 @@
+import Card from "@/components/Card";
 import BasePageLayout from "@components/BasePageLayout";
-import Link from "next/link";
 
 const ProjectsPage = () => {
 	return (
-		<BasePageLayout
-			title="Tapnisu - Projects"
-			description="Projects I made"
-		>
+		<BasePageLayout title="Tapnisu - Projects" description="Projects I made">
 			<h1 className="text-3xl font-bold p-2">My projects</h1>
 
 			<div>
@@ -44,32 +41,15 @@ const ProjectsPage = () => {
 							"Discord.js 14 bot made in TypeScript (currently tapris)",
 						language: "TypeScript"
 					}
-				]?.map(
-					(repo: {
-						name: string;
-						url: string;
-						description: string;
-						language: string;
-					}) => (
-						<div
-							key={repo.name}
-							className="bg-main-100 dark:bg-main-900 m-4 p-4 rounded-xl"
-						>
-							<Link
-								href={repo.url}
-								className="text-xl cursor-pointer text-main-900 dark:text-main-100 hover:text-accent-600 dark:hover:text-accent-500 transition-colors"
-							>
-								{repo.name}
-							</Link>
-
-							<p className="text-main-800 dark:text-main-400">
-								{repo.description}
-								<br />
-								Written in {repo.language}
-							</p>
-						</div>
-					)
-				)}
+				]?.map((info) => (
+					<Card
+						title={info.name}
+						url={info.url}
+						description={info.description}
+						comments={`Written in ${info.language}`}
+						key={info.name}
+					/>
+				))}
 			</div>
 		</BasePageLayout>
 	);

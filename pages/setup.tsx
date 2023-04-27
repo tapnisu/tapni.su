@@ -1,3 +1,4 @@
+import Card from "@/components/Card";
 import BasePageLayout from "@components/BasePageLayout";
 
 const SetupPage = () => {
@@ -26,18 +27,11 @@ const SetupPage = () => {
 							description: "Mouse"
 						}
 					].map((info) => (
-						<div
+						<Card
+							title={info.name}
+							description={info.description}
 							key={info.name}
-							className="bg-main-100 dark:bg-main-900 m-4 p-4 rounded-xl"
-						>
-							<h2 className="text-xl text-main-900 dark:text-main-100">
-								{info.name}
-							</h2>
-
-							<p className="text-main-800 dark:text-main-400">
-								{info.description}
-							</p>
-						</div>
+						/>
 					))}
 				</div>
 
@@ -57,18 +51,11 @@ const SetupPage = () => {
 							description: "2 GiB memory usage"
 						}
 					].map((info) => (
-						<div
+						<Card
+							title={info.name}
+							description={info.description}
 							key={info.name}
-							className="bg-main-100 dark:bg-main-900 m-4 p-4 rounded-xl"
-						>
-							<h2 className="text-xl text-main-900 dark:text-main-100">
-								{info.name}
-							</h2>
-
-							<p className="text-main-800 dark:text-main-400">
-								{info.description}
-							</p>
-						</div>
+						/>
 					))}
 				</div>
 			</div>
