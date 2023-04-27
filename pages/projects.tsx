@@ -1,6 +1,7 @@
 import Card from "@/components/Card";
 import BasePageLayout from "@components/BasePageLayout";
-import tapciifyImage from "@public/tapciify.webp";
+import tapciifyImage from "@public/projects/tapciify.webp";
+import websiteImage from "@public/projects/website.webp";
 
 const ProjectsPage = () => {
 	return (
@@ -45,7 +46,8 @@ const ProjectsPage = () => {
 					},
 					{
 						name: "website",
-						url: "tapni.su",
+						image: websiteImage,
+						url: "https://github.com/tapnisu/website",
 						description: "My personal website",
 						language: "Typescript"
 					}
