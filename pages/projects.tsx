@@ -1,5 +1,6 @@
 import Card from "@/components/Card";
 import BasePageLayout from "@components/BasePageLayout";
+import tapciifyImage from "@public/tapciify.webp";
 
 const ProjectsPage = () => {
 	return (
@@ -10,6 +11,7 @@ const ProjectsPage = () => {
 				{[
 					{
 						name: "tapciify",
+						image: tapciifyImage,
 						url: "https://github.com/tapnisu/tapciify",
 						description: "CLI tool that can let you view images in terminal",
 						language: "Rust"
@@ -50,6 +52,7 @@ const ProjectsPage = () => {
 				]?.map((info) => (
 					<Card
 						title={info.name}
+						image={info.image}
 						url={info.url}
 						description={info.description}
 						comments={`Written in ${info.language}`}
