@@ -40,6 +40,12 @@ const ProjectsPage = () => {
 						description:
 							"Discord.js 14 bot made in TypeScript (currently tapris)",
 						language: "TypeScript"
+					},
+					{
+						name: "website",
+						url: "tapni.su",
+						description: "My personal website",
+						language: "Typescript"
 					}
 				]?.map((info) => (
 					<Card

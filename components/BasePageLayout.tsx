@@ -18,7 +18,7 @@ const BasePageLayout = ({ title, description, children }: BaseLayoutProps) => (
 		<main className="bg-main-50 text-main-900 dark:bg-main-950 dark:text-main-100 selection:bg-accent-600 selection:text-accent-100 min-h-screen flex flex-col justify-between">
 			<Navbar />
 			<div className="flex flex-col items-center justify-center min-h-[50vh] p-2">
-				{children}
+				<div>{children}</div>
 			</div>
 			<Footer />
 		</main>

@@ -22,7 +22,7 @@ const HomePage = () => {
 				/>
 
 				<div className="flex flex-col flex-wrap items-center justify-center p-2 h-full">
-					<h1 className="text-3xl font-semibold">
+					<h1 className="text-3xl font-bold">
 						Oh, hi! I am <span className="text-accent-600">Tapnisu</span>!
 					</h1>
 
