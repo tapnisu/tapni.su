@@ -14,27 +14,29 @@ const ProjectsPage = () => {
 						name: "tapciify",
 						image: tapciifyImage,
 						url: "https://github.com/tapnisu/tapciify",
-						description: "CLI tool that can let you view images in terminal",
+						description:
+							"CLI tool that can let you view images/videos in terminal as ASCII",
 						language: "Rust"
 					},
 					{
 						name: "tapris",
 						url: "https://github.com/tapris-bot/tapris",
-						description: "Tapris rewrite with Deno and @harmonyland/harmony",
+						description:
+							"Lightweight multi-language, multi-purpose bot for Discord made with Deno",
 						language: "TypeScript"
 					},
 					{
 						name: "forwarding-discord-telegram",
 						url: "https://github.com/tapnisu/forwarding-discord-telegram",
 						description:
-							"This bot can help you to read discord messages in telegram.",
+							"Bot that can help you to read discord messages in telegram",
 						language: "JavaScript"
 					},
 					{
 						name: "exhrtcc",
 						url: "https://github.com/tapnisold/exhrtcc",
 						description:
-							"CLI tool that can let you to convert currencies without leaving your terminal",
+							"A CLI tool that allows you to convert currencies without leaving the terminal",
 						language: "Rust"
 					},
 					{
@@ -48,7 +50,7 @@ const ProjectsPage = () => {
 						name: "website",
 						image: websiteImage,
 						url: "https://github.com/tapnisu/website",
-						description: "My personal website",
+						description: "My personal website (you are here right now)",
 						language: "Typescript"
 					}
 				]?.map((info) => (
