@@ -1,4 +1,5 @@
 const { fontFamily } = require("tailwindcss/defaultTheme");
+const { transparent } = require("tailwindcss/colors");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -32,7 +33,8 @@ module.exports = {
 				700: "#3f5873",
 				800: "#2a3b4c",
 				900: "#151d26"
-			}
+			},
+			transparent
 		},
 		extend: {
 			fontFamily: {

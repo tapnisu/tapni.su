@@ -1,0 +1,44 @@
+[
+	{
+		"description": "CLI tool that can let you view images/videos in terminal as ASCII",
+		"image": "/projects/tapciify.webp",
+		"language": "Rust",
+		"name": "tapciify",
+		"theme": "dark",
+		"url": "https://github.com/tapnisu/tapciify"
+	},
+	{
+		"description": "Lightweight multi-language, multi-purpose bot for Discord made with Deno",
+		"language": "TypeScript",
+		"name": "tapris",
+		"url": "https://github.com/tapris-bot/tapris"
+	},
+	{
+		"description": "Bot that can help you to read discord messages in telegram",
+		"language": "JavaScript",
+		"name": "forwarding-discord-telegram",
+		"url": "https://github.com/tapnisu/forwarding-discord-telegram"
+	},
+	{
+		"description": "A CLI tool that allows you to convert currencies without leaving the terminal",
+		"language": "Rust",
+		"name": "exhrtcc",
+		"url": "https://github.com/tapnisold/exhrtcc"
+	},
+	{
+		"description": "Discord.js 14 bot made in TypeScript (currently tapris)",
+		"image": "/projects/tapris.webp",
+		"language": "TypeScript",
+		"name": "tapris-node",
+		"theme": "dark",
+		"url": "https://github.com/tapris-bot/tapris-node"
+	},
+	{
+		"description": "My personal website (you are here right now)",
+		"image": "/projects/website.webp",
+		"language": "Typescript",
+		"name": "website",
+		"url": "https://github.com/tapnisu/website",
+		"theme": "dark"
+	}
+]

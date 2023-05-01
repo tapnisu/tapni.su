@@ -13,7 +13,7 @@ const HomePage = () => {
 			<div className="flex flex-row flex-wrap justify-center items-center">
 				<Image
 					src={Avatar}
-					className="w-72 rounded-full m-2 border-main-300 dark:border-main-800"
+					className="w-72 rounded-full m-2"
 					alt="Avatar"
 					sizes="(max-width: 768px) 100vw,
 							(max-width: 1200px) 50vw,
