@@ -11,7 +11,9 @@
 		"description": "Lightweight multi-language, multi-purpose bot for Discord made with Deno",
 		"language": "TypeScript",
 		"name": "tapris",
-		"url": "https://github.com/tapris-bot/tapris"
+		"url": "https://github.com/tapris-bot/tapris",
+		"image": "/projects/tapris.webp",
+		"theme": "dark"
 	},
 	{
 		"description": "Bot that can help you to read discord messages in telegram",
@@ -25,14 +27,7 @@
 		"name": "exhrtcc",
 		"url": "https://github.com/tapnisold/exhrtcc"
 	},
-	{
-		"description": "Discord.js 14 bot made in TypeScript (currently tapris)",
-		"image": "/projects/tapris.webp",
-		"language": "TypeScript",
-		"name": "tapris-node",
-		"theme": "dark",
-		"url": "https://github.com/tapris-bot/tapris-node"
-	},
+
 	{
 		"description": "My personal website (you are here right now)",
 		"image": "/projects/website.webp",
