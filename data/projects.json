@@ -21,7 +21,7 @@
 	},
 	{
 		"name": "tapris",
-		"url": "https://github.com/tapris-bot/tapris",
+		"url": "https://tapris.tapni.su",
 		"image": "/projects/tapris.webp",
 		"description": "Lightweight multi-language, multi-purpose bot for Discord made with Deno",
 		"language": "TypeScript",
