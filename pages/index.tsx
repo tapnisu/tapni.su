@@ -6,10 +6,7 @@ import Link from "next/link";
 
 const HomePage = () => {
 	return (
-		<BasePageLayout
-			title="Tapnisu - Home"
-			description="Website of 15 years old developer from Russia"
-		>
+		<BasePageLayout>
 			<div className="flex flex-row flex-wrap justify-center items-center">
 				<Image
 					src={Avatar}

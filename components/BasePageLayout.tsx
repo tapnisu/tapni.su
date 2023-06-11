@@ -3,12 +3,16 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 
 export interface BaseLayoutProps {
-	title: string;
-	description: string;
+	title?: string;
+	description?: string;
 	children: React.ReactNode;
 }
 
-const BasePageLayout = ({ title, description, children }: BaseLayoutProps) => (
+const BasePageLayout = ({
+	title = "Tapnisu",
+	description = "Oh, hi! I'm Alexiy Rybin, 15 years old, a developer from Russia, mainly using TypeScript and Rust.",
+	children
+}: BaseLayoutProps) => (
 	<>
 		<Head>
 			<title>{title}</title>
