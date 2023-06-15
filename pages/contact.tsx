@@ -36,7 +36,7 @@ const ContactPage = () => {
 						icon: <FaGithub />
 					},
 					{
-						name: "Discord: tapnisu#0001",
+						name: "Discord: tapnisu",
 						url: "/discord",
 						icon: <FaDiscord />
 					},
