@@ -1,4 +1,4 @@
-import Card from "@/components/Card";
+import Card from "@components/Card";
 import BasePageLayout from "@components/BasePageLayout";
 import projects from "@data/projects.json";
 
