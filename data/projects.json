@@ -1,44 +1,44 @@
 [
-	{
-		"name": "tapciify",
-		"url": "https://github.com/tapnisu/tapciify",
-		"image": "/projects/tapciify.webp",
-		"description": "CLI tool that can let you view images/videos in terminal as ASCII",
-		"language": "Rust",
-		"theme": "dark"
-	},
-	{
-		"name": "dsc-tg-forwarder",
-		"url": "https://github.com/tapnisu/dsc-tg-forwarder",
-		"description": "Selfbot to send your incoming Discord messages to Telegram",
-		"language": "Rust"
-	},
-	{
-		"name": "forwarding-discord-telegram",
-		"url": "https://github.com/tapnisu/forwarding-discord-telegram",
-		"description": "Bot that can help you to read discord messages in telegram",
-		"language": "JavaScript"
-	},
-	{
-		"name": "tapris",
-		"url": "https://tapris.tapni.su",
-		"image": "/projects/tapris.webp",
-		"description": "Lightweight multi-language, multi-purpose bot for Discord made with Deno",
-		"language": "TypeScript",
-		"theme": "dark"
-	},
-	{
-		"name": "exhrtcc",
-		"url": "https://github.com/tapnisold/exhrtcc",
-		"description": "CLI tool that can let you to convert currencies without leaving your terminal",
-		"language": "Rust"
-	},
-	{
-		"name": "website",
-		"url": "https://github.com/tapnisu/website",
-		"image": "/projects/website.webp",
-		"description": "My personal website (you are here right now)",
-		"language": "Typescript",
-		"theme": "dark"
-	}
+    {
+        "name": "tapciify",
+        "url": "https://github.com/tapnisu/tapciify",
+        "image": "/projects/tapciify.webp",
+        "description": "CLI tool that can let you view images/videos in terminal as ASCII",
+        "language": "Rust",
+        "theme": "dark"
+    },
+    {
+        "name": "dsc-tg-forwarder",
+        "url": "https://github.com/tapnisu/dsc-tg-forwarder",
+        "description": "Selfbot to send your incoming Discord messages to Telegram",
+        "language": "Rust"
+    },
+    {
+        "name": "forwarding-discord-telegram",
+        "url": "https://github.com/tapnisu/forwarding-discord-telegram",
+        "description": "Bot that can help you to read discord messages in telegram",
+        "language": "JavaScript"
+    },
+    {
+        "name": "tapris",
+        "url": "https://tapris.tapni.su",
+        "image": "/projects/tapris.webp",
+        "description": "Lightweight multi-language, multi-purpose bot for Discord made with Deno",
+        "language": "TypeScript",
+        "theme": "dark"
+    },
+    {
+        "name": "exhrtcc",
+        "url": "https://github.com/tapnisold/exhrtcc",
+        "description": "CLI tool that can let you to convert currencies without leaving your terminal",
+        "language": "Rust"
+    },
+    {
+        "name": "website",
+        "url": "https://github.com/tapnisu/website",
+        "image": "/projects/website.webp",
+        "description": "My personal website (you are here right now)",
+        "language": "Typescript",
+        "theme": "dark"
+    }
 ]
