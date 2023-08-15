@@ -13,3 +13,40 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
+.title {
+  border-radius: 9999px;
+
+  padding: 0.5rem;
+
+  display: none;
+}
+
+.linkName {
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .title {
+    display: inline-block;
+  }
+}
+
+.link {
+  border-radius: 9999px;
+
+  display: inline-block;
+
+  padding: 0.5rem;
+
+  transition-property: color, background-color, border-color;
+}
+
+.link:hover {
+  color: var(--text-main);
+  background: var(--accent);
+}

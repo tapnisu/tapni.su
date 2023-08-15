@@ -26,3 +26,7 @@
   background: var(--selection);
   color: var(--bg);
 }
+
+body {
+  margin: 0;
+}
