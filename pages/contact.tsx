@@ -1,13 +1,11 @@
 import BasePageLayout from "@/components/basePageLayout";
-import Avatar from "@public/avatar.webp";
-import Image from "next/image";
 import Link from "next/link";
 import {
-    FaDiscord,
-    FaGithub,
-    FaMailBulk,
-    FaTelegram,
-    FaTwitter,
+  FaDiscord,
+  FaGithub,
+  FaMailBulk,
+  FaTelegram,
+  FaTwitter,
 } from "react-icons/fa";
 
 const ContactPage = () => {
@@ -17,16 +15,6 @@ const ContactPage = () => {
       description="Website of 15 years old developer from Russia"
     >
       <div className="flex flex-col justify-center items-center">
-        <Image
-          src={Avatar}
-          className="w-72 rounded-full m-2 border-main-300 dark:border-main-800"
-          alt="Avatar"
-          width={640}
-          height={640}
-          priority={true}
-          placeholder="blur"
-        />
-
         <h1 className="text-3xl font-bold m-2">Contact tapnisu</h1>
 
         {[

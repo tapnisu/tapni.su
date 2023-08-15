@@ -16,7 +16,7 @@ export default function Navbar() {
       <div className={styles.title}>
         <div className={styles.linkName}>Alexiy Rybin</div>
       </div>
-      <div>
+      <div className={styles.linksContainer}>
         {paths?.map((info: { name: string; url: string }) => (
           <div className={styles.link} key={info.name}>
             <Link className={styles.linkName} href={info.url}>
