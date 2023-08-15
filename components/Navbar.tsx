@@ -9,7 +9,7 @@ const paths = [
   { name: "Setup", url: "/setup" },
 ];
 
-const Navbar = () => (
+export default function Navbar() {
   <nav className="sticky top-0 font-semibold flex flex-wrap justify-around w-full text-accent-600 bg-main-50/75 dark:bg-main-950/75 backdrop-blur-sm p-2">
     <div className="py-2 rounded-full transition hidden md:inline-block">
       <div className="px-4">Alexiy Rybin</div>
@@ -26,7 +26,5 @@ const Navbar = () => (
         </div>
       ))}
     </div>
-  </nav>
-);
-
-export default Navbar;
+  </nav>;
+}
