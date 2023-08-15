@@ -1,5 +1,4 @@
-import BasePageLayout from "@/components/basePageLayout";
-import Button from "@components/Button";
+import BasePageLayout from "@components/basePageLayout";
 import Link from "next/link";
 
 const HomePage = () => {
@@ -13,7 +12,7 @@ const HomePage = () => {
 
           <div className="m-4">
             <Link href="/contact">
-              <Button>Contact me</Button>
+              <button>Contact me</button>
             </Link>
           </div>
         </div>

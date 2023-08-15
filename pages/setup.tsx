@@ -1,4 +1,4 @@
-import BasePageLayout from "@/components/basePageLayout";
+import BasePageLayout from "@components/basePageLayout";
 import Card from "@components/Card";
 import setup from "@data/setup.json";
 

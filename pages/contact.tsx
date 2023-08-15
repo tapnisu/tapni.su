@@ -1,4 +1,4 @@
-import BasePageLayout from "@/components/basePageLayout";
+import BasePageLayout from "@components/basePageLayout";
 import Link from "next/link";
 import {
   FaDiscord,

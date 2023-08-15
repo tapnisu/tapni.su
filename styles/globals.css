@@ -33,3 +33,25 @@
 body {
   margin: 0;
 }
+
+button {
+  font-family: inherit;
+
+  color: var(--text-main);
+  background: var(--accent);
+
+  font-weight: 600;
+
+  padding: 1rem;
+
+  border-radius: 0.75rem;
+  border: none;
+
+  transition-property: color, background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+
+  &:hover {
+    background: var(--accent);
+  }
+}
