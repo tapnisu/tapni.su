@@ -1,11 +1,11 @@
 :root {
   /* Colors */
-  --text-main: "#fff";
-  --accent: "#397f7b";
-  --bg: "#000";
+  --text-main: #fff;
+  --accent: #397f7b;
+  --bg: #000;
   --bg-75: rgba(0, 0, 0, 0.75);
 
-  --selection: "#fff";
+  --selection: #fff;
 
   /* Spacing */
   --gap-quarter: 0.25rem;
