@@ -1,6 +1,7 @@
 import Head from "next/head";
-import Footer from "./Footer";
-import Navbar from "./Navbar";
+import Footer from "../Footer";
+import Navbar from "../Navbar";
+import styles from "./basePageLayout.module.css";
 
 export interface BaseLayoutProps {
   title?: string;
@@ -20,7 +21,7 @@ export default function BasePageLayout({
         <meta name="description" content={description} />
       </Head>
 
-      <main className="bg-main-50 text-main-900 dark:bg-main-950 dark:text-main-100 selection:bg-accent-600 selection:text-accent-100 min-h-screen flex flex-col justify-between">
+      <main className={styles.main}>
         <Navbar />
         <div className="flex flex-col items-center justify-center min-h-[50vh] p-2">
           <div>{children}</div>

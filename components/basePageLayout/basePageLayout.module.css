@@ -1,0 +1,10 @@
+.main {
+  color: var(--main-color);
+  background-color: var(--bg);
+
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

@@ -1,13 +1,13 @@
-import BasePageLayout from "@components/BasePageLayout";
+import BasePageLayout from "@/components/basePageLayout";
 import Avatar from "@public/avatar.webp";
 import Image from "next/image";
 import Link from "next/link";
 import {
-  FaDiscord,
-  FaGithub,
-  FaMailBulk,
-  FaTelegram,
-  FaTwitter,
+    FaDiscord,
+    FaGithub,
+    FaMailBulk,
+    FaTelegram,
+    FaTwitter,
 } from "react-icons/fa";
 
 const ContactPage = () => {

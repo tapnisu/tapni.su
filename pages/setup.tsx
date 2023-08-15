@@ -1,5 +1,5 @@
+import BasePageLayout from "@/components/basePageLayout";
 import Card from "@components/Card";
-import BasePageLayout from "@components/BasePageLayout";
 import setup from "@data/setup.json";
 
 const SetupPage = () => {

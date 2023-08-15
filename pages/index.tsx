@@ -1,4 +1,4 @@
-import BasePageLayout from "@components/BasePageLayout";
+import BasePageLayout from "@/components/basePageLayout";
 import Button from "@components/Button";
 import Link from "next/link";
 

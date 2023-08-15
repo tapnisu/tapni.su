@@ -1,9 +1,26 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+:root {
+  /* Colors */
+  --main-text: "#fff";
+  --accent-color: "#397f7b";
+  --bg: "#000";
+  --selection: "#fff";
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: dark;
-  }
+  /* Spacing */
+  --gap-quarter: 0.25rem;
+  --gap-half: 0.5rem;
+  --gap: 1rem;
+  --gap-double: 2rem;
+  --small-gap: 4rem;
+  --big-gap: 4rem;
+  --main-content: 45rem;
+  --radius: 8px;
+  --inline-radius: 5px;
+
+  color-scheme: "dark";
 }
+
+/* ::selection {
+  text-shadow: none;
+  background: var(--selection);
+  color: var(--bg);
+} */
