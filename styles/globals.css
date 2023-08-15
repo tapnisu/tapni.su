@@ -55,3 +55,16 @@ button {
     background: var(--accent);
   }
 }
+
+.color-accent {
+  color: var(--accent);
+}
+
+.container-center {
+  display: flex;
+
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
