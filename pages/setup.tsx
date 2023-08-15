@@ -8,7 +8,7 @@ const SetupPage = () => {
       title="Tapnisu - Setup"
       description="My setup: workstation and tech stack"
     >
-      <h1 className="p-2 text-3xl font-bold">My setup</h1>
+      <h1>My setup</h1>
 
       {setup.map(({ name, description }) => (
         <Card title={name} description={description} key={name} />
