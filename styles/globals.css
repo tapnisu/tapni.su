@@ -1,6 +1,6 @@
 :root {
   /* Colors */
-  --main-text: "#fff";
+  --text-main: "#fff";
   --accent: "#397f7b";
   --bg: "#000";
   --bg-75: rgba(0, 0, 0, 0.75);
