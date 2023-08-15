@@ -15,7 +15,6 @@
   --gap-half: 0.5rem;
   --gap: 1rem;
   --gap-double: 2rem;
-  --small-gap: 4rem;
   --big-gap: 4rem;
   --main-content: 45rem;
   --radius: 8px;
@@ -52,6 +51,7 @@ button {
   transition-duration: 150ms;
 
   &:hover {
+    cursor: pointer;
     background: var(--accent);
   }
 }
