@@ -26,7 +26,7 @@ export default function Footer() {
           ))}
         </div>
 
-        <p className="p-4">© 2023 Alexiy Rybin</p>
+        <p className="p-4">2023 Alexiy Rybin</p>
       </div>
     </footer>
   );
