@@ -1,4 +1,5 @@
 import Link from "next/link";
+import styles from "./footer.module.css";
 
 const paths = [
   { name: "Home", url: "/" },
@@ -12,17 +13,11 @@ const paths = [
 
 export default function Footer() {
   return (
-    <footer className="text-main-800 dark:text-main-400 p-8">
-      <div className="mx-auto w-24 h-1 my-12 bg-main-800 dark:bg-main-400 rounded-full"></div>
-
-      <div className="flex flex-row flex-wrap items-center justify-around">
-        <div className="flex flex-row flex-wrap">
+    <footer className={styles.footer}>
+      <div className={styles.toSides}>
+        <div className={styles.links}>
           {paths?.map((info: { name: string; url: string }) => (
-            <Link
-              href={info.url}
-              className="underline underline-offset-4 hover:text-accent-600 transition-colors m-2"
-              key={info.name}
-            >
+            <Link href={info.url} className={styles.link} key={info.name}>
               {info.name}
             </Link>
           ))}

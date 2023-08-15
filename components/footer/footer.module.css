@@ -1,0 +1,36 @@
+.footer {
+  color: var(--text-secondary);
+
+  padding: 2rem;
+}
+
+.toSides {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.link {
+  color: var(--text-secondary);
+
+  margin: 0.5rem;
+
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+
+  text-decoration: underline;
+  text-underline-offset: 4px;
+
+  &:hover {
+    color: var(--accent);
+  }
+}

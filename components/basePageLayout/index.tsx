@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Footer from "../Footer";
+import Footer from "../footer";
 import Navbar from "../navbar";
 import styles from "./basePageLayout.module.css";
 
