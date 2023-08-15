@@ -3,6 +3,8 @@
   background: var(--bg-75);
   backdrop-filter: blur(0.4);
 
+  font-weight: 600;
+
   position: sticky;
   top: 0px;
   width: 100%;
