@@ -1,0 +1,15 @@
+.navbar {
+  color: var(--accent);
+  background: var(--bg-75);
+
+  backdrop-filter: blur(0.4);
+
+  position: sticky;
+  top: 0px;
+
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

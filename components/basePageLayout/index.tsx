@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Footer from "../Footer";
-import Navbar from "../Navbar";
+import Navbar from "../navbar";
 import styles from "./basePageLayout.module.css";
 
 export interface BaseLayoutProps {
@@ -23,7 +23,7 @@ export default function BasePageLayout({
 
       <main className={styles.main}>
         <Navbar />
-        <div className="flex flex-col items-center justify-center min-h-[50vh] p-2">
+        <div className={styles.content}>
           <div>{children}</div>
         </div>
         <Footer />

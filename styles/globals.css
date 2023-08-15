@@ -1,8 +1,10 @@
 :root {
   /* Colors */
   --main-text: "#fff";
-  --accent-color: "#397f7b";
+  --accent: "#397f7b";
   --bg: "#000";
+  --bg-75: rgba(0, 0, 0, 0.75);
+
   --selection: "#fff";
 
   /* Spacing */
@@ -19,8 +21,8 @@
   color-scheme: "dark";
 }
 
-/* ::selection {
+::selection {
   text-shadow: none;
   background: var(--selection);
   color: var(--bg);
-} */
+}

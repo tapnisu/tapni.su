@@ -1,4 +1,5 @@
 import Link from "next/link";
+import styles from "./navbar.module.css";
 
 const paths = [
   { name: "Home", url: "/" },
@@ -11,7 +12,7 @@ const paths = [
 
 export default function Navbar() {
   return (
-    <nav className="sticky top-0 font-semibold flex flex-wrap justify-around w-full text-accent-600 bg-main-50/75 dark:bg-main-950/75 backdrop-blur-sm p-2">
+    <nav className={styles.navbar}>
       <div className="py-2 rounded-full transition hidden md:inline-block">
         <div className="px-4">Alexiy Rybin</div>
       </div>
