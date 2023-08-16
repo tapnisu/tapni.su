@@ -7,18 +7,18 @@
 
   --bg: #000;
   --bg-75: rgba(0, 0, 0, 0.75);
+  --secondary-bg: #202020;
+  --border-color: #404040;
 
   --selection: #fff;
 
   /* Spacing */
-  --gap-quarter: 0.25rem;
   --gap-half: 0.5rem;
   --gap: 1rem;
   --gap-double: 2rem;
-  --big-gap: 4rem;
-  --main-content: 45rem;
-  --radius: 8px;
-  --inline-radius: 5px;
+
+  --border-radius: 12px;
+  --border-width: 2px;
 
   color-scheme: "dark";
 }

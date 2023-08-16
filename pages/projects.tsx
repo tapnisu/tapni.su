@@ -1,5 +1,5 @@
 import BasePageLayout from "@components/basePageLayout";
-import Card from "@components/Card";
+import Card from "@components/card";
 import projects from "@data/projects.json";
 
 const ProjectsPage = () => {
@@ -14,7 +14,6 @@ const ProjectsPage = () => {
           url={url}
           description={description}
           comments={`Written in ${language}`}
-          theme={theme}
           key={name}
         />
       ))}
