@@ -4,6 +4,7 @@
   --text-secondary: #aaa;
 
   --accent: #628ed2;
+  --accent-darker: #5379b3;
 
   --bg: #000;
   --bg-75: rgba(0, 0, 0, 0.75);
@@ -54,7 +55,7 @@ button {
 
   &:hover {
     cursor: pointer;
-    background: var(--accent);
+    background: var(--accent-darker);
   }
 }
 

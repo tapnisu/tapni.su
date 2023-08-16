@@ -1,5 +1,16 @@
 import BasePageLayout from "@components/basePageLayout";
 import Link from "next/link";
+import styles from "./index.module.css";
+
+interface buttonLink {
+  value: string;
+  href: string;
+}
+
+const buttonLinks: buttonLink[] = [
+  { value: "About", href: "/about" },
+  { value: "Contact", href: "/contact" },
+];
 
 export default function HomePage() {
   return (
@@ -9,9 +20,17 @@ export default function HomePage() {
           Oh, hi! I am <span className="color-accent">tapnisu</span>!
         </h1>
 
-        <Link href="/contact">
-          <button>Contact me</button>
-        </Link>
+        <span>
+          {buttonLinks.map((buttonLink) => (
+            <Link
+              href={buttonLink.href}
+              key={buttonLink.value}
+              className={styles.buttonLink}
+            >
+              <button>{buttonLink.value}</button>
+            </Link>
+          ))}
+        </span>
       </div>
     </BasePageLayout>
   );
