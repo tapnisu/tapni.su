@@ -1,8 +1,8 @@
-import Card from "@/components/card";
 import BasePageLayout from "@components/basePageLayout";
+import Card from "@components/card";
 import setup from "@data/setup.json";
 
-const SetupPage = () => {
+export default function SetupPage() {
   return (
     <BasePageLayout
       title="Tapnisu - Setup"
@@ -15,6 +15,4 @@ const SetupPage = () => {
       ))}
     </BasePageLayout>
   );
-};
-
-export default SetupPage;
+}

@@ -1,7 +1,7 @@
 .navbar {
   color: var(--accent);
   background: var(--bg-75);
-  backdrop-filter: blur(0.4);
+  backdrop-filter: blur(var(--blur-radius));
 
   font-weight: 600;
 

@@ -1,7 +1,7 @@
 import BasePageLayout from "@components/basePageLayout";
 import Link from "next/link";
 
-const HomePage = () => {
+export default function HomePage() {
   return (
     <BasePageLayout>
       <div className="container-center">
@@ -15,6 +15,4 @@ const HomePage = () => {
       </div>
     </BasePageLayout>
   );
-};
-
-export default HomePage;
+}

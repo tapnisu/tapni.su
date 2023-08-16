@@ -8,7 +8,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 
-const ContactPage = () => {
+export default function ContactPage() {
   return (
     <BasePageLayout
       title="Tapnisu - Contact"
@@ -58,6 +58,4 @@ const ContactPage = () => {
       ))}
     </BasePageLayout>
   );
-};
-
-export default ContactPage;
+}

@@ -23,7 +23,7 @@ export default function Footer() {
           ))}
         </div>
 
-        <p className="p-4">Made by Alexiy Rybin</p>
+        <p>Made by Alexiy Rybin</p>
       </div>
     </footer>
   );

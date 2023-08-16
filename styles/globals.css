@@ -3,7 +3,7 @@
   --text-main: #fff;
   --text-secondary: #aaa;
 
-  --accent: #397f7b;
+  --accent: #628ed2;
 
   --bg: #000;
   --bg-75: rgba(0, 0, 0, 0.75);
@@ -19,6 +19,8 @@
 
   --border-radius: 12px;
   --border-width: 2px;
+
+  --blur-radius: 4px;
 
   color-scheme: "dark";
 }
@@ -41,9 +43,9 @@ button {
 
   font-weight: 600;
 
-  padding: 1rem;
+  padding: var(--gap);
 
-  border-radius: 0.75rem;
+  border-radius: var(--border-radius);
   border: none;
 
   transition-property: color, background-color;
