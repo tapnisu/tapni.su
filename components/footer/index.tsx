@@ -3,6 +3,7 @@ import styles from "./footer.module.css";
 
 const paths = [
   { name: "Home", url: "/" },
+  { name: "About", url: "/about" },
   {
     name: "Projects",
     url: "/projects",
@@ -15,15 +16,25 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.toSides}>
-        <div className={styles.links}>
-          {paths?.map((info: { name: string; url: string }) => (
-            <Link href={info.url} className={styles.link} key={info.name}>
-              {info.name}
-            </Link>
-          ))}
+        <div>
+          <h4>Alexiy Rybin</h4>
+          <div className={styles.links}>
+            {paths?.map((info: { name: string; url: string }) => (
+              <Link href={info.url} className={styles.link} key={info.name}>
+                {info.name}
+              </Link>
+            ))}
+          </div>
         </div>
 
-        <p>Made by Alexiy Rybin</p>
+        <div>
+          <p>Built using NextJS</p>
+
+          <p>
+            Source code on{" "}
+            <Link href="https://github.com/tapnisu/website/">Github</Link>
+          </p>
+        </div>
       </div>
     </footer>
   );
