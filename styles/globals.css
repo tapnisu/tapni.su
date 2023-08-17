@@ -3,11 +3,14 @@
   --text-main: #fff;
   --text-secondary: #aaa;
 
-  --accent: #628ed2;
+  --accent: #5379b3;
   --accent-darker: #5379b3;
 
-  --bg: #000;
-  --bg-75: rgba(0, 0, 0, 0.75);
+  --warning: #ded15b;
+  --danger: #de5d5b;
+
+  --bg: #0b0d16;
+  --bg-75: rgba(11, 13, 22, 0.5);
   --secondary-bg: #202020;
   --border-color: #404040;
 
