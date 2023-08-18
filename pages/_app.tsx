@@ -5,19 +5,18 @@ import Head from "next/head";
 
 const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-inter",
 });
 
-const App = ({ Component, pageProps }: AppProps) => (
-  <>
-    <Head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    </Head>
+export default function App({ Component, pageProps }: AppProps) {
+  return (
+    <>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
 
-    <main className={`${inter.variable} font-sans`}>
-      <Component {...pageProps} />
-    </main>
-  </>
-);
-
-export default App;
+      <main className={inter.className}>
+        <Component {...pageProps} />
+      </main>
+    </>
+  );
+}

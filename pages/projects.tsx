@@ -1,25 +1,22 @@
-import Card from "@components/Card";
-import BasePageLayout from "@components/BasePageLayout";
+import BasePageLayout from "@components/basePageLayout";
+import Card from "@components/card";
 import projects from "@data/projects.json";
 
-const ProjectsPage = () => {
+export default function ProjectsPage() {
   return (
     <BasePageLayout title="Tapnisu - Projects" description="Projects I made">
-      <h1 className="text-3xl font-bold p-2">My projects</h1>
+      <h1>My projects</h1>
 
-      {projects?.map(({ name, image, url, description, language, theme }) => (
+      {projects?.map(({ name, image, url, description, language }) => (
         <Card
           title={name}
           image={image}
           url={url}
           description={description}
           comments={`Written in ${language}`}
-          theme={theme}
           key={name}
         />
       ))}
     </BasePageLayout>
   );
-};
-
-export default ProjectsPage;
+}

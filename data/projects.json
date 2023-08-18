@@ -4,8 +4,7 @@
     "url": "https://github.com/tapciify/tapciify/",
     "image": "/projects/tapciify.webp",
     "description": "CLI tool that can let you view images/videos in terminal as ASCII",
-    "language": "Rust",
-    "theme": "dark"
+    "language": "Rust"
   },
   {
     "name": "dsc-tg-forwarder",
@@ -24,16 +23,14 @@
     "url": "https://tapris.tapni.su/",
     "image": "/projects/tapris.webp",
     "description": "Lightweight multi-language, multi-purpose bot for Discord made with Deno",
-    "language": "TypeScript",
-    "theme": "dark"
+    "language": "TypeScript"
   },
   {
     "name": "tapciify.space",
     "url": "https://tapciify.space/",
     "image": "/projects/tapciifySpace.webp",
     "description": "Website to convert you images to ASCII art",
-    "language": "TypeScript",
-    "theme": "dark"
+    "language": "TypeScript"
   },
   {
     "name": "exhrtcc",
@@ -46,7 +43,6 @@
     "url": "https://github.com/tapnisu/website/",
     "image": "/projects/website.webp",
     "description": "My personal website (you are here right now)",
-    "language": "TypeScript",
-    "theme": "dark"
+    "language": "TypeScript"
   }
 ]

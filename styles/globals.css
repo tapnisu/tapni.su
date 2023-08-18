@@ -1,9 +1,91 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+:root {
+  /* Colors */
+  --text-main: #fff;
+  --text-secondary: #aaa;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: dark;
+  --accent: #5379b3;
+  --accent-darker: #436392;
+
+  --warning: #ded15b;
+  --danger: #de5d5b;
+
+  --bg: #0b0d16;
+  --bg-75: rgba(11, 13, 22, 0.5);
+  --secondary-bg: #202020;
+  --border-color: #404040;
+
+  --selection: #fff;
+
+  /* Spacing */
+  --gap-half: 0.5rem;
+  --gap: 1rem;
+  --gap-double: 2rem;
+
+  --border-radius: 12px;
+  --border-width: 2px;
+
+  --blur-radius: 4px;
+
+  color-scheme: "dark";
+}
+
+::selection {
+  text-shadow: none;
+  background: var(--selection);
+  color: var(--bg);
+}
+
+body {
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+
+  color: var(--text-main);
+  background: var(--accent);
+
+  font-weight: 600;
+
+  padding: var(--gap);
+
+  border-radius: var(--border-radius);
+  border: none;
+
+  transition-property: color, background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+
+  &:hover {
+    cursor: pointer;
+    background: var(--accent-darker);
   }
+}
+
+a {
+  color: var(--text-main);
+
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+
+  text-decoration: underline;
+  text-underline-offset: 4px;
+
+  &:hover {
+    color: var(--accent);
+  }
+}
+
+.color-accent {
+  color: var(--accent);
+}
+
+.container-center {
+  display: flex;
+
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }

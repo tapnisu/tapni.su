@@ -1,0 +1,19 @@
+.main {
+  color: var(--text-main);
+  background-color: var(--bg);
+
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content {
+  padding: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,50 +1,34 @@
-import BasePageLayout from "@components/BasePageLayout";
-import Button from "@components/Button";
-import Avatar from "@public/avatar.webp";
-import Image from "next/image";
+import BasePageLayout from "@components/basePageLayout";
 import Link from "next/link";
+import styles from "./index.module.css";
 
-const HomePage = () => {
+interface buttonLink {
+  value: string;
+  href: string;
+}
+
+const buttonLinks: buttonLink[] = [{ value: "Contact", href: "/contact" }];
+
+export default function HomePage() {
   return (
     <BasePageLayout>
-      <div className="flex flex-row flex-wrap justify-center items-center">
-        <Image
-          src={Avatar}
-          className="w-72 rounded-full m-2"
-          alt="Avatar"
-          sizes="(max-width: 768px) 100vw,
-							(max-width: 1200px) 50vw,
-							33vw"
-          priority
-          placeholder="blur"
-        />
+      <div className="container-center">
+        <h1>
+          Oh, hi! I am <span className="color-accent">tapnisu</span>!
+        </h1>
 
-        <div className="flex flex-col flex-wrap items-center justify-center p-2 h-full">
-          <h1 className="text-3xl font-bold">
-            Oh, hi! I am <span className="text-accent-600">Tapnisu</span>!
-          </h1>
-
-          <p>
-            My name is{" "}
-            <span className="text-accent-600 font-semibold">Alexiy Rybin</span>
-            .
-            <br />
-            I am 15 years old developer from Russia.
-            <br />
-            Currently using Rust for my projects.
-            <br />
-            Still in school btw :D
-          </p>
-
-          <div className="m-4">
-            <Link href="/contact">
-              <Button>Contact me</Button>
+        <span>
+          {buttonLinks.map((buttonLink) => (
+            <Link
+              href={buttonLink.href}
+              key={buttonLink.value}
+              className={styles.buttonLink}
+            >
+              <button>{buttonLink.value}</button>
             </Link>
-          </div>
-        </div>
+          ))}
+        </span>
       </div>
     </BasePageLayout>
   );
-};
-
-export default HomePage;
+}

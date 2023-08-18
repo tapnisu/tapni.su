@@ -1,0 +1,11 @@
+.card {
+  background: var(--secondary-bg);
+
+  border-style: solid;
+  border-color: var(--border-color);
+  border-width: var(--border-width);
+  border-radius: var(--border-radius);
+
+  margin: var(--gap);
+  padding: var(--gap);
+}
