@@ -7,10 +7,7 @@ interface buttonLink {
   href: string;
 }
 
-const buttonLinks: buttonLink[] = [
-  { value: "About", href: "/about" },
-  { value: "Contact", href: "/contact" },
-];
+const buttonLinks: buttonLink[] = [{ value: "Contact", href: "/contact" }];
 
 export default function HomePage() {
   return (
