@@ -14,7 +14,7 @@ export default function ContactPage() {
       title="Tapnisu - Contact"
       description="15 years old developer from Russia"
     >
-      <h1>Contact tapnisu</h1>
+      <h1>Alexiy Rybin</h1>
 
       {[
         {

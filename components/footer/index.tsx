@@ -18,7 +18,7 @@ export default function Footer() {
         <div>
           <h4>Alexiy Rybin</h4>
           <div className={styles.links}>
-            {paths?.map((info: { name: string; url: string }) => (
+            {paths?.map((info) => (
               <Link href={info.url} className={styles.link} key={info.name}>
                 {info.name}
               </Link>

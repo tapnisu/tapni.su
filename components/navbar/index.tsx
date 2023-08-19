@@ -24,7 +24,7 @@ export default function Navbar() {
       </div>
 
       <div className={styles.linksContainer}>
-        {paths?.map((info: { name: string; url: string }) => (
+        {paths?.map((info) => (
           <div className={styles.link} key={info.name}>
             <Link className={styles.linkName} href={info.url}>
               {info.name}
