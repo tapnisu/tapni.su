@@ -3,7 +3,6 @@ import styles from "./footer.module.css";
 
 const paths = [
   { name: "Home", url: "/" },
-  { name: "About", url: "/about" },
   {
     name: "Projects",
     url: "/projects",

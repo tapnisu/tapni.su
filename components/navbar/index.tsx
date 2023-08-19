@@ -2,7 +2,7 @@ import Link from "next/link";
 import styles from "./navbar.module.css";
 
 const paths = [
-  { name: "About", url: "/about" },
+  { name: "Home", url: "/" },
   {
     name: "Projects",
     url: "/projects",
