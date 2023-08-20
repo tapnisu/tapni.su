@@ -1,6 +1,5 @@
 import BasePageLayout from "@components/basePageLayout";
 import Link from "next/link";
-import styles from "./index.module.css";
 
 interface buttonLink {
   value: string;
@@ -22,7 +21,7 @@ export default function HomePage() {
             <Link
               href={buttonLink.href}
               key={buttonLink.value}
-              className={styles.buttonLink}
+              className="gap-half"
             >
               <button>{buttonLink.value}</button>
             </Link>

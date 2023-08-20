@@ -89,3 +89,7 @@ a {
   justify-content: center;
   align-items: center;
 }
+
+.gap-half {
+  margin: var(--gap-half);
+}
