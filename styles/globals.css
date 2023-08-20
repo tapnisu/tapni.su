@@ -93,3 +93,7 @@ a {
 .gap-half {
   margin: var(--gap-half);
 }
+
+li {
+  margin: var(--gap-half);
+}

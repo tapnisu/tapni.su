@@ -11,7 +11,7 @@ export default function DomainsPage() {
       <h1>My domains</h1>
       <ul>
         {domains.map((domain) => (
-          <li key={domain} className="gap-half">
+          <li key={domain}>
             <Link href={`https://${domain}/`}>{domain}</Link>
           </li>
         ))}
