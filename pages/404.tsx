@@ -1,6 +1,5 @@
 import BasePageLayout from "@components/basePageLayout";
 import Link from "next/link";
-import styles from "./index.module.css";
 
 export default function NotFoundPage() {
   return (
@@ -8,7 +7,7 @@ export default function NotFoundPage() {
       <div className="container-center">
         <h1>404 Not found :C</h1>
 
-        <Link href="/" className={styles.buttonLink}>
+        <Link href="/">
           <button>Home</button>
         </Link>
       </div>
