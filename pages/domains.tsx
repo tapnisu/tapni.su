@@ -9,7 +9,6 @@ export default function DomainsPage() {
       description="15 years old developer from Russia"
     >
       <h1>My domains</h1>
-
       <ul>
         {domains.map((domain) => (
           <li key={domain} className="gap-half">
@@ -17,6 +16,7 @@ export default function DomainsPage() {
           </li>
         ))}
       </ul>
+      Other domains are secret for now ^_^
     </BasePageLayout>
   );
 }
