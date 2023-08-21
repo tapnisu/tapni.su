@@ -31,7 +31,7 @@ const nextConfig = {
       },
       {
         source: "/email",
-        destination: "mailto:alexiy.rybin@gmail.com",
+        destination: "mailto:Aleksey.rybin@gmail.com",
         permanent: true,
       },
       {
