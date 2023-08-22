@@ -13,7 +13,11 @@ export default function HomePage() {
     <BasePageLayout>
       <div className="container-center">
         <h1 className="text-center">
-          Oh, hi! I am <span className="color-accent">Aleksei Rybin</span>!
+          Oh, hi! I am{" "}
+          <span className="color-accent">
+            Aleksei R<u title="ы">y</u>bin
+          </span>
+          !
         </h1>
 
         <span>

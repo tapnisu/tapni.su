@@ -101,3 +101,8 @@ li {
 .text-center {
   text-align: center;
 }
+
+u {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
