@@ -16,7 +16,9 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.toSides}>
         <div>
-          <h4>Aleksei Rybin</h4>
+          <p>
+            <b> Aleksei Rybin</b>
+          </p>
           <div className={styles.links}>
             {paths?.map((info) => (
               <Link href={info.url} className={styles.link} key={info.name}>
