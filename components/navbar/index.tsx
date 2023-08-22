@@ -17,7 +17,7 @@ export default function Navbar() {
         <div className={styles.linksContainer}>
           <div className={styles.link}>
             <Link className={styles.linkName} href="/">
-              Aleksey Rybin
+              Aleksei Rybin
             </Link>
           </div>
         </div>

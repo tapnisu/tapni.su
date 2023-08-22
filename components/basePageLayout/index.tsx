@@ -11,7 +11,7 @@ export interface BaseLayoutProps {
 
 export default function BasePageLayout({
   title = "Tapnisu",
-  description = "Oh, hi! I'm Aleksey Rybin, 15 years old, a developer from Russia, mainly using TypeScript and Rust.",
+  description = "Oh, hi! I'm Aleksei Rybin, 15 years old, a developer from Russia, mainly using TypeScript and Rust.",
   children,
 }: BaseLayoutProps) {
   return (
