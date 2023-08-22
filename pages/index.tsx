@@ -12,7 +12,7 @@ export default function HomePage() {
   return (
     <BasePageLayout>
       <div className="container-center">
-        <h1>
+        <h1 className="text-center">
           Oh, hi! I am <span className="color-accent">Aleksei Rybin</span>!
         </h1>
 

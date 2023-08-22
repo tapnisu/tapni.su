@@ -3,16 +3,16 @@
   --text-main: #fff;
   --text-secondary: #aaa;
 
-  --accent: #5379b3;
-  --accent-darker: #436392;
+  --accent: #4aada6;
+  --accent-darker: #347a75;
 
   --warning: #ded15b;
   --danger: #de5d5b;
 
-  --bg: #0b0d16;
-  --bg-75: rgba(11, 13, 22, 0.5);
-  --secondary-bg: #111422;
-  --border-color: #191d33;
+  --bg: #000;
+  --bg-75: rgba(0, 0, 0, 0.5);
+  --secondary-bg: #131313;
+  --border-color: #232323;
 
   --selection: #fff;
 
@@ -96,4 +96,8 @@ a {
 
 li {
   margin: var(--gap-half);
+}
+
+.text-center {
+  text-align: center;
 }
