@@ -23,14 +23,14 @@
     "url": "https://tapris.tapni.su/",
     "image": "/projects/tapris.webp",
     "description": "Lightweight multi-language, multi-purpose bot for Discord made with Deno",
-    "language": "TypeScript"
+    "language": "TypeScript, Deno"
   },
   {
-    "name": "tapciify.space",
-    "url": "https://tapciify.space/",
-    "image": "/projects/tapciifySpace.webp",
+    "name": "tapciify.ru",
+    "url": "https://tapciify.ru/",
+    "image": "/projects/tapciifyRu.webp",
     "description": "Website to convert you images to ASCII art",
-    "language": "TypeScript"
+    "language": "TypeScript, React, Vite, Pico css"
   },
   {
     "name": "exhrtcc",
@@ -43,6 +43,6 @@
     "url": "https://github.com/tapnisu/website/",
     "image": "/projects/website.webp",
     "description": "My personal website (you are here right now)",
-    "language": "TypeScript"
+    "language": "TypeScript, Next.js"
   }
 ]
