@@ -13,7 +13,7 @@ export default function ProjectsPage() {
           image={image}
           url={url}
           description={description}
-          comments={`Written in ${language}`}
+          comments={`Made using ${language}`}
           key={name}
         />
       ))}
