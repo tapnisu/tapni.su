@@ -25,13 +25,15 @@ export default function Card({
         backgroundPosition: "center",
       }}
     >
-      <p>{url ? <Link href={url}>{title}</Link> : <>{title}</>}</p>
+      <div className={styles.gradient}>
+        <p>{url ? <Link href={url}>{title}</Link> : <>{title}</>}</p>
 
-      <p>
-        {description}
-        <br />
-        {comments}
-      </p>
+        <p>
+          {description}
+          <br />
+          {comments}
+        </p>
+      </div>
     </div>
   );
 }

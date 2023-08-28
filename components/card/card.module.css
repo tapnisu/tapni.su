@@ -7,5 +7,11 @@
   border-radius: var(--border-radius);
 
   margin: var(--gap);
+}
+
+.gradient {
+  border-radius: var(--border-radius);
+
   padding: var(--gap);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), var(--secondary-bg));
 }
