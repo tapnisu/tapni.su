@@ -26,11 +26,11 @@
     "language": "TypeScript, Deno"
   },
   {
-    "name": "tapciify.ru",
+    "name": "Tapciify web",
     "url": "https://tapciify.ru/",
-    "image": "/projects/tapciifyRu.webp",
+    "image": "/projects/tapciify-web.webp",
     "description": "Website to convert you images to ASCII art",
-    "language": "TypeScript, React, Vite, Pico css"
+    "language": "TypeScript, Solid, Vite, Pico.css"
   },
   {
     "name": "exhrtcc",
