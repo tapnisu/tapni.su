@@ -16,46 +16,48 @@ export default function ContactPage() {
     >
       <h1>Aleksei Rybin</h1>
 
-      {[
-        {
-          name: "Github",
-          url: "https://github.com/tapnisu",
-          icon: <FaGithub />,
-        },
-        {
-          name: "Discord: tapnisu",
-          url: "/discord",
-          icon: <FaDiscord />,
-        },
-        {
-          name: "Twitter",
-          url: "/twitter",
-          icon: <FaTwitter />,
-        },
-        {
-          name: "Telegram",
-          url: "/telegram",
-          icon: <FaTelegram />,
-        },
-        {
-          name: "Email",
-          url: "/email",
-          icon: <FaMailBulk />,
-        },
-      ]?.map((info: { name: string; url: string; icon: React.ReactNode }) => (
-        <Link
-          href={info.url}
-          key={info.name}
-          style={{
-            display: "flex",
-            flexWrap: "nowrap",
-            flexDirection: "row",
-            textDecoration: "none",
-          }}
-        >
-          {info.icon} <pre> </pre> {info.name}
-        </Link>
-      ))}
+      <div>
+        {[
+          {
+            name: "Github",
+            url: "https://github.com/tapnisu",
+            icon: <FaGithub />,
+          },
+          {
+            name: "Discord: tapnisu",
+            url: "/discord",
+            icon: <FaDiscord />,
+          },
+          {
+            name: "Twitter",
+            url: "/twitter",
+            icon: <FaTwitter />,
+          },
+          {
+            name: "Telegram",
+            url: "/telegram",
+            icon: <FaTelegram />,
+          },
+          {
+            name: "Email",
+            url: "/email",
+            icon: <FaMailBulk />,
+          },
+        ]?.map((info: { name: string; url: string; icon: React.ReactNode }) => (
+          <Link
+            href={info.url}
+            key={info.name}
+            style={{
+              display: "flex",
+              flexWrap: "nowrap",
+              flexDirection: "row",
+              textDecoration: "none",
+            }}
+          >
+            {info.icon} <pre> </pre> {info.name}
+          </Link>
+        ))}
+      </div>
     </BasePageLayout>
   );
 }
