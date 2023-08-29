@@ -11,7 +11,7 @@ import {
 export default function ContactPage() {
   return (
     <BasePageLayout
-      title="Tapnisu - Contact"
+      title="Contact / Aleksei Rybin"
       description="15 years old developer from Russia"
     >
       <h1>Aleksei Rybin</h1>

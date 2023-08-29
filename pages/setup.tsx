@@ -5,7 +5,7 @@ import setup from "@data/setup.json";
 export default function SetupPage() {
   return (
     <BasePageLayout
-      title="Tapnisu - Setup"
+      title="Setup / Aleksei Rybin"
       description="My setup: workstation and tech stack"
     >
       <h1>My setup</h1>

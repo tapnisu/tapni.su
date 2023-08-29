@@ -4,7 +4,10 @@ import projects from "@data/projects.json";
 
 export default function ProjectsPage() {
   return (
-    <BasePageLayout title="Tapnisu - Projects" description="Projects I made">
+    <BasePageLayout
+      title="Projects / Aleksei Rybin"
+      description="Projects I made"
+    >
       <h1>My projects</h1>
       <div>
         {projects?.map(({ name, image, url, description, language }) => (
