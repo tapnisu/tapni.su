@@ -1,5 +1,12 @@
 [
   {
+    "name": "Tapciify web",
+    "url": "https://tapciify.ru/",
+    "image": "/projects/tapciify-web.webp",
+    "description": "Website to convert your images to ASCII art",
+    "language": "TypeScript, Solid, Vite, Pico.css"
+  },
+  {
     "name": "tapciify",
     "url": "https://github.com/tapciify/tapciify/",
     "image": "/projects/tapciify.webp",
@@ -19,30 +26,24 @@
     "language": "JavaScript"
   },
   {
+    "name": "website",
+    "url": "https://github.com/tapnisu/website/",
+    "image": "/projects/website.webp",
+    "description": "My personal website (you are here right now)",
+    "language": "TypeScript, Next.js"
+  },
+  {
     "name": "tapris",
     "url": "https://tapris.tapni.su/",
     "image": "/projects/tapris.webp",
     "description": "Lightweight multi-language, multi-purpose bot for Discord made with Deno",
     "language": "TypeScript, Deno"
   },
-  {
-    "name": "Tapciify web",
-    "url": "https://tapciify.ru/",
-    "image": "/projects/tapciify-web.webp",
-    "description": "Website to convert your images to ASCII art",
-    "language": "TypeScript, Solid, Vite, Pico.css"
-  },
+
   {
     "name": "exhrtcc",
     "url": "https://github.com/tapnisold/exhrtcc/",
     "description": "CLI tool that can let you to convert currencies without leaving your terminal",
     "language": "Rust"
-  },
-  {
-    "name": "website",
-    "url": "https://github.com/tapnisu/website/",
-    "image": "/projects/website.webp",
-    "description": "My personal website (you are here right now)",
-    "language": "TypeScript, Next.js"
   }
 ]
