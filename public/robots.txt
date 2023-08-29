@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://tapnisu.ru
+
+# Sitemaps
+Sitemap: https://tapnisu.ru/sitemap.xml
