@@ -29,7 +29,7 @@
     "name": "Tapciify web",
     "url": "https://tapciify.ru/",
     "image": "/projects/tapciify-web.webp",
-    "description": "Website to convert you images to ASCII art",
+    "description": "Website to convert your images to ASCII art",
     "language": "TypeScript, Solid, Vite, Pico.css"
   },
   {
