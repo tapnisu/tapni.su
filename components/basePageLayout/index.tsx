@@ -18,7 +18,12 @@ export default function BasePageLayout({
     <>
       <Head>
         <title>{title}</title>
+        <meta name="title" content={title} />
+        <meta name="og:title" content={title} />
+        <meta name="apple-mobile-web-app-title" content={title} />
+
         <meta name="description" content={description} />
+        <meta name="og:description" content={description} />
       </Head>
 
       <main className={styles.main}>

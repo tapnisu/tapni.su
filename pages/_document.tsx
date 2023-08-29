@@ -4,7 +4,18 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+        <meta http-equiv="Content-Language" content="en" />
+
+        <meta name="theme-color" content="#000000" />
+
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <meta name="og:image" content="/og.png" />
+
+        <meta name="og:url" content="https://tapnisu.ru/" />
+
+        <meta name="twitter:image" content="/og.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@tapnisu" />
       </Head>
       <body>
         <Main />
