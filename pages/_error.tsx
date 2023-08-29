@@ -1,15 +1,21 @@
+import BasePageLayout from "@components/basePageLayout";
+import Error from "@components/error";
 import { NextPageContext } from "next";
 
-Error.getInitialProps = async ({ res, err }: NextPageContext) => {
+ErrorPage.getInitialProps = async ({ res, err }: NextPageContext) => {
   const status = res ? res.statusCode : err ? err.statusCode : null;
 
   return status;
 };
 
-export default function Error({
+export default function ErrorPage({
   status,
 }: {
   status: number | null | undefined;
 }) {
-  return <Error status={status} />;
+  return (
+    <BasePageLayout>
+      <Error status={status} />
+    </BasePageLayout>
+  );
 }
