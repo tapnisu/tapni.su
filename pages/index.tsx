@@ -19,7 +19,6 @@ export default function HomePage() {
           </span>
           !
         </h1>
-
         <span>
           {buttonLinks.map((buttonLink) => (
             <Link

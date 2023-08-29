@@ -6,7 +6,6 @@ export default function Document() {
       <Head>
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
       </Head>
-
       <body>
         <Main />
         <NextScript />

@@ -16,7 +16,7 @@ export default function DomainsPage() {
           </li>
         ))}
       </ul>
-      Other domains are secret for now ^_^
+      <p>Other domains are secret for now ^_^</p>
     </BasePageLayout>
   );
 }

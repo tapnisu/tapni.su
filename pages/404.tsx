@@ -6,7 +6,6 @@ export default function NotFoundPage() {
     <BasePageLayout>
       <div className="container-center">
         <h1>404 Not found :C</h1>
-
         <Link href="/">
           <button>Home</button>
         </Link>

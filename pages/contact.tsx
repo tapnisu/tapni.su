@@ -15,7 +15,6 @@ export default function ContactPage() {
       description="15 years old developer from Russia"
     >
       <h1>Aleksei Rybin</h1>
-
       <div>
         {[
           {

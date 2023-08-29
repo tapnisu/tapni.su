@@ -9,10 +9,11 @@ export default function SetupPage() {
       description="My setup: workstation and tech stack"
     >
       <h1>My setup</h1>
-
-      {setup.map(({ name, description }) => (
-        <Card title={name} description={description} key={name} />
-      ))}
+      <div>
+        {setup.map(({ name, description }) => (
+          <Card title={name} description={description} key={name} />
+        ))}
+      </div>
     </BasePageLayout>
   );
 }
