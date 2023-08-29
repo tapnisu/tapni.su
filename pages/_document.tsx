@@ -8,7 +8,7 @@ export default function Document() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="Content-Language" content="en" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="theme-color" content="#000000" />
+        <meta name="theme-color" content="#6690e3" />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <meta name="og:image" content="https://tapnisu.ru/og.png" />
         <meta name="og:url" content="https://tapnisu.ru/" />
