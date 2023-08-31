@@ -2,12 +2,7 @@ import Link from "next/link";
 import styles from "./footer.module.css";
 
 const paths = [
-  { name: "Home", url: "/" },
-  {
-    name: "Projects",
-    url: "/projects",
-  },
-  { name: "Setup", url: "/setup" },
+  { name: "Domains", url: "/domains" },
   { name: "Contact", url: "/contact" },
 ];
 
