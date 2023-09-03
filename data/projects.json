@@ -33,6 +33,12 @@
     "language": "TypeScript, Next.js"
   },
   {
+    "name": "лёшапомоги.рф",
+    "url": "https://лёшапомоги.рф/",
+    "description": "Website with guides for my classmates",
+    "language": "TypeScript, Preact, Lume, Pico.css"
+  },
+  {
     "name": "tapris",
     "url": "https://tapris.tapni.su/",
     "image": "/projects/tapris.webp",
