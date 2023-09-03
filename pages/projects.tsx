@@ -10,13 +10,13 @@ export default function ProjectsPage() {
     >
       <h1>My projects</h1>
       <div>
-        {projects?.map(({ name, image, url, description, language }) => (
+        {projects?.map(({ name, image, url, description, buildUsing }) => (
           <Card
             title={name}
             image={image}
             url={url}
             description={description}
-            comments={`Made using ${language}`}
+            comments={`Built using ${buildUsing.join(", ")}`}
             key={name}
           />
         ))}
