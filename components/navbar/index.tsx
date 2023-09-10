@@ -23,23 +23,17 @@ export default function Navbar() {
 
   return (
     <nav className={styles.navbar}>
-      <div className={styles.title}>
-        <div className={styles.linksContainer}>
-          <div className={styles.link}>
-            <Link className={styles.linkName} href="/">
-              Aleksei Rybin
-            </Link>
-          </div>
-        </div>
+      <div className={styles.linksContainer}>
+        <Link className={styles.link} href="/">
+          Aleksei Rybin
+        </Link>
       </div>
 
       <div className={styles.linksContainer}>
         {paths?.map((info) => (
-          <div className={styles.link} key={info.name}>
-            <Link className={styles.linkName} href={info.url}>
-              {info.name}
-            </Link>
-          </div>
+          <Link className={styles.link} href={info.url} key={info.name}>
+            {info.name}
+          </Link>
         ))}
       </div>
 
