@@ -1,12 +1,12 @@
 :root {
+  color-scheme: light dark;
+
   /* Spacing */
   --gap-half: 0.5rem;
   --gap: 1rem;
   --gap-double: 2rem;
 
   --border-radius: 12px;
-  --border-width: 2px;
-
   --blur-radius: 4px;
 
   /* Colors */
@@ -19,11 +19,8 @@
   --bg: #fff;
   --bg-75: rgba(255, 255, 255, 0.5);
   --secondary-bg: #eee;
-  --border-color: #ddd;
 
   --selection: #000;
-
-  color-scheme: light dark;
 }
 
 .dark {
@@ -33,7 +30,6 @@
   --bg: #000;
   --bg-75: rgba(0, 0, 0, 0.5);
   --secondary-bg: #131313;
-  --border-color: #232323;
 
   --selection: #fff;
 }
