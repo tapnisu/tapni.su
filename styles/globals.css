@@ -22,6 +22,8 @@
   --border-color: #ddd;
 
   --selection: #000;
+
+  color-scheme: light dark;
 }
 
 .dark {
@@ -34,8 +36,6 @@
   --border-color: #232323;
 
   --selection: #fff;
-
-  color-scheme: "dark";
 }
 
 * {
