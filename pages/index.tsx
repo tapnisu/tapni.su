@@ -13,11 +13,7 @@ export default function HomePage() {
     <BasePageLayout>
       <div className="container-center">
         <h1 className="text-center">
-          Oh, hi! I am{" "}
-          <span className="color-accent">
-            Aleksei R<u title="ы">y</u>bin
-          </span>
-          !
+          Oh, hi! I am <span className="color-accent">Aleksei Rybin</span>!
         </h1>
         <span>
           {buttonLinks.map((buttonLink) => (
