@@ -1,21 +1,4 @@
 :root {
-  /* Colors */
-  --text-main: #fff;
-  --text-secondary: #aaa;
-
-  --accent: #6690e3;
-  --accent-darker: #4b72c2;
-
-  --warning: #ded15b;
-  --danger: #de5d5b;
-
-  --bg: #000;
-  --bg-75: rgba(0, 0, 0, 0.5);
-  --secondary-bg: #131313;
-  --border-color: #232323;
-
-  --selection: #fff;
-
   /* Spacing */
   --gap-half: 0.5rem;
   --gap: 1rem;
@@ -26,7 +9,39 @@
 
   --blur-radius: 4px;
 
+  /* Colors */
+  --text-main: #000;
+  --text-secondary: #222;
+
+  --accent: #4b72c2;
+  --accent-darker: #6690e3;
+
+  --bg: #fff;
+  --bg-75: rgba(255, 255, 255, 0.5);
+  --secondary-bg: #eee;
+  --border-color: #ddd;
+
+  --selection: #000;
+}
+
+.dark {
+  --text-main: #fff;
+  --text-secondary: #aaa;
+
+  --bg: #000;
+  --bg-75: rgba(0, 0, 0, 0.5);
+  --secondary-bg: #131313;
+  --border-color: #232323;
+
+  --selection: #fff;
+
   color-scheme: "dark";
+}
+
+* {
+  transition-property: color, background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 ::selection {
@@ -52,10 +67,6 @@ button {
   border-radius: var(--border-radius);
   border: none;
 
-  transition-property: color, background-color;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-
   &:hover {
     cursor: pointer;
     background: var(--accent);
@@ -64,10 +75,6 @@ button {
 
 a {
   color: var(--text-main);
-
-  transition-property: color;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
 
   text-decoration: underline;
   text-underline-offset: 4px;

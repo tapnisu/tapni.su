@@ -1,3 +1,4 @@
+import { MyThemeContextProvider } from "@components/MyThemeContextProvider";
 import "@styles/globals.css";
 import type { AppProps } from "next/app";
 import { Inter } from "next/font/google";
@@ -9,13 +10,14 @@ const inter = Inter({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <MyThemeContextProvider>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
+
       <main className={inter.className}>
         <Component {...pageProps} />
       </main>
-    </>
+    </MyThemeContextProvider>
   );
 }

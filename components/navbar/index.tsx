@@ -1,4 +1,7 @@
+import MyThemeContext from "@components/MyThemeContextProvider";
 import Link from "next/link";
+import { useContext } from "react";
+import { FaMoon } from "react-icons/fa";
 import styles from "./navbar.module.css";
 
 const paths = [
@@ -11,6 +14,13 @@ const paths = [
 ];
 
 export default function Navbar() {
+  const themeCtx: { isDarkMode?: boolean; toggleThemeHandler: () => void } =
+    useContext(MyThemeContext);
+
+  function toggleThemeHandler(): void {
+    themeCtx.toggleThemeHandler();
+  }
+
   return (
     <nav className={styles.navbar}>
       <div className={styles.title}>
@@ -31,6 +41,10 @@ export default function Navbar() {
             </Link>
           </div>
         ))}
+      </div>
+
+      <div className={styles.linksContainer}>
+        <FaMoon className={styles.modeSwitcher} onClick={toggleThemeHandler} />
       </div>
     </nav>
   );
