@@ -28,25 +28,21 @@
   padding-top: var(--gap-half);
   padding-bottom: var(--gap-half);
 
-  transition-property: background-color;
+  text-decoration: none;
+  color: var(--accent);
+  background: rgba(0, 0, 0, 0);
+
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 
-  color: var(--accent);
-
-  text-decoration: none;
-
   > a {
     color: inherit;
-
-    transition-property: color;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 150ms;
   }
 
   &:hover {
     color: var(--text-main);
-
     background: var(--accent);
   }
 }

@@ -1,4 +1,4 @@
-import MyThemeContext from "@components/myThemeContextProvider";
+import MyThemeContext from "@components/MyThemeContextProvider";
 import Link from "next/link";
 import { useContext } from "react";
 import { useTranslation } from "react-i18next";

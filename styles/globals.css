@@ -27,17 +27,14 @@
   --text-main: #fff;
   --text-secondary: #aaa;
 
+  --accent: #6690e3;
+  --accent-darker: #4b72c2;
+
   --bg: #000;
   --bg-75: rgba(0, 0, 0, 0.5);
   --secondary-bg: #131313;
 
   --selection: #fff;
-}
-
-* {
-  transition-property: color, background-color;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
 }
 
 ::selection {
@@ -63,6 +60,11 @@ button {
   border-radius: var(--border-radius);
   border: none;
 
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+
   &:hover {
     cursor: pointer;
     background: var(--accent);
@@ -74,6 +76,11 @@ a {
 
   text-decoration: underline;
   text-underline-offset: 4px;
+
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 
   &:hover {
     color: var(--accent);
@@ -103,9 +110,4 @@ li {
 
 .text-center {
   text-align: center;
-}
-
-u {
-  text-decoration: underline;
-  text-underline-offset: 4px;
 }
