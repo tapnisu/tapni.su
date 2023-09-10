@@ -23,7 +23,7 @@ export default function Navbar() {
 
   return (
     <nav className={styles.navbar}>
-      <div className={styles.linksContainer}>
+      <div className={`${styles.title} ${styles.linksContainer}`}>
         <Link className={styles.link} href="/">
           Aleksei Rybin
         </Link>

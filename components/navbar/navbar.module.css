@@ -51,6 +51,16 @@
   }
 }
 
+.title {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .title {
+    display: inline-block;
+  }
+}
+
 .modeSwitcher {
   cursor: pointer;
 
