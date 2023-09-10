@@ -1,25 +1,23 @@
-import MyThemeContext from "@components/MyThemeContextProvider";
+import MyThemeContext from "@components/myThemeContextProvider";
 import Link from "next/link";
 import { useContext } from "react";
-import { FaMoon } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
+import { FaMoon, FaSun } from "react-icons/fa";
 import styles from "./navbar.module.css";
 
 const paths = [
-  { name: "Home", url: "/" },
+  { name: "home", url: "/" },
   {
-    name: "Projects",
+    name: "projects",
     url: "/projects",
   },
-  { name: "Setup", url: "/setup" },
+  { name: "setup", url: "/setup" },
 ];
 
 export default function Navbar() {
-  const themeCtx: { isDarkMode?: boolean; toggleThemeHandler: () => void } =
-    useContext(MyThemeContext);
+  const { t } = useTranslation("navbar");
 
-  function toggleThemeHandler(): void {
-    themeCtx.toggleThemeHandler();
-  }
+  const themeCtx = useContext(MyThemeContext);
 
   return (
     <nav className={styles.navbar}>
@@ -32,13 +30,18 @@ export default function Navbar() {
       <div className={styles.linksContainer}>
         {paths?.map((info) => (
           <Link className={styles.link} href={info.url} key={info.name}>
-            {info.name}
+            {t(info.name)}
           </Link>
         ))}
       </div>
 
       <div className={styles.linksContainer}>
-        <FaMoon className={styles.modeSwitcher} onClick={toggleThemeHandler} />
+        <div
+          className={styles.modeSwitcher}
+          onClick={themeCtx.toggleThemeHandler}
+        >
+          {themeCtx.isDarkTheme ? <FaMoon /> : <FaSun />}
+        </div>
       </div>
     </nav>
   );

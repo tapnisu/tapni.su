@@ -29,9 +29,7 @@ export function MyThemeContextProvider(
         localStorage.getItem("isDarkTheme")!
       );
       isDarkTheme && document!.querySelector("body")!.classList.add("dark");
-      setIsDarkTheme(() => {
-        return isDarkTheme;
-      });
+      setIsDarkTheme(isDarkTheme);
     }
   }
 
@@ -53,10 +51,14 @@ export function MyThemeContextProvider(
   }
 
   return (
-    <MyThemeContext.Provider value={{ isDarkTheme: true, toggleThemeHandler }}>
+    <MyThemeContext.Provider value={{ isDarkTheme, toggleThemeHandler }}>
       {props.children}
     </MyThemeContext.Provider>
   );
+
+  function theme() {
+    return JSON.parse(localStorage.getItem("isDarkTheme")!);
+  }
 }
 
 export default MyThemeContext;
