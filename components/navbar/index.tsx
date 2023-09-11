@@ -13,38 +13,40 @@ export default function Navbar() {
   const themeCtx = useContext(MyThemeContext);
 
   return (
-    <nav className={styles.navbar}>
-      <div className={`${styles.title} ${styles.linksContainer}`}>
-        <Link className={styles.link} href="/">
-          {t.name}
-        </Link>
-      </div>
-
-      <div className={styles.linksContainer}>
-        <Link className={styles.link} href="/">
-          {t.home}
-        </Link>
-        <Link className={styles.link} href="/projects">
-          {t.projects}
-        </Link>
-      </div>
-
-      <div className={styles.linksContainer}>
-        <div className={styles.linksContainer}>
-          <Link href="" locale="en" style={{ textDecoration: "none" }}>
-            EN
-          </Link>
-          /
-          <Link href="" locale="ru" style={{ textDecoration: "none" }}>
-            RU
+    <nav className={styles.navbarContainer}>
+      <div className={styles.navbar}>
+        <div className={`${styles.title} ${styles.linksContainer}`}>
+          <Link className={styles.link} href="/">
+            {t.name}
           </Link>
         </div>
 
-        <div
-          className={styles.modeSwitcher}
-          onClick={themeCtx.toggleThemeHandler}
-        >
-          {themeCtx.isDarkTheme ? <FaMoon /> : <FaSun />}
+        <div className={styles.linksContainer}>
+          <Link className={styles.link} href="/">
+            {t.home}
+          </Link>
+          <Link className={styles.link} href="/projects">
+            {t.projects}
+          </Link>
+        </div>
+
+        <div className={styles.linksContainer}>
+          <div className={styles.languageSwitcher}>
+            <Link href="" locale="en">
+              EN
+            </Link>
+            /
+            <Link href="" locale="ru">
+              RU
+            </Link>
+          </div>
+
+          <div
+            className={styles.modeSwitcher}
+            onClick={themeCtx.toggleThemeHandler}
+          >
+            {themeCtx.isDarkTheme ? <FaMoon /> : <FaSun />}
+          </div>
         </div>
       </div>
     </nav>

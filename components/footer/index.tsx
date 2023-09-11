@@ -8,12 +8,12 @@ export default function Footer() {
   const t = router.locale === "en" ? en : ru;
 
   return (
-    <footer className={styles.footer}>
-      <div className={styles.toSides}>
-        <div>
-          <p>
-            <b>{t.name}</b>
-          </p>
+    <footer className={styles.footerContainer}>
+      <div className={styles.footer}>
+        <p>
+          <b>{t.name}</b>
+        </p>
+        <div className={styles.toSides}>
           <div className={styles.links}>
             <Link href="/domains" className={styles.link}>
               {t.domains}
@@ -22,15 +22,15 @@ export default function Footer() {
               {t.contact}
             </Link>
           </div>
-        </div>
 
-        <div>
-          <p>{t.footer.madeWith}</p>
+          <div>
+            <p>{t.footer.madeWith}</p>
 
-          <p>
-            {t.footer.sourceCodeOn}
-            <Link href="https://github.com/tapnisu/website/">Github</Link>
-          </p>
+            <p>
+              {t.footer.sourceCodeOn}
+              <Link href="https://github.com/tapnisu/website/">Github</Link>
+            </p>
+          </div>
         </div>
       </div>
     </footer>

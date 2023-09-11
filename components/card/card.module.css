@@ -14,3 +14,7 @@
 .text {
   padding: var(--gap);
 }
+
+.comments {
+  color: var(--text-secondary);
+}

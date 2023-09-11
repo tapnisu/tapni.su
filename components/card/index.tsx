@@ -34,12 +34,8 @@ export default function Card({
 
       <div className={styles.text}>
         <p>{url ? <Link href={url}>{title}</Link> : <>{title}</>}</p>
-
-        <p>
-          {description}
-          <br />
-          {comments}
-        </p>
+        <p>{description}</p>
+        <p className={styles.comments}>{comments}</p>
       </div>
     </div>
   );
