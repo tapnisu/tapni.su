@@ -9,8 +9,8 @@ export default function HomePage() {
 
   return (
     <BasePageLayout>
-      <div className="container-center">
-        <h1 className="text-center">
+      <div className="text-center">
+        <h1>
           {t.index.ohHiIam} <span className="color-accent">{t.name}</span>!
         </h1>
         <p>

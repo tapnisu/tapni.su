@@ -34,13 +34,13 @@ export default function BasePageLayout({
         <meta name="og:description" content={descriptionFull} />
       </Head>
 
-      <main className={styles.main}>
+      <div className={styles.main}>
         <Navbar />
         <div className={styles.content}>
           <div className={styles.width}>{children}</div>
         </div>
         <Footer />
-      </main>
+      </div>
     </>
   );
 }
