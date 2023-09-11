@@ -27,9 +27,6 @@ export default function Navbar() {
         <Link className={styles.link} href="/projects">
           {t.projects}
         </Link>
-        <Link className={styles.link} href="/setup">
-          {t.setup}
-        </Link>
       </div>
 
       <div className={styles.linksContainer}>

@@ -5,8 +5,6 @@ export const en = {
 
   home: "Home",
   projects: "Projects",
-  setup: "Setup",
-
   domains: "Domains",
   contact: "Contact",
 
@@ -22,5 +20,28 @@ export const en = {
 
   index: {
     ohHi: (name: string) => `Oh, hi! I am ${name}`,
+  },
+
+  projectsData: {
+    madeWith: "Made with ",
+    tapciifyWeb: {
+      description: "Website to convert your images to ASCII art",
+    },
+    tapciify: {
+      description:
+        "CLI tool that can let you view images/videos in terminal as ASCII",
+    },
+    forwardingDiscordTelegram: {
+      description: "Selfbot to send your incoming Discord messages to Telegram",
+    },
+    website: {
+      description: "My personal website (you are here right now)",
+    },
+    leshapomogi: {
+      description: "Website with guides for my classmates",
+    },
+    tapris: {
+      description: "Discord bot",
+    },
   },
 };

@@ -5,8 +5,6 @@ export const ru = {
 
   home: "Главная",
   projects: "Проекты",
-  setup: "Сетап",
-
   domains: "Домены",
   contact: "Связаться",
 
@@ -22,5 +20,29 @@ export const ru = {
 
   index: {
     ohHi: (name: string) => `Ох, привет! Я ${name}`,
+  },
+
+  projectsData: {
+    madeWith: "Создано с использованием ",
+    tapciifyWeb: {
+      description:
+        "Веб-сайт для преобразования ваших изображений в формат ASCII",
+    },
+    tapciify: {
+      description:
+        "CLI утилита, которая позволяет просматривать изображения/видео в терминале в формате ASCII",
+    },
+    forwardingDiscordTelegram: {
+      description: "Selfbot для отправки входящих сообщений Discord в Telegram",
+    },
+    website: {
+      description: "Мой сайт (вы сейчас здесь)",
+    },
+    leshapomogi: {
+      description: "Сайт с руководствами для моих одноклассников",
+    },
+    tapris: {
+      description: "Discord бот",
+    },
   },
 };
