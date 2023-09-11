@@ -31,11 +31,11 @@ export default function Navbar() {
 
       <div className={styles.linksContainer}>
         <div className={styles.linksContainer}>
-          <Link href="" locale="en">
+          <Link href="" locale="en" style={{ textDecoration: "none" }}>
             EN
           </Link>
           /
-          <Link href="" locale="ru">
+          <Link href="" locale="ru" style={{ textDecoration: "none" }}>
             RU
           </Link>
         </div>
