@@ -1,5 +1,5 @@
 import BasePageLayout from "@components/basePageLayout";
-import Error from "@components/error";
+import Error from "@components/Error";
 import { NextPageContext } from "next";
 
 ErrorPage.getInitialProps = async ({ res, err }: NextPageContext) => {
