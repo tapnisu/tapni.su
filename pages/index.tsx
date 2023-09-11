@@ -3,11 +3,6 @@ import { en, ru } from "@locales/index";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-interface buttonLink {
-  value: string;
-  href: string;
-}
-
 export default function HomePage() {
   const router = useRouter();
   const t = router.locale === "en" ? en : ru;

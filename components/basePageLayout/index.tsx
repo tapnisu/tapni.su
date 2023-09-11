@@ -30,8 +30,8 @@ export default function BasePageLayout({
         <meta name="og:title" content={titleFull} />
         <meta name="apple-mobile-web-app-title" content={titleFull} />
 
-        <meta name="description" content={description} />
-        <meta name="og:description" content={description} />
+        <meta name="description" content={descriptionFull} />
+        <meta name="og:description" content={descriptionFull} />
       </Head>
 
       <main className={styles.main}>

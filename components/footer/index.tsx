@@ -3,11 +3,6 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import styles from "./footer.module.css";
 
-const paths = [
-  { name: "Domains", url: "/domains" },
-  { name: "Contact", url: "/contact" },
-];
-
 export default function Footer() {
   const router = useRouter();
   const t = router.locale === "en" ? en : ru;
