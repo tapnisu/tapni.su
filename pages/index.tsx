@@ -22,6 +22,8 @@ export default function HomePage() {
             maxWidth: "18rem",
             height: "auto",
           }}
+          placeholder="blur"
+          priority
         />
         <h1>
           {t.index.ohHiIam} <span className="color-accent">{t.name}</span>!
