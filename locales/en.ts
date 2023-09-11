@@ -2,6 +2,7 @@ export const en = {
   name: "Aleksei Rybin",
   description:
     "Oh, hi! I'm Aleksei Rybin, a programmer from Russia using Rust and Typescript.",
+  username: "tapnisu",
 
   home: "Home",
   projects: "Projects",
@@ -19,7 +20,8 @@ export const en = {
   },
 
   index: {
-    ohHi: (name: string) => `Oh, hi! I am ${name}`,
+    ohHiIam: "Oh, hi! I am ",
+    alsoKnownAs: "Also known as ",
   },
 
   projectsData: {

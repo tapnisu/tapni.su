@@ -10,7 +10,13 @@ export default function HomePage() {
   return (
     <BasePageLayout>
       <div className="container-center">
-        <h1 className="text-center">{t.index.ohHi(t.name)}</h1>
+        <h1 className="text-center">
+          {t.index.ohHiIam} <span className="color-accent">{t.name}</span>!
+        </h1>
+        <p>
+          {t.index.alsoKnownAs}{" "}
+          <span className="color-accent">{t.username}</span>
+        </p>
 
         <Link href="/contact" className="gap-half">
           <button>{t.contact}</button>
