@@ -1,5 +1,7 @@
 import BasePageLayout from "@components/basePageLayout";
+import { en, ru } from "@locales/index";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import {
   FaDiscord,
   FaGithub,
@@ -9,12 +11,12 @@ import {
 } from "react-icons/fa";
 
 export default function ContactPage() {
+  const router = useRouter();
+  const t = router.locale === "en" ? en : ru;
+
   return (
-    <BasePageLayout
-      title="Contact / Aleksei Rybin"
-      description="15 years old developer from Russia"
-    >
-      <h1>Aleksei Rybin</h1>
+    <BasePageLayout title={t.contact}>
+      <h1>{t.name}</h1>
       <div>
         {[
           {

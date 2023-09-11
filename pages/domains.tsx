@@ -1,14 +1,16 @@
 import BasePageLayout from "@components/basePageLayout";
 import domains from "@data/domains.json";
+import { en, ru } from "@locales/index";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function DomainsPage() {
+  const router = useRouter();
+  const t = router.locale === "en" ? en : ru;
+
   return (
-    <BasePageLayout
-      title="Domains / Aleksei Rybin"
-      description="15 years old developer from Russia"
-    >
-      <h1>My domains</h1>
+    <BasePageLayout title={t.domains}>
+      <h1>{t.domains}</h1>
       <ul>
         {domains.map((domain) => (
           <li key={domain}>

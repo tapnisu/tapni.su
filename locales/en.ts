@@ -1,5 +1,7 @@
 export const en = {
   name: "Aleksei Rybin",
+  description:
+    "Oh, hi! I'm Aleksei Rybin, a programmer from Russia using Rust and Typescript.",
 
   home: "Home",
   projects: "Projects",
@@ -11,6 +13,11 @@ export const en = {
   footer: {
     madeWith: "Made with NextJS",
     sourceCodeOn: "Source code on ",
+  },
+
+  error: {
+    error404: "404 not found :(",
+    unknown: "Unknown error happened :(",
   },
 
   index: {

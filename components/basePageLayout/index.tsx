@@ -1,4 +1,6 @@
+import { en, ru } from "@locales/index";
 import Head from "next/head";
+import { useRouter } from "next/router";
 import Footer from "../footer";
 import Navbar from "../navbar";
 import styles from "./basePageLayout.module.css";
@@ -10,17 +12,23 @@ export interface BaseLayoutProps {
 }
 
 export default function BasePageLayout({
-  title = "Aleksei Rybin",
-  description = "Oh, hi! I'm Aleksei Rybin, 15 years old, a developer from Russia, mainly using TypeScript and Rust.",
+  title,
+  description,
   children,
 }: BaseLayoutProps) {
+  const router = useRouter();
+  const t = router.locale === "en" ? en : ru;
+
+  const titleFull = title ? `${title} / ${t.name}` : t.name;
+  const descriptionFull = description ?? t.description;
+
   return (
     <>
       <Head>
-        <title>{title}</title>
-        <meta name="title" content={title} />
-        <meta name="og:title" content={title} />
-        <meta name="apple-mobile-web-app-title" content={title} />
+        <title>{titleFull}</title>
+        <meta name="title" content={titleFull} />
+        <meta name="og:title" content={titleFull} />
+        <meta name="apple-mobile-web-app-title" content={titleFull} />
 
         <meta name="description" content={description} />
         <meta name="og:description" content={description} />
