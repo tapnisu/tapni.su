@@ -26,6 +26,9 @@ dependencies:
   next-sitemap:
     specifier: ^4.2.3
     version: 4.2.3(next@13.4.19)
+  preact:
+    specifier: ^10.17.1
+    version: 10.17.1
   react:
     specifier: 18.2.0
     version: 18.2.0
@@ -2084,6 +2087,10 @@ packages:
       picocolors: 1.0.0
       source-map-js: 1.0.2
     dev: true
+
+  /preact@10.17.1:
+    resolution: {integrity: sha512-X9BODrvQ4Ekwv9GURm9AKAGaomqXmip7NQTZgY7gcNmr7XE83adOMJvd3N42id1tMFU7ojiynRsYnY6/BRFxLA==}
+    dev: false
 
   /prebuild-install@7.1.1:
     resolution: {integrity: sha512-jAXscXWMcCK8GgCoHOfIr0ODh5ai8mj63L2nWrjuAgXE6tDyYGnx4/8o/rCgU+B4JSyZBKbeZqzhtwtC3ovxjw==}
