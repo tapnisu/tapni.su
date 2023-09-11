@@ -1,5 +1,7 @@
 import BasePageLayout from "@components/basePageLayout";
 import { en, ru } from "@locales/index";
+import avatarImage from "@public/avatar.webp";
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
@@ -10,6 +12,17 @@ export default function HomePage() {
   return (
     <BasePageLayout>
       <div className="text-center">
+        <Image
+          src={avatarImage}
+          width={288}
+          alt="Avatar"
+          style={{
+            borderRadius: "9999px",
+            width: "100%",
+            maxWidth: "18rem",
+            height: "auto",
+          }}
+        />
         <h1>
           {t.index.ohHiIam} <span className="color-accent">{t.name}</span>!
         </h1>
