@@ -1,21 +1,14 @@
 import MyThemeContext from "@components/MyThemeContextProvider";
+import { en, ru } from "@locales/index";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useContext } from "react";
-import { useTranslation } from "react-i18next";
 import { FaMoon, FaSun } from "react-icons/fa";
 import styles from "./navbar.module.css";
 
-const paths = [
-  { name: "home", url: "/" },
-  {
-    name: "projects",
-    url: "/projects",
-  },
-  { name: "setup", url: "/setup" },
-];
-
 export default function Navbar() {
-  const { t } = useTranslation("navbar");
+  const router = useRouter();
+  const t = router.locale === "en" ? en : ru;
 
   const themeCtx = useContext(MyThemeContext);
 
@@ -23,19 +16,33 @@ export default function Navbar() {
     <nav className={styles.navbar}>
       <div className={`${styles.title} ${styles.linksContainer}`}>
         <Link className={styles.link} href="/">
-          Aleksei Rybin
+          {t.name}
         </Link>
       </div>
 
       <div className={styles.linksContainer}>
-        {paths?.map((info) => (
-          <Link className={styles.link} href={info.url} key={info.name}>
-            {t(info.name)}
-          </Link>
-        ))}
+        <Link className={styles.link} href="/">
+          {t.home}
+        </Link>
+        <Link className={styles.link} href="/projects">
+          {t.projects}
+        </Link>
+        <Link className={styles.link} href="/setup">
+          {t.setup}
+        </Link>
       </div>
 
       <div className={styles.linksContainer}>
+        <div className={styles.linksContainer}>
+          <Link href="" locale="en">
+            EN
+          </Link>
+          /
+          <Link href="" locale="ru">
+            RU
+          </Link>
+        </div>
+
         <div
           className={styles.modeSwitcher}
           onClick={themeCtx.toggleThemeHandler}

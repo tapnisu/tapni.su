@@ -16,6 +16,10 @@
 }
 
 .linksContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
   padding: var(--gap-half);
 }
 
