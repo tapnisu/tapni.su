@@ -5,9 +5,12 @@
   border-radius: var(--border-radius);
 }
 
-.gradient {
-  border-radius: var(--border-radius);
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
 
+.text {
   padding: var(--gap);
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0), var(--secondary-bg));
 }

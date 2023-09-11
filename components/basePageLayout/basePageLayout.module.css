@@ -17,3 +17,13 @@
   justify-content: center;
   align-items: center;
 }
+
+.width {
+  width: 768px;
+}
+
+@media (max-width: 768px) {
+  .width {
+    width: 100vw;
+  }
+}

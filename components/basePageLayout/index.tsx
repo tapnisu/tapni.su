@@ -37,7 +37,7 @@ export default function BasePageLayout({
       <main className={styles.main}>
         <Navbar />
         <div className={styles.content}>
-          <div>{children}</div>
+          <div className={styles.width}>{children}</div>
         </div>
         <Footer />
       </main>

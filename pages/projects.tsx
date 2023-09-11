@@ -3,6 +3,11 @@ import Card from "@components/card";
 import { en, ru } from "@locales/index";
 import { useRouter } from "next/router";
 
+import TapciifyWebImage from "@public/projects/tapciify-web.webp";
+import TapciifyImage from "@public/projects/tapciify.webp";
+import TaprisImage from "@public/projects/tapris.webp";
+import WebsiteImage from "@public/projects/website.webp";
+
 export default function ProjectsPage() {
   const router = useRouter();
   const t = router.locale === "en" ? en : ru;
@@ -11,14 +16,14 @@ export default function ProjectsPage() {
     {
       name: "Tapciify web",
       url: "https://tapciify.ru/",
-      image: "/projects/tapciify-web.webp",
+      image: TapciifyWebImage,
       description: t.projectsData.tapciifyWeb.description,
       buildUsing: ["TypeScript", "Solid", "Vite", "Pico.css"],
     },
     {
       name: "tapciify",
       url: "https://github.com/tapciify/tapciify/",
-      image: "/projects/tapciify.webp",
+      image: TapciifyImage,
       description: t.projectsData.tapciify.description,
       buildUsing: ["Rust"],
     },
@@ -37,7 +42,7 @@ export default function ProjectsPage() {
     {
       name: "website",
       url: "https://github.com/tapnisu/website/",
-      image: "/projects/website.webp",
+      image: WebsiteImage,
       description: t.projectsData.website.description,
       buildUsing: ["TypeScript", "Next.js"],
     },
@@ -50,7 +55,7 @@ export default function ProjectsPage() {
     {
       name: "tapris",
       url: "https://tapris.tapni.su/",
-      image: "/projects/tapris.webp",
+      image: TaprisImage,
       description: t.projectsData.tapris.description,
       buildUsing: ["TypeScript", "Deno"],
     },

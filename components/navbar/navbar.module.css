@@ -52,12 +52,12 @@
 }
 
 .title {
-  display: none;
+  display: inline-block;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .title {
-    display: inline-block;
+    display: none;
   }
 }
 
