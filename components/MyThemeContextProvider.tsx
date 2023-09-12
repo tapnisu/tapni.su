@@ -10,7 +10,7 @@ interface ThemePropsInterface {
 }
 
 export function MyThemeContextProvider(
-  props: ThemePropsInterface
+  props: ThemePropsInterface,
 ): ReactElement {
   const [isDarkTheme, setIsDarkTheme] = useState(true);
   useEffect(() => initialThemeHandler());
@@ -26,7 +26,7 @@ export function MyThemeContextProvider(
       setIsDarkTheme(true);
     } else {
       const isDarkTheme: boolean = JSON.parse(
-        localStorage.getItem("isDarkTheme")!
+        localStorage.getItem("isDarkTheme")!,
       );
       isDarkTheme && document!.querySelector("body")!.classList.add("dark");
       setIsDarkTheme(isDarkTheme);
@@ -35,7 +35,7 @@ export function MyThemeContextProvider(
 
   function toggleThemeHandler(): void {
     const isDarkTheme: boolean = JSON.parse(
-      localStorage.getItem("isDarkTheme")!
+      localStorage.getItem("isDarkTheme")!,
     );
     setIsDarkTheme(!isDarkTheme);
     toggleDarkClassToBody();
