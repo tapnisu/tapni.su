@@ -1,6 +1,4 @@
 :root {
-  color-scheme: light dark;
-
   /* Spacing */
   --gap-half: 0.5rem;
   --gap: 1rem;
@@ -23,7 +21,7 @@
   --selection: #000;
 }
 
-.dark {
+[data-theme="dark"] {
   --text-main: #fff;
   --text-secondary: #aaa;
 
@@ -32,7 +30,7 @@
 
   --bg: #000;
   --bg-75: rgba(0, 0, 0, 0.5);
-  --secondary-bg: #131313;
+  --secondary-bg: #272727;
 
   --selection: #fff;
 }
@@ -110,4 +108,24 @@ li {
 
 .text-center {
   text-align: center;
+}
+
+select {
+  appearance: none;
+
+  background-color: var(--secondary-bg);
+
+  border: none;
+  border-radius: 9999px;
+
+  padding: var(--gap-half);
+
+  &::after {
+    background-color: var(--secondary-bg);
+
+    border: none;
+    border-radius: 9999px;
+
+    padding: var(--gap-half);
+  }
 }

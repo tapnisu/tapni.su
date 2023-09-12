@@ -1,16 +1,12 @@
-import MyThemeContext from "@components/MyThemeContextProvider";
+import ThemeSwitch from "@components/themeSwitch";
 import { en, ru } from "@locales/index";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useContext } from "react";
-import { FaMoon, FaSun } from "react-icons/fa";
 import styles from "./navbar.module.css";
 
 export default function Navbar() {
   const router = useRouter();
   const t = router.locale === "en" ? en : ru;
-
-  const themeCtx = useContext(MyThemeContext);
 
   return (
     <nav className={styles.navbarContainer}>
@@ -41,12 +37,7 @@ export default function Navbar() {
             </Link>
           </div>
 
-          <div
-            className={styles.modeSwitcher}
-            onClick={themeCtx.toggleThemeHandler}
-          >
-            {themeCtx.isDarkTheme ? <FaMoon /> : <FaSun />}
-          </div>
+          <ThemeSwitch />
         </div>
       </div>
     </nav>

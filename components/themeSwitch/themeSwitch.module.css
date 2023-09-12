@@ -1,0 +1,18 @@
+.themeSwitch {
+  cursor: pointer;
+
+  color: var(--accent);
+
+  padding-left: var(--gap);
+  padding-right: var(--gap);
+  padding-top: var(--gap-half);
+  padding-bottom: var(--gap-half);
+
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+
+  &:hover {
+    color: var(--accent-darker);
+  }
+}
