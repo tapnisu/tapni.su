@@ -9,9 +9,9 @@ export default function Document() {
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="theme-color" content="#6690e3" />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <meta name="og:image" content="https://tapnisu.ru/og.png" />
-        <meta name="og:url" content="https://tapnisu.ru/" />
-        <meta name="twitter:image" content="https://tapnisu.ru/og.png" />
+        <meta name="og:image" content="https://tapni.su/og.png" />
+        <meta name="og:url" content="https://tapni.su/" />
+        <meta name="twitter:image" content="https://tapni.su/og.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@tapnisu" />
       </Head>
