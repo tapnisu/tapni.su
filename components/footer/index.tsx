@@ -11,7 +11,12 @@ export default function Footer() {
     <footer className={styles.footerContainer}>
       <div className={styles.footer}>
         <p>
-          <b>{t.name}</b>
+          <b>
+            {t.name}{" "}
+            <Link href="/cookie" className={styles.cookie}>
+              🍪
+            </Link>
+          </b>
         </p>
         <div className={styles.toSides}>
           <div className={styles.links}>

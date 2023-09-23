@@ -25,6 +25,10 @@
   align-items: center;
 }
 
+.cookie {
+  text-decoration: none;
+}
+
 .links {
   display: flex;
   flex-direction: column;
