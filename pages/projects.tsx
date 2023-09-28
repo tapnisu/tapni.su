@@ -56,7 +56,7 @@ export default function ProjectsPage() {
     },
     {
       name: "tapris",
-      url: "https://tapris.tapnisu.ru/",
+      url: "https://tapris.tapni.su/",
       image: taprisImage,
       description: t.projectsData.tapris.description,
       buildUsing: ["TypeScript", "Deno"],
