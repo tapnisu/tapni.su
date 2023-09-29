@@ -17,8 +17,6 @@
   --bg-75: rgba(224, 231, 247, 0.5);
   --secondary-bg: #cbd8e8;
   --third-bg: #b0c1e8;
-
-  --selection: #000;
 }
 
 [data-theme="dark"] {
@@ -29,13 +27,11 @@
   --bg-75: rgba(12, 16, 33, 0.5);
   --secondary-bg: #0f1634;
   --third-bg: #2d3579;
-
-  --selection: #fff;
 }
 
 ::selection {
   text-shadow: none;
-  background: var(--selection);
+  background: var(--text-main);
   color: var(--bg);
 }
 
