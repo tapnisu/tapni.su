@@ -8,29 +8,27 @@
   --blur-radius: 4px;
 
   /* Colors */
-  --text-main: #000;
-  --text-secondary: #222;
+  --text-main: #0c1021;
+  --text-secondary: #0f1634;
 
-  --accent: #4b72c2;
-  --accent-darker: #6690e3;
+  --accent: #3f43da;
 
-  --bg: #fff;
-  --bg-75: rgba(255, 255, 255, 0.5);
-  --secondary-bg: #eee;
+  --bg: #e0e7f7;
+  --bg-75: rgba(224, 231, 247, 0.5);
+  --secondary-bg: #cbd8e8;
+  --third-bg: #b0c1e8;
 
   --selection: #000;
 }
 
 [data-theme="dark"] {
-  --text-main: #fff;
-  --text-secondary: #aaa;
+  --text-main: #e0e7f7;
+  --text-secondary: #cbd8e8;
 
-  --accent: #6690e3;
-  --accent-darker: #4b72c2;
-
-  --bg: #000;
-  --bg-75: rgba(0, 0, 0, 0.5);
-  --secondary-bg: #272727;
+  --bg: #0c1021;
+  --bg-75: rgba(12, 16, 33, 0.5);
+  --secondary-bg: #0f1634;
+  --third-bg: #2d3579;
 
   --selection: #fff;
 }
@@ -49,7 +47,7 @@ button {
   font-family: inherit;
 
   color: var(--text-main);
-  background: var(--accent-darker);
+  background: var(--secondary-bg);
 
   font-weight: 600;
 
@@ -65,7 +63,7 @@ button {
 
   &:hover {
     cursor: pointer;
-    background: var(--accent);
+    background: var(--third-bg);
   }
 }
 
@@ -85,8 +83,9 @@ a {
   }
 }
 
-.color-accent {
-  color: var(--accent);
+u {
+  text-underline-offset: 4px;
+  text-decoration-color: var(--accent);
 }
 
 .container-center {

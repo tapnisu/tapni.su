@@ -26,11 +26,10 @@ export default function HomePage() {
           priority
         />
         <h1>
-          {t.index.ohHiIam} <span className="color-accent">{t.name}</span>!
+          {t.index.ohHiIam} <u>{t.name}</u>!
         </h1>
         <p>
-          {t.index.alsoKnownAs}{" "}
-          <span className="color-accent">{t.username}</span>
+          {t.index.alsoKnownAs} <u>{t.username}</u>
         </p>
 
         <Link href="/contact" className="gap-half">

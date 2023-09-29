@@ -1,7 +1,7 @@
 .themeSwitch {
   cursor: pointer;
 
-  color: var(--accent);
+  color: var(--text-secondary);
 
   padding-left: var(--gap);
   padding-right: var(--gap);
@@ -13,6 +13,6 @@
   transition-duration: 150ms;
 
   &:hover {
-    color: var(--accent-darker);
+    color: var(--accent);
   }
 }
