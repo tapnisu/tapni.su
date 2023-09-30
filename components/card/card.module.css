@@ -1,5 +1,5 @@
 .card {
-  background: var(--secondary-bg);
+  background: var(--bg-2);
 
   margin: var(--gap);
   border-radius: var(--border-radius);
@@ -16,5 +16,5 @@
 }
 
 .comments {
-  color: var(--text-secondary);
+  color: var(--text-2);
 }

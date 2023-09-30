@@ -1,5 +1,5 @@
 .main {
-  color: var(--text-main);
+  color: var(--text);
   background-color: var(--bg);
 
   min-height: 100vh;

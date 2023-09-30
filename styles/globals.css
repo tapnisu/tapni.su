@@ -8,30 +8,30 @@
   --blur-radius: 4px;
 
   /* Colors */
-  --text-main: #0f0f14;
-  --text-secondary: #101b3b;
+  --text: #0f0f14;
+  --text-2: #101b3b;
 
   --accent: #688ce2;
 
   --bg: #e0e7f7;
-  --bg-75: rgba(224, 231, 247, 0.5);
-  --secondary-bg: #cbd8e8;
-  --third-bg: #b0c1e8;
+  --bg-blurred: rgba(224, 231, 247, 0.5);
+  --bg-2: #cbd8e8;
+  --bg-3: #b0c1e8;
 }
 
 [data-theme="dark"] {
-  --text-main: #e0e7f7;
-  --text-secondary: #cbd8e8;
+  --text: #e0e7f7;
+  --text-2: #cbd8e8;
 
   --bg: #0f0f14;
-  --bg-75: rgba(15, 15, 20, 0.5);
-  --secondary-bg: #161822;
-  --third-bg: #101b3b;
+  --bg-blurred: rgba(15, 15, 20, 0.5);
+  --bg-2: #161822;
+  --bg-3: #101b3b;
 }
 
 ::selection {
   text-shadow: none;
-  background: var(--text-main);
+  background: var(--text);
   color: var(--bg);
 }
 
@@ -42,8 +42,8 @@ body {
 button {
   font-family: inherit;
 
-  color: var(--text-main);
-  background: var(--secondary-bg);
+  color: var(--text);
+  background: var(--bg-2);
 
   font-weight: 600;
 
@@ -59,12 +59,12 @@ button {
 
   &:hover {
     cursor: pointer;
-    background: var(--third-bg);
+    background: var(--bg-3);
   }
 }
 
 a {
-  color: var(--text-main);
+  color: var(--text);
 
   text-decoration: underline;
   text-underline-offset: 4px;
@@ -108,7 +108,7 @@ li {
 select {
   appearance: none;
 
-  background-color: var(--secondary-bg);
+  background-color: var(--bg-2);
 
   border: none;
   border-radius: 9999px;
@@ -116,7 +116,7 @@ select {
   padding: var(--gap-half);
 
   &::after {
-    background-color: var(--secondary-bg);
+    background-color: var(--bg-2);
 
     border: none;
     border-radius: 9999px;
