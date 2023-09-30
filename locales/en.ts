@@ -22,6 +22,8 @@ export const en = {
   index: {
     ohHiIam: "Oh, hi! I am ",
     alsoKnownAs: "Also known as ",
+    about: "I'm a 15 years old beginner software developer. Usually, I use ",
+    and: "and",
   },
 
   projectsData: {

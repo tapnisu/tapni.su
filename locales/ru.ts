@@ -22,6 +22,8 @@ export const ru = {
   index: {
     ohHiIam: "Ох, привет! Я ",
     alsoKnownAs: "Также известный как ",
+    about: "Я 15 летний начинающий разработчик. Обычно я пишу на ",
+    and: "and",
   },
 
   projectsData: {

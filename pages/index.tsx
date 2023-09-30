@@ -1,7 +1,5 @@
 import BasePageLayout from "@components/basePageLayout";
 import { en, ru } from "@locales/index";
-import avatarImage from "@public/avatar.webp";
-import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
@@ -11,25 +9,20 @@ export default function HomePage() {
 
   return (
     <BasePageLayout>
-      <div className="text-center">
-        <Image
-          src={avatarImage}
-          width={288}
-          alt="Avatar"
-          style={{
-            borderRadius: "9999px",
-            width: "100%",
-            maxWidth: "18rem",
-            height: "auto",
-          }}
-          placeholder="blur"
-          priority
-        />
-        <h1>
-          {t.index.ohHiIam} <u>{t.name}</u>!
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        <h1 className="text-center">
+          {t.index.ohHiIam} <u>{t.name}</u> aka <u>{t.username}</u>
         </h1>
+
         <p>
-          {t.index.alsoKnownAs} <u>{t.username}</u>
+          {" "}
+          {t.index.about} Rust {t.index.and} Typescript
         </p>
 
         <Link href="/contact" className="gap-half">
