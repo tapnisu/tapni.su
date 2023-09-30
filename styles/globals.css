@@ -14,6 +14,7 @@
   --accent: #688ce2;
 
   --bg: #e0e7f7;
+  --bg-transparent: rgba(224, 231, 247, 0.5);
   --bg-2: #cbd8e8;
   --bg-3: #b0c1e8;
 
@@ -25,6 +26,7 @@
   --text-2: #cbd8e8;
 
   --bg: #0f0f14;
+  --bg-transparent: rgba(15, 15, 20, 0.5);
   --bg-2: #161822;
   --bg-3: #101b3b;
 
