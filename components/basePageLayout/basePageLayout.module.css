@@ -12,7 +12,7 @@
 }
 
 .content {
-  padding: 0.5rem;
+  padding: var(--gap);
 
   display: flex;
   flex-direction: column;

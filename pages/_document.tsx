@@ -5,9 +5,8 @@ export default function Document() {
     <Html>
       <Head>
         <meta charSet="UTF-8" />
-        <meta httpEquiv="Content-Language" content="en" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="theme-color" content="#6690e3" />
+        <meta name="theme-color" content="#688ce2" />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <meta name="og:image" content="https://tapni.su/og.png" />
         <meta name="og:url" content="https://tapni.su/" />
