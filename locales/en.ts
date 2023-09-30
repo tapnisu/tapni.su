@@ -15,8 +15,8 @@ export const en = {
   },
 
   error: {
-    error404: "404 not found :(",
-    unknown: "Unknown error happened :(",
+    error404: "Roses are red, violets are blue, page not found for you",
+    unknown: "Something weird just happened",
   },
 
   index: {

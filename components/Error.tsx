@@ -12,11 +12,12 @@ export default function Error(props: ErrorProps) {
 
   return (
     <div className="container-center">
-      <h1>
+      <h1>{props.status}</h1>
+      <h2 className="text-center">
         {props.status == 404
           ? t.error.error404
           : props.status || t.error.unknown}
-      </h1>
+      </h2>
       <Link href="/">
         <button>{t.home}</button>
       </Link>
