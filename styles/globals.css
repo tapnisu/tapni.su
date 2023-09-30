@@ -11,7 +11,7 @@
   --text-main: #0c1021;
   --text-secondary: #0f1634;
 
-  --accent: #3f43da;
+  --accent: #688ce2;
 
   --bg: #e0e7f7;
   --bg-75: rgba(224, 231, 247, 0.5);
@@ -23,10 +23,10 @@
   --text-main: #e0e7f7;
   --text-secondary: #cbd8e8;
 
-  --bg: #0c1021;
+  --bg: #0f0f14;
   --bg-75: rgba(12, 16, 33, 0.5);
-  --secondary-bg: #0f1634;
-  --third-bg: #2d3579;
+  --secondary-bg: #161822;
+  --third-bg: #101b3b;
 }
 
 ::selection {
