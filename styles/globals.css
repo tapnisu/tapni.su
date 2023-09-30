@@ -17,6 +17,8 @@
   --bg-blurred: rgba(224, 231, 247, 0.5);
   --bg-2: #cbd8e8;
   --bg-3: #b0c1e8;
+
+  --tiled-bg: url("/bg.png");
 }
 
 [data-theme="dark"] {
@@ -27,6 +29,8 @@
   --bg-blurred: rgba(15, 15, 20, 0.5);
   --bg-2: #161822;
   --bg-3: #101b3b;
+
+  --tiled-bg: url("/bg-dark.png");
 }
 
 ::selection {

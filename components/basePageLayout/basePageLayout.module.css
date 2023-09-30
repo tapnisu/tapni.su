@@ -1,6 +1,8 @@
 .main {
   color: var(--text);
-  background-color: var(--bg);
+
+  background: var(--bg);
+  background: var(--tiled-bg);
 
   min-height: 100vh;
 
