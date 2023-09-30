@@ -8,8 +8,8 @@
   --blur-radius: 4px;
 
   /* Colors */
-  --text-main: #0c1021;
-  --text-secondary: #0f1634;
+  --text-main: #0f0f14;
+  --text-secondary: #101b3b;
 
   --accent: #688ce2;
 
@@ -24,7 +24,7 @@
   --text-secondary: #cbd8e8;
 
   --bg: #0f0f14;
-  --bg-75: rgba(12, 16, 33, 0.5);
+  --bg-75: rgba(15, 15, 20, 0.5);
   --secondary-bg: #161822;
   --third-bg: #101b3b;
 }
