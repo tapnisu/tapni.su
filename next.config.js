@@ -21,6 +21,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/x",
+        destination: "https://twitter.com/tapnisu",
+        permanent: true,
+      },
+      {
         source: "/telegram",
         destination: "https://t.me/tapnisu",
         permanent: true,

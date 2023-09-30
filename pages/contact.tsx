@@ -2,13 +2,7 @@ import BasePageLayout from "@components/basePageLayout";
 import { en, ru } from "@locales/index";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import {
-  FaDiscord,
-  FaGithub,
-  FaMailBulk,
-  FaTelegram,
-  FaTwitter,
-} from "react-icons/fa";
+import { FaDiscord, FaGithub, FaMailBulk, FaTelegram } from "react-icons/fa";
 
 export default function ContactPage() {
   const router = useRouter();
@@ -17,6 +11,7 @@ export default function ContactPage() {
   return (
     <BasePageLayout title={t.contact}>
       <h1>{t.name}</h1>
+
       <div>
         {[
           {
@@ -30,9 +25,9 @@ export default function ContactPage() {
             icon: <FaDiscord />,
           },
           {
-            name: "Twitter",
-            url: "/twitter",
-            icon: <FaTwitter />,
+            name: "X",
+            url: "/x",
+            icon: "𝕏",
           },
           {
             name: "Telegram",
@@ -40,7 +35,7 @@ export default function ContactPage() {
             icon: <FaTelegram />,
           },
           {
-            name: "Email",
+            name: "Email: 0xalekseirybi@gmail.com",
             url: "/email",
             icon: <FaMailBulk />,
           },
@@ -55,7 +50,7 @@ export default function ContactPage() {
               textDecoration: "none",
             }}
           >
-            {info.icon} <pre> </pre> {info.name}
+            <b>{info.icon}</b> <pre> </pre> {info.name}
           </Link>
         ))}
       </div>
