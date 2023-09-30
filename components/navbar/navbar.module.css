@@ -1,6 +1,7 @@
 .navbarContainer {
   background: var(--bg-transparent);
   backdrop-filter: blur(var(--blur-radius));
+  background-image: var(--tiled-bg);
 
   position: sticky;
   top: 0px;
