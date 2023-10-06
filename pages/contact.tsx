@@ -35,7 +35,7 @@ export default function ContactPage() {
             icon: <FaTelegram />,
           },
           {
-            name: "Email: 0xalekseirybi@gmail.com",
+            name: "Email: 0xalekseirybin@gmail.com",
             url: "/email",
             icon: <FaMailBulk />,
           },
