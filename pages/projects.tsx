@@ -3,11 +3,11 @@ import Card from "@components/card";
 import { en, ru } from "@locales/index";
 import { useRouter } from "next/router";
 
+import websiteImage from "@public/og.png";
 import leshapomogiImage from "@public/projects/leshapomogi.webp";
 import tapciifyWebImage from "@public/projects/tapciify-web.webp";
 import tapciifyImage from "@public/projects/tapciify.webp";
 import taprisImage from "@public/projects/tapris.webp";
-import websiteImage from "@public/projects/website.webp";
 
 export default function ProjectsPage() {
   const router = useRouter();
@@ -42,7 +42,7 @@ export default function ProjectsPage() {
     },
     {
       name: "website",
-      url: "https://github.com/tapnisu/website/",
+      url: "https://github.com/tapnisu/tapni.su/",
       image: websiteImage,
       description: t.projectsData.website.description,
       buildUsing: ["TypeScript", "Next.js"],
