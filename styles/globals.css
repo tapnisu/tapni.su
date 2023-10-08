@@ -19,6 +19,9 @@
   --bg-3: #b0c1e8;
 
   --tiled-bg: url("/bg.png");
+
+  --drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04))
+    drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
 }
 
 [data-theme="dark"] {
@@ -55,6 +58,8 @@ button {
 
   border-radius: var(--border-radius);
   border: none;
+
+  filter: var(--drop-shadow);
 
   transition-property: color, background-color, border-color,
     text-decoration-color, fill, stroke;

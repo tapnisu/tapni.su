@@ -60,6 +60,8 @@
   }
 
   &:hover {
+    filter: var(--drop-shadow);
+
     color: var(--text);
     background: var(--bg-3);
   }
