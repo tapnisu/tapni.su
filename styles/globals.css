@@ -20,8 +20,8 @@
 
   --tiled-bg: url("/bg.png");
 
-  --drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04))
-    drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
 [data-theme="dark"] {
@@ -59,7 +59,7 @@ button {
   border-radius: var(--border-radius);
   border: none;
 
-  filter: var(--drop-shadow);
+  box-shadow: var(--box-shadow);
 
   transition-property: color, background-color, border-color,
     text-decoration-color, fill, stroke;

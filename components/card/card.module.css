@@ -4,7 +4,7 @@
   margin: var(--gap);
   border-radius: var(--border-radius);
 
-  filter: var(--drop-shadow);
+  box-shadow: var(--box-shadow);
 }
 
 .image {
