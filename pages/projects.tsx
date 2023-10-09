@@ -48,8 +48,8 @@ export default function ProjectsPage() {
       buildUsing: ["TypeScript", "Next.js"],
     },
     {
-      name: "лёшапомоги.рф",
-      url: "https://лёшапомоги.рф/",
+      name: "лешапомоги.рф",
+      url: "https://лешапомоги.рф/",
       image: leshapomogiImage,
       description: t.projectsData.leshapomogi.description,
       buildUsing: ["TypeScript", "Preact", "Lume", "Pico.css"],
