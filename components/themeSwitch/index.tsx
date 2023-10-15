@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { FaMobile, FaMoon, FaSun } from "react-icons/fa";
 import styles from "./themeSwitch.module.css";
 
-function switchTheme(theme: string | undefined): string {
+function switchTheme(theme?: string) {
   switch (theme) {
     case "system":
       return "dark";
@@ -16,7 +16,7 @@ function switchTheme(theme: string | undefined): string {
   }
 }
 
-function themeIcon(theme: string | undefined) {
+function themeIcon(theme?: string) {
   switch (theme) {
     case "light":
       return <FaSun />;
