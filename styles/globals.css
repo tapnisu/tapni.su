@@ -18,8 +18,6 @@
   --bg-2: #cbd8e8;
   --bg-3: #b0c1e8;
 
-  --tiled-bg: url("/bg.png");
-
   --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
     0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
@@ -32,8 +30,6 @@
   --bg-transparent: rgba(15, 15, 20, 0.5);
   --bg-2: #161822;
   --bg-3: #101b3b;
-
-  --tiled-bg: url("/bg-dark.png");
 }
 
 ::selection {

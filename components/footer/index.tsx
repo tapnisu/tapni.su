@@ -10,16 +10,14 @@ export default function Footer() {
   return (
     <footer className={styles.footerContainer}>
       <div className={styles.footer}>
-        <p>
-          <b>
-            {t.name}{" "}
-            <Link href="/cookie" className={styles.cookie}>
-              🍪
-            </Link>
-          </b>
-        </p>
         <div className={styles.toSides}>
           <div className={styles.links}>
+            <b className={styles.name}>
+              {t.name}{" "}
+              <Link href="/cookie" className={styles.cookie}>
+                🍪
+              </Link>
+            </b>
             <Link href="/domains" className={styles.link}>
               {t.domains}
             </Link>
@@ -29,6 +27,8 @@ export default function Footer() {
           </div>
 
           <div>
+            <br />
+
             <p>{t.footer.madeWith}</p>
 
             <p>
