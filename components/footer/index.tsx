@@ -28,6 +28,7 @@ export default function Footer() {
 
           <div>
             <br />
+            <br />
 
             <p>{t.footer.madeWith}</p>
 
