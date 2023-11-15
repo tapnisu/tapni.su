@@ -7,7 +7,6 @@ import websiteImage from "@public/og.png";
 import leshapomogiImage from "@public/projects/leshapomogi.webp";
 import tapciifyWebImage from "@public/projects/tapciify-web.webp";
 import tapciifyImage from "@public/projects/tapciify.webp";
-import taprisImage from "@public/projects/tapris.webp";
 
 export default function ProjectsPage() {
   const router = useRouter();
@@ -53,13 +52,6 @@ export default function ProjectsPage() {
       image: leshapomogiImage,
       description: t.projectsData.leshapomogi.description,
       buildUsing: ["TypeScript", "Preact", "Lume", "Pico.css"],
-    },
-    {
-      name: "tapris",
-      url: "https://tapris.tapni.su/",
-      image: taprisImage,
-      description: t.projectsData.tapris.description,
-      buildUsing: ["TypeScript", "Deno"],
     },
   ];
 
