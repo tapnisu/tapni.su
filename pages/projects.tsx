@@ -31,7 +31,7 @@ export default function ProjectsPage() {
       name: "forwarding-discord-telegram",
       url: "https://github.com/tapnisu/forwarding-discord-telegram/",
       description: t.projectsData.forwardingDiscordTelegram.description,
-      buildUsing: ["JavaScript"],
+      buildUsing: ["TypeScript"],
     },
     {
       name: "dsc-tg-forwarder",
@@ -44,7 +44,7 @@ export default function ProjectsPage() {
       url: "https://github.com/tapnisu/tapni.su/",
       image: websiteImage,
       description: t.projectsData.website.description,
-      buildUsing: ["TypeScript", "Next.js"],
+      buildUsing: ["TypeScript", "Next.js", "React"],
     },
     {
       name: "лёшапомоги.рф",
