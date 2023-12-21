@@ -1,7 +1,9 @@
 import BasePageLayout from "@components/basePageLayout";
-import domains from "@data/domains.json";
-import { en, ru } from "@locales/index";
 import Link from "next/link";
+
+import domains from "@data/domains.json";
+
+import { en, ru } from "@locales/index";
 import { useRouter } from "next/router";
 
 export default function DomainsPage() {

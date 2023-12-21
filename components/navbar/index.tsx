@@ -17,14 +17,14 @@ export default function Navbar() {
           </Link>
         </div>
 
-        <div className={styles.linksContainer}>
+        {/* <div className={styles.linksContainer}>
           <Link className={styles.link} href="/">
             {t.home}
           </Link>
           <Link className={styles.link} href="/projects">
             {t.projects}
           </Link>
-        </div>
+        </div> */}
 
         <div className={styles.linksContainer}>
           <div className={styles.languageSwitcher}>

@@ -1,5 +1,6 @@
-import { en, ru } from "@locales/index";
 import Link from "next/link";
+
+import { en, ru } from "@locales/index";
 import { useRouter } from "next/router";
 
 export interface ErrorProps {

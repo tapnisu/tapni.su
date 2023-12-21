@@ -1,14 +1,14 @@
-import BasePageLayout from "@components/basePageLayout";
 import Card from "@components/card";
-import { en, ru } from "@locales/index";
-import { useRouter } from "next/router";
 
 import websiteImage from "@public/og.png";
 import leshapomogiImage from "@public/projects/leshapomogi.webp";
 import tapciifyWebImage from "@public/projects/tapciify-web.webp";
 import tapciifyImage from "@public/projects/tapciify.webp";
 
-export default function ProjectsPage() {
+import { en, ru } from "@locales/index";
+import { useRouter } from "next/router";
+
+export default function Projects() {
   const router = useRouter();
   const t = router.locale === "en" ? en : ru;
 
@@ -56,20 +56,17 @@ export default function ProjectsPage() {
   ];
 
   return (
-    <BasePageLayout title={t.projects}>
-      <h1>{t.projects}</h1>
-      <div>
-        {projects?.map(({ name, image, url, description, buildUsing }) => (
-          <Card
-            title={name}
-            image={image}
-            url={url}
-            description={description}
-            comments={`${t.projectsData.madeWith} ${buildUsing.join(", ")}`}
-            key={name}
-          />
-        ))}
-      </div>
-    </BasePageLayout>
+    <div>
+      {projects?.map(({ name, image, url, description, buildUsing }) => (
+        <Card
+          title={name}
+          image={image}
+          url={url}
+          description={description}
+          comments={`${t.projectsData.madeWith} ${buildUsing.join(", ")}`}
+          key={name}
+        />
+      ))}
+    </div>
   );
 }
