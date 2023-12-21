@@ -8,6 +8,8 @@ import tapciifyImage from "@public/projects/tapciify.webp";
 import { en, ru } from "@locales/index";
 import { useRouter } from "next/router";
 
+import styles from "./projects.module.css";
+
 export default function Projects() {
   const router = useRouter();
   const t = router.locale === "en" ? en : ru;
@@ -57,16 +59,20 @@ export default function Projects() {
 
   return (
     <div>
-      {projects?.map(({ name, image, url, description, buildUsing }) => (
-        <Card
-          title={name}
-          image={image}
-          url={url}
-          description={description}
-          comments={`${t.projectsData.madeWith} ${buildUsing.join(", ")}`}
-          key={name}
-        />
-      ))}
+      <h2 className="text-center">{t.projects}</h2>
+
+      <div className={styles.projects}>
+        {projects?.map(({ name, image, url, description, buildUsing }) => (
+          <Card
+            title={name}
+            image={image}
+            url={url}
+            description={description}
+            comments={`${t.projectsData.madeWith} ${buildUsing.join(", ")}`}
+            key={name}
+          />
+        ))}
+      </div>
     </div>
   );
 }
