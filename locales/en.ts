@@ -4,10 +4,14 @@ export const en = {
     "Oh, hi! I'm Aleksei Rybin, a programmer from Russia using Rust and Typescript.",
   username: "tapnisu",
 
-  home: "Home",
-  projects: "Projects",
-  domains: "Domains",
-  contact: "Contact",
+  homeTitle: "Home",
+  projectsTitle: "Projects",
+  domainsTitle: "Domains",
+  contactTitle: "Contact",
+  aboutTitle: "About me",
+
+  aboutText:
+    "I am a 16-years-old developer from Russia. I started my programming journey in 2018. My first programming language was C#. Nowadays I usually use Rust and Typescript. I'll be glad to work with you!",
 
   footer: {
     madeWith: "Made with NextJS",
@@ -19,12 +23,7 @@ export const en = {
     unknown: "Something weird just happened",
   },
 
-  index: {
-    ohHiIam: "Oh, hi! I am ",
-    alsoKnownAs: "Also known as ",
-    about: "I'm a 16 years old beginner software developer. Usually, I use ",
-    and: "and",
-  },
+  index: { iAm: "I'm", alsoKnownAs: "Also known as" },
 
   projectsData: {
     madeWith: "Made with ",

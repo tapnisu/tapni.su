@@ -19,10 +19,10 @@ export default function Footer() {
               </Link>
             </b>
             <Link href="/domains" className={styles.link}>
-              {t.domains}
+              {t.domainsTitle}
             </Link>
             <Link href="/contact" className={styles.link}>
-              {t.contact}
+              {t.contactTitle}
             </Link>
           </div>
 

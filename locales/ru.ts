@@ -1,13 +1,15 @@
 export const ru = {
   name: "Алексей Рыбин",
-  description:
-    "Ох, привет! Я Алексей Рыбин, программист из России, использующий Rust и Typescript.",
   username: "tapnisu",
 
-  home: "Главная",
-  projects: "Проекты",
-  domains: "Домены",
-  contact: "Связаться",
+  homeTitle: "Главная",
+  projectsTitle: "Проекты",
+  domainsTitle: "Домены",
+  contactTitle: "Связаться",
+  aboutTitle: "О мне",
+
+  aboutText:
+    "Я 16-летний разработчик из России. Я начал свой путь программирования в 2018 году. Моим первым языком программирования был C#. Сейчас я обычно использую Rust и Typescript. Буду рад поработать с вами!",
 
   footer: {
     madeWith: "Создано с использованием NextJS",
@@ -19,12 +21,7 @@ export const ru = {
     unknown: "Что-то странное случилось",
   },
 
-  index: {
-    ohHiIam: "Ох, привет! Я ",
-    alsoKnownAs: "Также известный как ",
-    about: "Я 16 летний начинающий разработчик. Обычно я пишу на ",
-    and: "and",
-  },
+  index: { iAm: "Я", alsoKnownAs: "Также известен как" },
 
   projectsData: {
     madeWith: "Создано с использованием ",

@@ -11,8 +11,8 @@ export default function DomainsPage() {
   const t = router.locale === "en" ? en : ru;
 
   return (
-    <BasePageLayout title={t.domains}>
-      <h1>{t.domains}</h1>
+    <BasePageLayout title={t.domainsTitle}>
+      <h1>{t.domainsTitle}</h1>
       <ul>
         {domains.map((domain) => (
           <li key={domain}>

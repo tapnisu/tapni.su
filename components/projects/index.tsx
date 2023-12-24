@@ -59,7 +59,7 @@ export default function Projects() {
 
   return (
     <div>
-      <h2 className="text-center">{t.projects}</h2>
+      <h2 className="text-center">{t.projectsTitle}</h2>
 
       <div className={styles.projects}>
         {projects?.map(({ name, image, url, description, buildUsing }) => (

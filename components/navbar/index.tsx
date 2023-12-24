@@ -19,10 +19,10 @@ export default function Navbar() {
 
         <div className={styles.linksContainer}>
           <Link className={styles.link} href="/">
-            {t.home}
+            {t.homeTitle}
           </Link>
           <Link className={styles.link} href="/projects">
-            {t.projects}
+            {t.projectsTitle}
           </Link>
         </div>
 

@@ -14,17 +14,17 @@ export default function Introduction() {
     <div className={styles.introduction}>
       <Avatar />
 
-      <h1 className="text-center">
-        {t.index.ohHiIam} <u>{t.name}</u> aka <u>{t.username}</u>
-      </h1>
-
-      <p>
-        {" "}
-        {t.index.about} Rust {t.index.and} Typescript
-      </p>
+      <div className="text-center">
+        <h1>
+          {t.index.iAm} <u>{t.name}</u>
+        </h1>
+        <h2>
+          {t.index.alsoKnownAs} <u>{t.username}</u>
+        </h2>
+      </div>
 
       <Link href="/contact" className="gap-half">
-        <button>{t.contact}</button>
+        <button>{t.contactTitle}</button>
       </Link>
     </div>
   );

@@ -1,6 +1,7 @@
 .projects {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
 }
 
 @media (max-width: 768px) {

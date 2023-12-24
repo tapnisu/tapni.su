@@ -8,7 +8,7 @@ export default function ProjectsPage() {
   const t = router.locale === "en" ? en : ru;
 
   return (
-    <BasePageLayout title={t.projects}>
+    <BasePageLayout title={t.projectsTitle}>
       <Projects />
     </BasePageLayout>
   );

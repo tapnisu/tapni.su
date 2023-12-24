@@ -15,7 +15,7 @@ export default function ContactPage() {
   const t = router.locale === "en" ? en : ru;
 
   return (
-    <BasePageLayout title={t.contact}>
+    <BasePageLayout title={t.contactTitle}>
       <h1>{t.name}</h1>
 
       <div>
