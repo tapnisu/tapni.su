@@ -43,13 +43,13 @@
 }
 
 .name {
-  padding: var(--gap-half);
+  padding: var(--gap-half) 0;
 }
 
 .link {
   color: var(--text-2);
 
-  padding: var(--gap-half);
+  padding: var(--gap-half) 0;
 
   transition-property: color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
