@@ -33,11 +33,9 @@ export default function Card({
       )}
 
       <div className={styles.text}>
-        <div>
-          <div>{url ? <Link href={url}>{title}</Link> : <>{title}</>}</div>
+        <div>{url ? <Link href={url}>{title}</Link> : <>{title}</>}</div>
 
-          <p>{description}</p>
-        </div>
+        <p>{description}</p>
 
         <div className={styles.comments}>{comments}</div>
       </div>
