@@ -20,7 +20,7 @@ export default function BasePageLayout({
   const t = router.locale === "en" ? en : ru;
 
   const titleFull = title ? `${title} / ${t.name}` : t.name;
-  const descriptionFull = description ?? t.description;
+  const descriptionFull = description ?? t.aboutText;
 
   return (
     <>
