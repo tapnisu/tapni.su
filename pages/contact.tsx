@@ -1,3 +1,4 @@
+import Avatar from "@components/avatar";
 import BasePageLayout from "@components/basePageLayout";
 import { en, ru } from "@locales/index";
 import Link from "next/link";
@@ -16,6 +17,8 @@ export default function ContactPage() {
 
   return (
     <BasePageLayout title={t.contactTitle}>
+      <Avatar />
+
       <h1>{t.name}</h1>
 
       <div>

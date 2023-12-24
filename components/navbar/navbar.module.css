@@ -69,11 +69,11 @@
   display: inline-block;
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .title {
     display: none;
   }
-} */
+}
 
 .languageSwitcher {
   color: var(--text-2);

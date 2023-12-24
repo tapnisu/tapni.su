@@ -5,3 +5,11 @@
   justify-content: center;
   width: 100%;
 }
+
+.socials {
+  display: flex;
+}
+
+.socialIcon {
+  margin: 2px;
+}
