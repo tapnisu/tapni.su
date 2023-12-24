@@ -29,7 +29,9 @@ function themeIcon(theme?: string) {
   }
 }
 
-export default function ThemeSwitch() {
+export default function ThemeSwitch(
+  props: React.HTMLAttributes<HTMLDivElement>
+) {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
 
@@ -41,8 +43,9 @@ export default function ThemeSwitch() {
 
   return (
     <div
-      className={styles.themeSwitch}
+      className={`${styles.themeSwitch} ${props.className}`}
       onClick={() => setTheme(switchTheme(theme))}
+      {...props}
     >
       {themeIcon(theme)}
     </div>

@@ -13,12 +13,14 @@ import {
 } from "react-icons/fa";
 import styles from "./introduction.module.css";
 
-export default function Introduction() {
+export default function Introduction(
+  props: React.HTMLAttributes<HTMLDivElement>
+) {
   const router = useRouter();
   const t = router.locale === "en" ? en : ru;
 
   return (
-    <div className={styles.introduction}>
+    <div className={`${styles.introduction} ${props.className}`} {...props}>
       <Avatar />
 
       <div className="text-center">

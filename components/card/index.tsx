@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./card.module.css";
 
-export interface CardProps {
+export interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
   title: string;
   image?: string | StaticImport;
   url?: string;
@@ -11,19 +11,13 @@ export interface CardProps {
   comments?: string;
 }
 
-export default function Card({
-  title,
-  image,
-  url,
-  description,
-  comments,
-}: CardProps) {
+export default function Card(props: CardProps) {
   return (
     <div className={styles.card}>
-      {image ? (
+      {props.image ? (
         <Image
-          src={image}
-          alt={title}
+          src={props.image}
+          alt={props.title}
           className={styles.image}
           width={768}
           placeholder="blur"
@@ -33,11 +27,17 @@ export default function Card({
       )}
 
       <div className={styles.text}>
-        <div>{url ? <Link href={url}>{title}</Link> : <>{title}</>}</div>
+        <div>
+          {props.url ? (
+            <Link href={props.url}>{props.title}</Link>
+          ) : (
+            <>{props.title}</>
+          )}
+        </div>
 
-        <p>{description}</p>
+        <p>{props.description}</p>
 
-        <div className={styles.comments}>{comments}</div>
+        <div className={styles.comments}>{props.comments}</div>
       </div>
     </div>
   );

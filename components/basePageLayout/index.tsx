@@ -5,22 +5,18 @@ import Footer from "../footer";
 import Navbar from "../navbar";
 import styles from "./basePageLayout.module.css";
 
-export interface BaseLayoutProps {
+export interface BaseLayoutProps extends React.HTMLAttributes<HTMLDivElement> {
   title?: string;
   description?: string;
   children: React.ReactNode;
 }
 
-export default function BasePageLayout({
-  title,
-  description,
-  children,
-}: BaseLayoutProps) {
+export default function BasePageLayout(props: BaseLayoutProps) {
   const router = useRouter();
   const t = router.locale === "en" ? en : ru;
 
-  const titleFull = title ? `${title} / ${t.name}` : t.name;
-  const descriptionFull = description ?? t.aboutText;
+  const titleFull = props.title ? `${props.title} / ${t.name}` : t.name;
+  const descriptionFull = props.description ?? t.aboutText;
 
   return (
     <>
@@ -34,10 +30,10 @@ export default function BasePageLayout({
         <meta name="og:description" content={descriptionFull} />
       </Head>
 
-      <div className={styles.main}>
+      <div className={`${styles.main} ${props.className}`} {...props}>
         <Navbar />
         <div className={styles.content}>
-          <div className={styles.width}>{children}</div>
+          <div className={styles.width}>{props.children}</div>
         </div>
         <Footer />
       </div>

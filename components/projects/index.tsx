@@ -10,7 +10,7 @@ import { useRouter } from "next/router";
 
 import styles from "./projects.module.css";
 
-export default function Projects() {
+export default function Projects(props: React.HTMLAttributes<HTMLDivElement>) {
   const router = useRouter();
   const t = router.locale === "en" ? en : ru;
 
@@ -58,7 +58,7 @@ export default function Projects() {
   ];
 
   return (
-    <div>
+    <div {...props}>
       <h2 className="text-center">{t.projectsTitle}</h2>
 
       <div className={styles.projects}>

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import styles from "./avatar.module.css";
 
-export default function Avatar() {
+export default function Avatar(props: React.HTMLAttributes<HTMLElement>) {
   return (
     <Image
       src={avatar}
@@ -13,6 +13,7 @@ export default function Avatar() {
       className={styles.avatar}
       priority
       placeholder="blur"
+      {...props}
     />
   );
 }

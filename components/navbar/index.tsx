@@ -4,12 +4,12 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import styles from "./navbar.module.css";
 
-export default function Navbar() {
+export default function Navbar(props: React.HTMLAttributes<HTMLElement>) {
   const router = useRouter();
   const t = router.locale === "en" ? en : ru;
 
   return (
-    <nav className={styles.navbarContainer}>
+    <nav className={`${styles.navbarContainer} ${props.className}`} {...props}>
       <div className={styles.navbar}>
         <div className={`${styles.title} ${styles.linksContainer}`}>
           <Link className={styles.link} href="/">
