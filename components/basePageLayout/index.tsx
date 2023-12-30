@@ -32,9 +32,11 @@ export default function BasePageLayout(props: BaseLayoutProps) {
 
       <div className={`${styles.main} ${props.className}`} {...props}>
         <Navbar />
-        <div className={styles.content}>
+
+        <main className={styles.content}>
           <div className={styles.width}>{props.children}</div>
-        </div>
+        </main>
+
         <Footer />
       </div>
     </>
