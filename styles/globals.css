@@ -15,7 +15,7 @@
 
   --bg: #e0e7f7;
   --bg-transparent: rgba(224, 231, 247, 0.5);
-  --bg-2: #cbd8e8;
+  --bg-2: #ffffff;
   --bg-3: #b0c1e8;
 
   --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
@@ -23,7 +23,7 @@
 }
 
 [data-theme="dark"] {
-  --text: #e0e7f7;
+  --text: #ffffff;
   --text-2: #cbd8e8;
 
   --bg: #0f0f14;
@@ -48,7 +48,7 @@ button {
   font-family: inherit;
 
   color: var(--text);
-  background: var(--bg-2);
+  background: var(--bg-3);
 
   font-weight: 600;
 
@@ -66,7 +66,7 @@ button {
 
   &:hover {
     cursor: pointer;
-    background: var(--bg-3);
+    background: var(--accent);
   }
 }
 

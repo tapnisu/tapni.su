@@ -30,11 +30,11 @@ export default function BasePageLayout(props: BaseLayoutProps) {
         <meta name="og:description" content={descriptionFull} />
       </Head>
 
-      <div className={`${styles.main} ${props.className}`} {...props}>
+      <div className={`${styles.basePageLayout} ${props.className}`} {...props}>
         <Navbar />
 
-        <main className={styles.content}>
-          <div className={styles.width}>{props.children}</div>
+        <main className={styles.main}>
+          <div className={styles.content}>{props.children}</div>
         </main>
 
         <Footer />

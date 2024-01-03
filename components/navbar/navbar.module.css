@@ -61,7 +61,7 @@
     box-shadow: var(--box-shadow);
 
     color: var(--text);
-    background: var(--bg-3);
+    background: var(--accent);
   }
 }
 
