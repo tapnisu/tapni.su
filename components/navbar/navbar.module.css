@@ -8,7 +8,7 @@
 }
 
 .navbar {
-  margin: var(--gap-half);
+  margin: var(--gap);
 
   background: var(--bg-2);
   border-radius: var(--border-radius);
@@ -38,10 +38,7 @@
   border-radius: 9999px;
   display: inline-block;
 
-  padding-left: var(--gap);
-  padding-right: var(--gap);
-  padding-top: var(--gap-half);
-  padding-bottom: var(--gap-half);
+  padding: var(--gap-half) var(--gap);
 
   color: var(--text-2);
 
