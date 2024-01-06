@@ -53,7 +53,7 @@ export default function Projects(props: React.HTMLAttributes<HTMLDivElement>) {
       url: "https://leshapomogi.ru/",
       image: leshapomogiImage,
       description: t.projectsData.leshapomogi.description,
-      buildUsing: ["TypeScript", "Preact", "Lume", "Pico.css"],
+      buildUsing: ["TypeScript", "Preact", "FreshJS", "TailwindCSS"],
     },
   ];
 
