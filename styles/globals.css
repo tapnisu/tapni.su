@@ -11,9 +11,9 @@
   --text: #0f0f14;
   --text-2: #101b3b;
 
-  --accent: #2e5db4;
+  --accent: #68cefd;
 
-  --bg: #D2D7EF;
+  --bg: #f5f6fa;
   --bg-transparent: rgba(255, 255, 255, 0.5);
   --bg-2: #ffffff;
 
@@ -25,9 +25,9 @@
   --text: #ffffff;
   --text-2: #cbd8e8;
 
-  --bg: #06070F;
+  --bg: #06070f;
   --bg-transparent: rgba(15, 15, 20, 0.5);
-  --bg-2: #0B0E1E;
+  --bg-2: #0b0e1e;
 }
 
 ::selection {
