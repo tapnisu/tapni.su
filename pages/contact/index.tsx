@@ -60,7 +60,6 @@ export default function ContactPage() {
                   key={info.name}
                   style={{
                     display: "flex",
-                    flexWrap: "nowrap",
                     flexDirection: "row",
                     textDecoration: "none",
                   }}

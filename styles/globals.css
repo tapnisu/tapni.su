@@ -14,7 +14,6 @@
   --accent: #68cefd;
 
   --bg: #f5f6fa;
-  --bg-transparent: rgba(255, 255, 255, 0.5);
   --bg-2: #ffffff;
 
   --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
@@ -26,7 +25,6 @@
   --text-2: #cbd8e8;
 
   --bg: #06070f;
-  --bg-transparent: rgba(15, 15, 20, 0.5);
   --bg-2: #0b0e1e;
 }
 
@@ -97,7 +95,6 @@ u {
   display: flex;
 
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
