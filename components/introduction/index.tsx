@@ -25,7 +25,7 @@ export default function Introduction(
         </h2>
       </div>
 
-      <Link href="/contact" className="gap-half">
+      <Link href="/contact">
         <button>{t.contactTitle}</button>
       </Link>
     </div>

@@ -99,34 +99,10 @@ u {
   align-items: center;
 }
 
-.gap-half {
-  margin: var(--gap-half);
-}
-
 li {
   margin: var(--gap-half);
 }
 
 .text-center {
   text-align: center;
-}
-
-select {
-  appearance: none;
-
-  background-color: var(--bg-2);
-
-  border: none;
-  border-radius: 9999px;
-
-  padding: var(--gap-half);
-
-  &::after {
-    background-color: var(--bg-2);
-
-    border: none;
-    border-radius: 9999px;
-
-    padding: var(--gap-half);
-  }
 }

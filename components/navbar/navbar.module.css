@@ -32,7 +32,7 @@
 
   &::-webkit-scrollbar-thumb {
     background-color: var(--accent);
-    border-radius: 0 0 9999px 9999px;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
   }
 }
 
@@ -44,7 +44,7 @@
 }
 
 .link {
-  border-radius: 9999px;
+  border-radius: var(--border-radius);
   display: inline-block;
 
   padding: var(--gap-half) var(--gap);
