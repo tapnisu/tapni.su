@@ -20,7 +20,7 @@ export default function Error(props: ErrorProps) {
       <h2>
         {props.status == 404
           ? t.error.error404
-          : props.status || t.error.unknown}
+          : props.status ?? t.error.unknown}
       </h2>
 
       <Link href="/">

@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 const config = {
-  siteUrl: process.env.SITE_URL || "https://tapni.su",
+  siteUrl: process.env.SITE_URL ?? "https://tapni.su",
   generateRobotsTxt: true,
   sitemapSize: 7000,
   changefreq: "weekly",

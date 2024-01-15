@@ -13,7 +13,7 @@ export default function CookiePage() {
   }
 
   useEffect(() => {
-    setCookies(Number(localStorage.getItem("cookieCount")) || 0);
+    setCookies(Number(localStorage.getItem("cookieCount")) ?? 0);
   }, []);
 
   return (
