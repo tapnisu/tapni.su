@@ -31,6 +31,11 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/telegram-channel",
+        destination: "https://t.me/tapnisusbox",
+        permanent: true,
+      },
+      {
         source: "/discord",
         destination: "https://discord.com/users/586128640136445964",
         permanent: true,
