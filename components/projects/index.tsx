@@ -55,13 +55,13 @@ export default function Projects(props: React.HTMLAttributes<HTMLDivElement>) {
       description: t.projectsData.leshapomogi.description,
       buildUsing: ["TypeScript", "Preact", "FreshJS", "TailwindCSS"],
     },
-    {
-      name: "Tapciify GUI",
-      url: "https://github.com/tapciify/tapciify-gui",
-      image: tapciifyWebImage,
-      description: t.projectsData.tapciifyGui.description,
-      buildUsing: ["Tauri", "TypeScript", "Rust", "Solid", "Vite", "Pico.css"],
-    },
+    // {
+    //   name: "Tapciify GUI",
+    //   url: "https://github.com/tapciify/tapciify-gui",
+    //   image: tapciifyWebImage,
+    //   description: t.projectsData.tapciifyGui.description,
+    //   buildUsing: ["Tauri", "TypeScript", "Rust", "Solid", "Vite", "Pico.css"],
+    // },
   ];
 
   return (
