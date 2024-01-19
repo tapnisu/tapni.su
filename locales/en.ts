@@ -30,6 +30,9 @@ export const en = {
     tapciifyWeb: {
       description: "Website to convert your images to ASCII art",
     },
+    tapciifyGui: {
+      description: "Convert your images to ASCII art",
+    },
     tapciify: {
       description:
         "CLI tool that can let you view images/videos in terminal as ASCII",
