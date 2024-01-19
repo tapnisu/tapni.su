@@ -21,8 +21,6 @@ jobs:
           node-version: "lts/*"
           cache: "pnpm"
 
-      - run: npm install -g pnpm
-
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
