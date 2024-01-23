@@ -15,7 +15,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
-    "react-typed": "^1.2.0",
+    "react-typed": "^2.0.8",
     "sharp": "^0.33.2"
   },
   "devDependencies": {
