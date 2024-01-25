@@ -22,16 +22,14 @@ export default function Card(props: CardProps) {
           width={768}
           placeholder="blur"
         />
-      ) : (
-        <></>
-      )}
+      ) : null}
 
       <div className={styles.text}>
         <div>
           {props.url ? (
             <Link href={props.url}>{props.title}</Link>
           ) : (
-            <>{props.title}</>
+            props.title
           )}
         </div>
 
