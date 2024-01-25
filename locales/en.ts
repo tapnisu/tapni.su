@@ -1,7 +1,5 @@
 export const en = {
   name: "Aleksei Rybin",
-  description:
-    "Oh, hi! I'm Aleksei Rybin, a programmer from Russia using Rust and Typescript.",
   username: "tapnisu",
 
   homeTitle: "Home",
