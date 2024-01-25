@@ -30,7 +30,7 @@ function themeIcon(theme?: string) {
 }
 
 export default function ThemeSwitch(
-  props: React.HTMLAttributes<HTMLDivElement>
+  props: React.HTMLAttributes<HTMLDivElement>,
 ) {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();

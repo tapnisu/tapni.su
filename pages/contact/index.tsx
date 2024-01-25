@@ -66,7 +66,7 @@ export default function ContactPage() {
                 >
                   <b>{info.icon}</b> <pre> </pre> {info.name}
                 </Link>
-              )
+              ),
             )}
           </div>
         </div>

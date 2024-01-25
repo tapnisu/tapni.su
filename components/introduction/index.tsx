@@ -7,7 +7,7 @@ import { useRouter } from "next/router";
 import styles from "./introduction.module.css";
 
 export default function Introduction(
-  props: React.HTMLAttributes<HTMLDivElement>
+  props: React.HTMLAttributes<HTMLDivElement>,
 ) {
   const router = useRouter();
   const t = router.locale === "en" ? en : ru;
