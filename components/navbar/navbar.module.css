@@ -1,6 +1,4 @@
 .navbarContainer {
-  position: sticky;
-  top: 0px;
   width: 100%;
 
   display: flex;
