@@ -24,8 +24,8 @@ dependencies:
     specifier: ^5.0.1
     version: 5.0.1(react@18.2.0)
   react-typed:
-    specifier: ^2.0.8
-    version: 2.0.8(react@18.2.0)
+    specifier: ^2.0.9
+    version: 2.0.9(react@18.2.0)
   sharp:
     specifier: ^0.33.2
     version: 0.33.2
@@ -2452,8 +2452,8 @@ packages:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
     dev: true
 
-  /react-typed@2.0.8(react@18.2.0):
-    resolution: {integrity: sha512-kUmIj3okF66yPwC81ucA2sHOzXasg6L7mJ+5+rjlAQ1aXQZF7HVsap7pvJkJKMWZeDRzus/8stLXCd5ODh4u2g==}
+  /react-typed@2.0.9(react@18.2.0):
+    resolution: {integrity: sha512-8fXJwTMZD8B60yxfTM0Uy7/x/NTnOjCVVYEICxL7NhqBze8LpdFmq7tpypGisXNLpvIozWoT5o59Qp44MlsQUA==}
     peerDependencies:
       react: '>16.8.0'
     dependencies:
