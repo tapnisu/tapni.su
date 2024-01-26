@@ -106,3 +106,31 @@ li {
 .text-center {
   text-align: center;
 }
+
+select {
+  color: var(--text-2);
+  background-color: var(--bg);
+
+  padding: var(--gap-half);
+
+  border: none;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+
+  box-shadow: var(--box-shadow);
+
+  cursor: pointer;
+
+  font-family: var(--font-inter);
+
+  outline: none;
+}
+
+option {
+  color: var(--text-2);
+  background-color: var(--bg);
+
+  border: none;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+}

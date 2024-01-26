@@ -8,6 +8,8 @@ export const en = {
   contactTitle: "Contact",
   aboutTitle: "About me",
 
+  themes: { system: "System", light: "Light", dark: "Dark" },
+
   aboutText:
     "I am a 16-years-old developer from Russia. I started my programming journey in 2018. My first programming language was C#. Nowadays I usually use Rust and Typescript. I'll be glad to work with you!",
 

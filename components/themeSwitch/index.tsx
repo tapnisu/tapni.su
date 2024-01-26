@@ -1,39 +1,16 @@
+import { en, ru } from "@locales/index";
 import { useTheme } from "next-themes";
+import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import { FaMobile, FaMoon, FaSun } from "react-icons/fa";
-import styles from "./themeSwitch.module.css";
-
-function switchTheme(theme?: string) {
-  switch (theme) {
-    case "system":
-      return "dark";
-
-    case "dark":
-      return "light";
-
-    default:
-      return "system";
-  }
-}
-
-function themeIcon(theme?: string) {
-  switch (theme) {
-    case "light":
-      return <FaSun />;
-
-    case "dark":
-      return <FaMoon />;
-
-    default:
-      return <FaMobile />;
-  }
-}
 
 export default function ThemeSwitch(
-  props: React.HTMLAttributes<HTMLDivElement>,
+  props: React.HTMLAttributes<HTMLSelectElement>
 ) {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
+
+  const router = useRouter();
+  const t = router.locale === "en" ? en : ru;
 
   useEffect(() => {
     setMounted(true);
@@ -42,12 +19,15 @@ export default function ThemeSwitch(
   if (!mounted) return null;
 
   return (
-    <div
-      className={`${styles.themeSwitch} ${props.className}`}
-      onClick={() => setTheme(switchTheme(theme))}
+    <select
+      name="theme"
+      value={theme}
+      onChange={(e) => setTheme(e.target.value)}
       {...props}
     >
-      {themeIcon(theme)}
-    </div>
+      <option value="system">{t.themes.system}</option>
+      <option value="light">{t.themes.light}</option>
+      <option value="dark">{t.themes.dark}</option>
+    </select>
   );
 }
