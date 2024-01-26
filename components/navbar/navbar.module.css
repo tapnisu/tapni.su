@@ -78,22 +78,3 @@
     display: none;
   }
 }
-
-.languageSwitcher {
-  color: var(--text-2);
-
-  padding-left: var(--gap);
-  padding-right: var(--gap);
-  padding-top: var(--gap-half);
-  padding-bottom: var(--gap-half);
-
-  > a {
-    color: inherit;
-
-    text-decoration: none;
-
-    &:hover {
-      color: var(--accent);
-    }
-  }
-}

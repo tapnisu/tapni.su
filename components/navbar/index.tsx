@@ -1,4 +1,5 @@
-import ThemeSwitch from "@components/themeSwitch";
+import LocaleSwitch from "@components/LocaleSwitch";
+import ThemeSwitch from "@components/ThemeSwitch";
 import { en, ru } from "@locales/index";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -27,15 +28,7 @@ export default function Navbar(props: React.HTMLAttributes<HTMLElement>) {
         </div>
 
         <div className={styles.linksContainer}>
-          <div className={styles.languageSwitcher}>
-            <Link href="" locale="en">
-              EN
-            </Link>
-            /
-            <Link href="" locale="ru">
-              RU
-            </Link>
-          </div>
+          <LocaleSwitch />
 
           <ThemeSwitch />
         </div>
