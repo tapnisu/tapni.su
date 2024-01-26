@@ -18,9 +18,8 @@
 
   font-weight: 600;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 
   overflow-x: auto;
 
@@ -39,6 +38,18 @@
   align-items: center;
 
   padding: var(--gap-half);
+}
+
+.linksContainer:nth-child(1) {
+  justify-self: start;
+}
+
+.linksContainer:nth-child(2) {
+  justify-self: center;
+}
+
+.linksContainer:nth-child(3) {
+  justify-self: end;
 }
 
 .link {
@@ -76,5 +87,13 @@
 @media (max-width: 768px) {
   .title {
     display: none;
+  }
+
+  .navbar {
+    grid-template-columns: auto auto;
+  }
+
+  .linksContainer:nth-child(2) {
+    justify-self: start;
   }
 }
