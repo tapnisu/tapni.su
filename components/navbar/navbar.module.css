@@ -11,8 +11,6 @@
   background: var(--bg-2);
   border-radius: var(--border-radius);
 
-  box-shadow: var(--box-shadow);
-
   width: 100%;
   max-width: 768px;
 
@@ -73,8 +71,6 @@
   }
 
   &:hover {
-    box-shadow: var(--box-shadow);
-
     color: var(--text);
     background: var(--accent);
   }

@@ -8,24 +8,21 @@
   --blur-radius: 4px;
 
   /* Colors */
-  --text: #0f0f14;
-  --text-2: #101b3b;
+  --text: #0f0f0f;
+  --text-2: #606060;
 
   --accent: #68cefd;
 
-  --bg: #f5f6fa;
-  --bg-2: #ffffff;
-
-  --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
-    0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --bg: #ffffff;
+  --bg-2: #f2f2f2;
 }
 
 [data-theme="dark"] {
   --text: #ffffff;
-  --text-2: #cbd8e8;
+  --text-2: #aaa;
 
-  --bg: #06070f;
-  --bg-2: #0b0e1e;
+  --bg: #0f0f0f;
+  --bg-2: #272727;
 }
 
 ::selection {
@@ -52,8 +49,6 @@ button {
 
   border-radius: var(--border-radius);
   border: none;
-
-  box-shadow: var(--box-shadow);
 
   transition-property: color, background-color, border-color,
     text-decoration-color, fill, stroke;
@@ -116,8 +111,6 @@ select {
   border: none;
   border-radius: var(--border-radius);
   font-weight: 600;
-
-  box-shadow: var(--box-shadow);
 
   cursor: pointer;
 
