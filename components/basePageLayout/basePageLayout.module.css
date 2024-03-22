@@ -21,10 +21,10 @@
 
 .content {
   max-width: 768px;
+}
 
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--gap);
+.content > * + * {
+  margin-top: var(--gap);
 }
 
 @media (max-width: 768px) {
