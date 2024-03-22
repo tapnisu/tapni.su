@@ -103,7 +103,7 @@ li {
 }
 
 select {
-  color: var(--text-2);
+  color: var(--text);
   background-color: var(--bg);
 
   padding: var(--gap-half);
@@ -120,7 +120,7 @@ select {
 }
 
 option {
-  color: var(--text-2);
+  color: var(--text);
   background-color: var(--bg);
 
   border: none;
