@@ -22,7 +22,7 @@ const nextConfig = {
       },
       {
         source: "/x",
-        destination: "https://twitter.com/tapnisu",
+        destination: "https://x.com/tapnisu",
         permanent: true,
       },
       {
@@ -31,8 +31,13 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/blog",
+        destination: "https://t.me/s/tapnisusbox",
+        permanent: true,
+      },
+      {
         source: "/telegram-channel",
-        destination: "https://t.me/tapnisusbox",
+        destination: "https://t.me/s/tapnisusbox",
         permanent: true,
       },
       {

@@ -8,6 +8,8 @@ export const en = {
   contactTitle: "Contact",
   aboutTitle: "About me",
 
+  blog: "Blog",
+
   themes: { system: "System", light: "Light", dark: "Dark" },
 
   aboutText:

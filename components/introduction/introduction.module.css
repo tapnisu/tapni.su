@@ -13,3 +13,7 @@
 .socialIcon {
   margin: 2px;
 }
+
+.buttons > * + * {
+  margin-left: var(--gap);
+}

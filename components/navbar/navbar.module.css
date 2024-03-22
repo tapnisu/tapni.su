@@ -50,6 +50,10 @@
   justify-self: end;
 }
 
+.linksContainer > * + * {
+  margin-left: var(--gap-half);
+}
+
 .link {
   border-radius: var(--border-radius);
   display: inline-block;
