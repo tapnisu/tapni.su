@@ -8,7 +8,7 @@ export const ru = {
   contactTitle: "Связаться",
   aboutTitle: "Обо мне",
 
-  blog: "Блог (в основном на английском)",
+  blog: "Telegram канад",
 
   themes: { system: "Системная", light: "Светлая", dark: "Тёмная" },
 
