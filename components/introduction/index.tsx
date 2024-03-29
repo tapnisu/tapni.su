@@ -29,9 +29,6 @@ export default function Introduction(
         <Link href="/contact">
           <button>{t.contactTitle}</button>
         </Link>
-        <Link href="/blog">
-          <button>{t.blog}</button>
-        </Link>
       </div>
     </div>
   );
