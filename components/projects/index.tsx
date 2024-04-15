@@ -59,7 +59,7 @@ export default function Projects(props: React.HTMLAttributes<HTMLDivElement>) {
 
   return (
     <div {...props}>
-      <h2 className="text-center">{t.projectsTitle}</h2>
+      <h2>{t.projectsTitle}</h2>
 
       <div className={styles.projects}>
         {projects?.map(({ name, image, url, description, buildUsing }) => (

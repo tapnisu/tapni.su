@@ -1,10 +1,10 @@
-import Avatar from "@components/avatar";
 import Link from "next/link";
 
 import { en, ru } from "@locales/index";
 import { useRouter } from "next/router";
 
 import styles from "./introduction.module.css";
+import { contacts } from "@lib/contact";
 
 export default function Introduction(
   props: React.HTMLAttributes<HTMLDivElement>
@@ -13,22 +13,24 @@ export default function Introduction(
   const t = router.locale === "en" ? en : ru;
 
   return (
-    <div className={`${styles.introduction} ${props.className}`} {...props}>
-      <Avatar />
-
-      <div className="text-center">
+    <div {...props}>
+      <div className={styles.title}>
         <h1>
-          {t.index.iAm} <u>{t.name}</u>
+          {t.index.iAm} <u>{t.name}</u> ({t.or} <u>{t.username}</u>)
         </h1>
-        <h2>
-          {t.index.alsoKnownAs} <u>{t.username}</u>
-        </h2>
       </div>
 
-      <div className={styles.buttons}>
-        <Link href="/contact">
-          <button>{t.contactTitle}</button>
-        </Link>
+      <div className={styles.about}>
+        <h2>{t.aboutTitle}</h2>
+        <p>{t.aboutText}</p>
+      </div>
+
+      <div className={styles.socials}>
+        {contacts.map((contact) => (
+          <Link href={contact.url} key={contact.name}>
+            {contact.icon}
+          </Link>
+        ))}
       </div>
     </div>
   );

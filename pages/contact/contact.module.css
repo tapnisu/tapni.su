@@ -5,3 +5,8 @@
   flex-direction: column;
   align-items: center;
 }
+
+.icon {
+  display: flex;
+  align-items: center;
+}

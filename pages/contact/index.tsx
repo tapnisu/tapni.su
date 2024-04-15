@@ -4,15 +4,9 @@ import Container from "@components/container";
 import { en, ru } from "@locales/index";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import {
-  FaDiscord,
-  FaGithub,
-  FaMailBulk,
-  FaTelegram,
-  FaTwitter,
-} from "react-icons/fa";
 
 import styles from "./contact.module.css";
+import { contacts } from "@lib/contact";
 
 export default function ContactPage() {
   const router = useRouter();
@@ -27,33 +21,7 @@ export default function ContactPage() {
           <h1>{t.name}</h1>
 
           <div>
-            {[
-              {
-                name: "Github",
-                url: "https://github.com/tapnisu",
-                icon: <FaGithub />,
-              },
-              {
-                name: "Discord: tapnisu",
-                url: "/discord",
-                icon: <FaDiscord />,
-              },
-              {
-                name: "Twitter",
-                url: "/twitter",
-                icon: <FaTwitter />,
-              },
-              {
-                name: "Telegram",
-                url: "/telegram",
-                icon: <FaTelegram />,
-              },
-              {
-                name: "Email: 0xalekseirybin@gmail.com",
-                url: "/email",
-                icon: <FaMailBulk />,
-              },
-            ]?.map(
+            {contacts?.map(
               (info: { name: string; url: string; icon: React.ReactNode }) => (
                 <Link
                   href={info.url}
@@ -63,10 +31,11 @@ export default function ContactPage() {
                     flexDirection: "row",
                     textDecoration: "none",
                   }}
+                  className={styles.icon}
                 >
-                  <b>{info.icon}</b> <pre> </pre> {info.name}
+                  {info.icon} <pre> </pre> {info.name}
                 </Link>
-              ),
+              )
             )}
           </div>
         </div>
