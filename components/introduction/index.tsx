@@ -27,7 +27,7 @@ export default function Introduction(
 
       <div className={styles.socials}>
         {contacts.map((contact) => (
-          <Link href={contact.url} key={contact.name}>
+          <Link href={contact.url} key={contact.name} title={contact.name}>
             {contact.icon}
           </Link>
         ))}
