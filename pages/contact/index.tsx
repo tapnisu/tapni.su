@@ -33,7 +33,7 @@ export default function ContactPage() {
               >
                 {info.icon} <pre> </pre> {info.name}
               </Link>
-            )
+            ),
           )}
         </div>
       </div>

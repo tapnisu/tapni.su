@@ -31,13 +31,11 @@ export default function BasePageLayout(props: BaseLayoutProps) {
       </Head>
 
       <div className={`${styles.basePageLayout} ${props.className}`} {...props}>
-        <Navbar />
-
-        <main className={styles.main}>
-          <div className={styles.content}>{props.children}</div>
-        </main>
-
-        <Footer />
+        <div className={styles.content}>
+          <Navbar />
+          <main className={styles.main}>{props.children}</main>
+          <Footer />
+        </div>
       </div>
     </>
   );

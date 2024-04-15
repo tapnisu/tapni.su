@@ -6,8 +6,6 @@
 }
 
 .navbar {
-  margin: var(--gap);
-
   background: var(--bg-2);
   border-radius: var(--border-radius);
 

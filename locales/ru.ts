@@ -17,8 +17,7 @@ export const ru = {
     "Я 16-летний разработчик из России. Я начал свой путь программирования в 2018 году. Моим первым языком программирования был C#. Сейчас я обычно использую Rust и Typescript. Буду рад поработать с вами!",
 
   footer: {
-    madeWith: "Создано с использованием NextJS",
-    sourceCodeOn: "Исходный код на ",
+    sourceCodeOn: "Исходный код",
   },
 
   error: {
@@ -26,16 +25,13 @@ export const ru = {
     unknown: "Что-то странное случилось",
   },
 
-  index: { iAm: "Я", alsoKnownAs: "Также известен как" },
+  index: { iAm: "Я" },
 
   projectsData: {
     madeWith: "Создано с использованием ",
     tapciifyWeb: {
       description:
         "Веб-сайт для преобразования ваших изображений в формат ASCII",
-    },
-    tapciifyGui: {
-      description: "Преобразуйте ваши изображения в формат ASCII изображение",
     },
     tapciify: {
       description:
@@ -49,9 +45,6 @@ export const ru = {
     },
     leshapomogi: {
       description: "Сайт с руководствами для моих одноклассников",
-    },
-    tapris: {
-      description: "Discord бот",
     },
   },
 };

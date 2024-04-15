@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 
 export default function LocaleSwitch(
-  props: React.HTMLAttributes<HTMLSelectElement>
+  props: React.HTMLAttributes<HTMLSelectElement>,
 ) {
   const router = useRouter();
 

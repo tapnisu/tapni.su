@@ -1,26 +1,22 @@
 .basePageLayout {
   color: var(--text);
-
   background: var(--bg);
 
   min-height: 100vh;
 
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.main {
-  padding: 0 var(--gap);
-
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .content {
-  max-width: 768px;
+  padding: var(--gap);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 768px;
+  min-height: 100%;
 }
 
 .content > * + * {
@@ -29,6 +25,6 @@
 
 @media (max-width: 768px) {
   .content {
-    max-width: 100vw;
+    width: 100%;
   }
 }

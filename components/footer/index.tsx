@@ -8,36 +8,25 @@ export default function Footer(props: React.HTMLAttributes<HTMLElement>) {
   const t = router.locale === "en" ? en : ru;
 
   return (
-    <footer
-      className={`${styles.footerContainer} ${props.className}`}
-      {...props}
-    >
-      <div className={styles.footer}>
-        <div className={styles.toSides}>
-          <div className={styles.links}>
-            <b className={styles.name}>
-              {t.name}{" "}
-              <Link href="/cookie" className={styles.cookie}>
-                🍪
-              </Link>
-            </b>
-            <Link href="/domains" className={styles.link}>
-              {t.domainsTitle}
-            </Link>
-            <Link href="/contact" className={styles.link}>
-              {t.contactTitle}
-            </Link>
-          </div>
+    <footer className={`${styles.footer} ${props.className}`} {...props}>
+      <div className={styles.inner}>
+        <b className={styles.name}>
+          {t.name}{" "}
+          <Link href="/cookie" className={styles.cookie}>
+            🍪
+          </Link>
+        </b>
 
-          <div>
-            <p>{t.footer.madeWith}</p>
-
-            <p>
+        <ul className={styles.links}>
+          <li>
+            <Link href="/contact">{t.contactTitle}</Link>
+          </li>
+          <li>
+            <Link href="https://github.com/tapnisu/tapni.su/">
               {t.footer.sourceCodeOn}
-              <Link href="https://github.com/tapnisu/website/">Github</Link>
-            </p>
-          </div>
-        </div>
+            </Link>
+          </li>
+        </ul>
       </div>
     </footer>
   );

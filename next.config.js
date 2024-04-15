@@ -60,6 +60,11 @@ const nextConfig = {
         destination: "/contact",
         permanent: true,
       },
+      {
+        source: "/domains",
+        destination: "/projects",
+        permanent: true,
+      },
     ];
   },
 };
