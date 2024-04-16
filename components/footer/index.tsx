@@ -2,6 +2,8 @@ import { en, ru } from "@locales/index";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import styles from "./footer.module.css";
+import LocaleSwitch from "@components/LocaleSwitch";
+import ThemeSwitch from "@components/ThemeSwitch";
 
 export default function Footer(props: React.HTMLAttributes<HTMLElement>) {
   const router = useRouter();
@@ -27,6 +29,11 @@ export default function Footer(props: React.HTMLAttributes<HTMLElement>) {
             </Link>
           </li>
         </ul>
+
+        <div className={styles.buttonsContainer}>
+          <LocaleSwitch />
+          <ThemeSwitch />
+        </div>
       </div>
     </footer>
   );

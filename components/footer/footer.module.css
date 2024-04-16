@@ -28,3 +28,7 @@
     color: var(--accent);
   }
 }
+
+.buttonsContainer > * + * {
+  margin-left: var(--gap-half);
+}

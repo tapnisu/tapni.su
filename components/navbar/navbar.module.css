@@ -1,32 +1,12 @@
-.navbarContainer {
-  width: 100%;
-
-  display: flex;
-  justify-content: center;
-}
-
 .navbar {
   background: var(--bg-2);
   border-radius: var(--border-radius);
 
   width: 100%;
-  max-width: 768px;
-
   font-weight: 600;
 
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-
-  overflow-x: auto;
-
-  &::-webkit-scrollbar {
-    height: 5px;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: var(--accent);
-    border-radius: 0 0 var(--border-radius) var(--border-radius);
-  }
+  grid-template-columns: 1fr 1fr;
 }
 
 .linksContainer {
@@ -41,10 +21,6 @@
 }
 
 .linksContainer:nth-child(2) {
-  justify-self: center;
-}
-
-.linksContainer:nth-child(3) {
   justify-self: end;
 }
 
