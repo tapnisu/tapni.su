@@ -1,35 +1,41 @@
 import {
-  FaDiscord,
-  FaGithub,
-  FaMailBulk,
-  FaTelegram,
-  FaTwitter,
-} from "react-icons/fa";
+  BsTwitterX,
+  BsTelegram,
+  BsGithub,
+  BsDiscord,
+  BsPencilFill,
+  BsEnvelopeFill,
+} from "react-icons/bs";
 
 export const contacts = [
   {
     name: "Github",
     url: "https://github.com/tapnisu",
-    icon: <FaGithub />,
+    icon: <BsGithub />,
   },
   {
     name: "Discord: tapnisu",
     url: "/discord",
-    icon: <FaDiscord />,
+    icon: <BsDiscord />,
   },
   {
     name: "Twitter",
     url: "/twitter",
-    icon: <FaTwitter />,
+    icon: <BsTwitterX />,
   },
   {
     name: "Telegram",
     url: "/telegram",
-    icon: <FaTelegram />,
+    icon: <BsTelegram />,
   },
   {
     name: "Email: 0xalekseirybin@gmail.com",
     url: "/email",
-    icon: <FaMailBulk />,
+    icon: <BsEnvelopeFill />,
+  },
+  {
+    name: "Telegram channel",
+    url: "/blog",
+    icon: <BsPencilFill />,
   },
 ];
