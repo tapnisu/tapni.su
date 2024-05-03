@@ -65,6 +65,11 @@ const nextConfig = {
         destination: "/projects",
         permanent: true,
       },
+      {
+        source: "/projects",
+        destination: "/#projects",
+        permanent: true,
+      },
     ];
   },
 };

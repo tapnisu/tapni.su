@@ -19,7 +19,7 @@ export default function Navbar(props: React.HTMLAttributes<HTMLElement>) {
         <Link className={styles.link} href="/">
           {t.homeTitle}
         </Link>
-        <Link className={styles.link} href="/projects">
+        <Link className={styles.link} href="/#projects">
           {t.projectsTitle}
         </Link>
       </div>

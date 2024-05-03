@@ -6,7 +6,7 @@ export default function HomePage() {
   return (
     <BasePageLayout>
       <Introduction />
-      <Projects />
+      <Projects id="projects" />
     </BasePageLayout>
   );
 }
