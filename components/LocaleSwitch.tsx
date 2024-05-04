@@ -8,6 +8,7 @@ export default function LocaleSwitch(
   return (
     <select
       name="locale"
+      aria-label="locale"
       value={router.locale}
       onChange={(e) => router.push("", "", { locale: e.target.value })}
       {...props}

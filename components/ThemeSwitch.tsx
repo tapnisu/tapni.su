@@ -21,6 +21,7 @@ export default function ThemeSwitch(
   return (
     <select
       name="theme"
+      aria-label="theme"
       value={theme}
       onChange={(e) => setTheme(e.target.value)}
       {...props}
