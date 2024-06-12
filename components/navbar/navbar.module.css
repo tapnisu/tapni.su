@@ -48,7 +48,14 @@
     color: inherit;
   }
 
-  &:hover {
+  &:active {
+    color: var(--text);
+    background: var(--accent);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .link:hover {
     color: var(--text);
     background: var(--accent);
   }

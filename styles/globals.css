@@ -55,8 +55,15 @@ button {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 
-  &:hover {
-    cursor: pointer;
+  cursor: pointer;
+
+  &:active {
+    background: var(--accent);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  button:hover {
     background: var(--accent);
   }
 }
@@ -72,7 +79,13 @@ a {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 
-  &:hover {
+  &:active {
+    color: var(--accent);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  a:hover {
     color: var(--accent);
   }
 }
