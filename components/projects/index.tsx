@@ -24,7 +24,7 @@ export default function Projects(props: React.HTMLAttributes<HTMLDivElement>) {
     },
     {
       name: "tapciify",
-      url: "https://github.com/tapciify/tapciify",
+      url: "https://github.com/tapnisu/tapciify",
       image: tapciifyImage,
       description: t.projectsData.tapciify.description,
       buildUsing: ["Rust"],
@@ -53,7 +53,7 @@ export default function Projects(props: React.HTMLAttributes<HTMLDivElement>) {
       url: "https://leshapomogi.ru",
       image: leshapomogiImage,
       description: t.projectsData.leshapomogi.description,
-      buildUsing: ["TypeScript", "Preact", "FreshJS", "TailwindCSS"],
+      buildUsing: ["TypeScript", "Preact", "FreshJS", "TailwindCSS", "Deno"],
     },
   ];
 
