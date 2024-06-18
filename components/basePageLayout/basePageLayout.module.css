@@ -9,7 +9,7 @@
 }
 
 .content {
-  padding: var(--gap);
+  padding: 0 var(--gap);
 
   display: flex;
   flex-direction: column;

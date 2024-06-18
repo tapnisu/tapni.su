@@ -1,9 +1,7 @@
 .footer {
   background: var(--bg-2);
-  border-radius: var(--border-radius);
-
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
   color: var(--text-2);
-
   width: 100%;
 }
 
