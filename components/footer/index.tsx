@@ -10,29 +10,28 @@ export default function Footer(props: React.HTMLAttributes<HTMLElement>) {
   const t = router.locale === "en" ? en : ru;
 
   return (
-    <footer className={`${styles.footer} ${props.className}`} {...props}>
-      <div className={styles.inner}>
-        <b className={styles.name}>
-          {t.name}{" "}
-          <Link href="/cookie" className={styles.cookie}>
-            🍪
-          </Link>
-        </b>
-
-        <ul className={styles.links}>
-          <li>
-            <Link href="/contact">{t.contactTitle}</Link>
-          </li>
-          <li>
-            <Link href="https://github.com/tapnisu/tapni.su/">
-              {t.footer.sourceCodeOn}
+    <footer {...props}>
+      <div className={styles.footer}>
+        <div className={styles.inner}>
+          <b className={styles.name}>
+            {t.name}{" "}
+            <Link href="/cookie" className={styles.cookie}>
+              🍪
             </Link>
-          </li>
-        </ul>
+          </b>
 
-        <div className={styles.buttonsContainer}>
-          <LocaleSwitch />
-          <ThemeSwitch />
+          <ul className={styles.links}>
+            <li>
+              <Link href="https://github.com/tapnisu/tapni.su/">
+                {t.footer.sourceCodeOn}
+              </Link>
+            </li>
+          </ul>
+
+          <div className={styles.buttonsContainer}>
+            <LocaleSwitch />
+            <ThemeSwitch />
+          </div>
         </div>
       </div>
     </footer>

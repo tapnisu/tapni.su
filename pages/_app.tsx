@@ -1,4 +1,5 @@
 import "@styles/globals.css";
+import "normalize.css";
 import { ThemeProvider } from "next-themes";
 import type { AppProps } from "next/app";
 import { Inter } from "next/font/google";

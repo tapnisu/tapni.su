@@ -8,20 +8,22 @@ export default function Navbar(props: React.HTMLAttributes<HTMLElement>) {
   const t = router.locale === "en" ? en : ru;
 
   return (
-    <nav className={`${styles.navbar} ${props.className}`} {...props}>
-      <div className={`${styles.title} ${styles.linksContainer}`}>
-        <Link className={styles.link} href="/">
-          {t.name}
-        </Link>
-      </div>
+    <nav {...props}>
+      <div className={styles.navbar}>
+        <div className={`${styles.title} ${styles.linksContainer}`}>
+          <Link className={styles.link} href="/">
+            {t.name}
+          </Link>
+        </div>
 
-      <div className={styles.linksContainer}>
-        <Link className={styles.link} href="/">
-          {t.homeTitle}
-        </Link>
-        <Link className={styles.link} href="/projects">
-          {t.projectsTitle}
-        </Link>
+        <div className={styles.linksContainer}>
+          <Link className={styles.link} href="/">
+            {t.homeTitle}
+          </Link>
+          <Link className={styles.link} href="/projects">
+            {t.projectsTitle}
+          </Link>
+        </div>
       </div>
     </nav>
   );

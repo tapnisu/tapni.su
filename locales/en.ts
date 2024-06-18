@@ -1,14 +1,9 @@
 export const en = {
   name: "Aleksei Rybin",
-  username: "tapnisu",
 
   homeTitle: "Home",
-  projectsTitle: "Projects",
-  domainsTitle: "Domains",
-  contactTitle: "Contact",
+  projectsTitle: "My projects",
   aboutTitle: "About me",
-
-  blog: "Blog",
 
   themes: { system: "System", light: "Light", dark: "Dark" },
 
@@ -24,8 +19,6 @@ export const en = {
     error404: "Roses are red, violets are blue, page not found for you",
     unknown: "Something weird just happened",
   },
-
-  index: { iAm: "I'm" },
 
   projectsData: {
     madeWith: "Made with ",

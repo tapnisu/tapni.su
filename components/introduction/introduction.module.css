@@ -1,20 +1,19 @@
-.title {
-  opacity: 0;
-  animation: fadeInUp 1s ease forwards;
+.introduction {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.about {
-  opacity: 0;
-  animation: fadeInUp 1s ease forwards;
-  animation-delay: 0.25s;
+.icon {
+  display: flex;
+  align-items: center;
 }
 
 .socials {
   display: flex;
-
-  opacity: 0;
-  animation: fadeInUp 1s ease forwards;
-  animation-delay: 0.5s;
 }
 
 .socials > * > svg {
@@ -26,13 +25,6 @@
   margin-left: var(--gap-half);
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.title {
+  text-align: center;
 }

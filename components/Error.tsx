@@ -12,17 +12,20 @@ export default function Error(props: ErrorProps) {
   const t = router.locale === "en" ? en : ru;
 
   return (
-    <div className={`container-center ${props.className}`} {...props}>
-      <h1>{props.status}</h1>
-      <h2>
-        {props.status == 404
-          ? t.error.error404
-          : props.status ?? t.error.unknown}
-      </h2>
+    <div {...props}>
+      <div className="container-center">
+        <h1>
+          {props.status}
+          <br />
+          {props.status == 404
+            ? t.error.error404
+            : props.status ?? t.error.unknown}
+        </h1>
 
-      <Link href="/">
-        <button>{t.homeTitle}</button>
-      </Link>
+        <Link href="/">
+          <button>{t.homeTitle}</button>
+        </Link>
+      </div>
     </div>
   );
 }

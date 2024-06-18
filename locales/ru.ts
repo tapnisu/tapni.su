@@ -1,14 +1,9 @@
 export const ru = {
   name: "Алексей Рыбин",
-  username: "tapnisu",
 
   homeTitle: "Главная",
-  projectsTitle: "Проекты",
-  domainsTitle: "Домены",
-  contactTitle: "Связаться",
+  projectsTitle: "Мои проекты",
   aboutTitle: "Обо мне",
-
-  blog: "Telegram канал",
 
   themes: { system: "Системная", light: "Светлая", dark: "Тёмная" },
 
@@ -24,8 +19,6 @@ export const ru = {
     error404: "Вы потерялись",
     unknown: "Что-то странное случилось",
   },
-
-  index: { iAm: "Я" },
 
   projectsData: {
     madeWith: "Создано с использованием ",

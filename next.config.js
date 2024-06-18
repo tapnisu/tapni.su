@@ -57,7 +57,12 @@ const nextConfig = {
       },
       {
         source: "/c",
-        destination: "/contact",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/contact",
+        destination: "/",
         permanent: true,
       },
       {

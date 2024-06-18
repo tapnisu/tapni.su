@@ -7,27 +7,42 @@
   --border-radius: 12px;
   --blur-radius: 4px;
 
-  /* Colors */
-  --text: #0f0f0f;
-  --text-2: #606060;
+  --app-width: 768px;
 
+  --black: #0f0f0f;
+  --black-2: #272727;
+  --black-3: #606060;
   --accent: #68cefd;
+  --white: #ffffff;
+  --while-2: #f2f2f2;
 
-  --bg: #ffffff;
-  --bg-2: #f2f2f2;
+  /* Colors */
+  --text: var(--black);
+  --text-2: var(--black-3);
+
+  --bg: var(--white);
+  --bg-2: var(--while-2);
 }
 
 [data-theme="dark"] {
-  --text: #ffffff;
-  --text-2: #aaa;
+  --text: var(--white);
+  --text-2: var(--while-2);
 
-  --bg: #0f0f0f;
-  --bg-2: #272727;
+  --bg: var(--black);
+  --bg-2: var(--black-2);
+}
+
+h1,
+h2,
+h3,
+h5,
+h6 {
+  text-align: center;
 }
 
 ::selection {
   text-shadow: none;
-  background: var(--text);
+  background: var(--accent);
   color: var(--bg);
 }
 

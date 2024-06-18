@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
 export default function ThemeSwitch(
-  props: React.HTMLAttributes<HTMLSelectElement>,
+  props: React.HTMLAttributes<HTMLSelectElement>
 ) {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();

@@ -34,7 +34,7 @@ export const contacts = [
     icon: <BsEnvelopeFill />,
   },
   {
-    name: "Telegram channel",
+    name: "Telegram ch.",
     url: "/blog",
     icon: <BsPencilFill />,
   },

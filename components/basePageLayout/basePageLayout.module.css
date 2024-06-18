@@ -15,16 +15,16 @@
   flex-direction: column;
   justify-content: space-between;
 
-  width: 768px;
+  width: var(--app-width);
   min-height: 100%;
 }
 
-.content > * + * {
-  margin-top: var(--gap);
+.main {
+  margin: var(--gap) 0;
 }
 
-@media (max-width: 768px) {
-  .content {
-    width: 100%;
-  }
+.main > * + * {
+  border-top: 1px solid var(--black-3);
+  margin-top: var(--gap);
+  padding-top: var(--gap);
 }

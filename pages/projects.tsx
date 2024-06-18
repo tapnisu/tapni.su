@@ -9,7 +9,10 @@ export default function HomePage() {
 
   return (
     <BasePageLayout title={t.projectsTitle}>
-      <Projects />
+      <div>
+        <h2>{t.projectsTitle}</h2>
+        <Projects />
+      </div>
     </BasePageLayout>
   );
 }

@@ -10,7 +10,11 @@ import { useRouter } from "next/router";
 
 import styles from "./projects.module.css";
 
-export default function Projects(props: React.HTMLAttributes<HTMLDivElement>) {
+interface ProjectsAttributes extends React.HTMLAttributes<HTMLDivElement> {
+  amount?: number;
+}
+
+export default function Projects(props: ProjectsAttributes) {
   const router = useRouter();
   const t = router.locale === "en" ? en : ru;
 
@@ -23,12 +27,13 @@ export default function Projects(props: React.HTMLAttributes<HTMLDivElement>) {
       buildUsing: ["TypeScript", "Solid", "Vite", "Pico.css"],
     },
     {
-      name: "tapciify",
-      url: "https://github.com/tapnisu/tapciify",
-      image: tapciifyImage,
-      description: t.projectsData.tapciify.description,
-      buildUsing: ["Rust"],
+      name: "leshapomogi.ru",
+      url: "https://leshapomogi.ru",
+      image: leshapomogiImage,
+      description: t.projectsData.leshapomogi.description,
+      buildUsing: ["TypeScript", "Preact", "FreshJS", "TailwindCSS", "Deno"],
     },
+
     {
       name: "forwarding-discord-telegram",
       url: "https://github.com/tapnisu/forwarding-discord-telegram",
@@ -42,25 +47,23 @@ export default function Projects(props: React.HTMLAttributes<HTMLDivElement>) {
       buildUsing: ["Rust"],
     },
     {
+      name: "tapciify",
+      url: "https://github.com/tapnisu/tapciify",
+      image: tapciifyImage,
+      description: t.projectsData.tapciify.description,
+      buildUsing: ["Rust"],
+    },
+    {
       name: "tapni.su",
       url: "https://github.com/tapnisu/tapni.su",
       image: websiteImage,
       description: t.projectsData.website.description,
       buildUsing: ["TypeScript", "Next.js", "React"],
     },
-    {
-      name: "leshapomogi.ru",
-      url: "https://leshapomogi.ru",
-      image: leshapomogiImage,
-      description: t.projectsData.leshapomogi.description,
-      buildUsing: ["TypeScript", "Preact", "FreshJS", "TailwindCSS", "Deno"],
-    },
-  ];
+  ].slice(0, props.amount);
 
   return (
     <div {...props}>
-      <h2>{t.projectsTitle}</h2>
-
       <div className={styles.projects}>
         {projects?.map(({ name, image, url, description, buildUsing }) => (
           <Card

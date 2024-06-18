@@ -13,29 +13,30 @@ export interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
 
 export default function Card(props: CardProps) {
   return (
-    <div className={styles.card}>
-      {props.image ? (
-        <Image
-          src={props.image}
-          alt={props.title}
-          className={styles.image}
-          width={768}
-          placeholder="blur"
-        />
-      ) : null}
+    <div {...props}>
+      <div className={styles.card}>
+        {props.image ? (
+          <Image
+            src={props.image}
+            alt={props.title}
+            className={styles.image}
+            placeholder="blur"
+          />
+        ) : null}
 
-      <div className={styles.text}>
-        <div>
-          {props.url ? (
-            <Link href={props.url}>{props.title}</Link>
-          ) : (
-            props.title
-          )}
+        <div className={styles.text}>
+          <div>
+            {props.url ? (
+              <Link href={props.url}>{props.title}</Link>
+            ) : (
+              props.title
+            )}
+          </div>
+
+          <p>{props.description}</p>
+
+          <div className={styles.comments}>{props.comments}</div>
         </div>
-
-        <p>{props.description}</p>
-
-        <div className={styles.comments}>{props.comments}</div>
       </div>
     </div>
   );
