@@ -2,6 +2,7 @@ import BasePageLayout from "@components/basePageLayout";
 import Introduction from "@components/introduction";
 import Projects from "@components/projects";
 import { en, ru } from "@locales/index";
+import Link from "next/link";
 import { useRouter } from "next/router";
 
 export default function HomePage() {
@@ -12,7 +13,9 @@ export default function HomePage() {
     <BasePageLayout>
       <Introduction />
       <div>
-        <h2>{t.projectsTitle}</h2>
+        <h2>
+          <Link href="/projects">{t.projectsTitle}</Link>
+        </h2>
         <Projects amount={2} />
       </div>
       <div>
