@@ -39,4 +39,9 @@ export const en = {
       description: "Website with guides for my classmates",
     },
   },
+
+  bank: "Bank",
+  crypto: "Crypto",
+  donate: "Donate",
+  donateDescription: "In case you want to support me for some reason :p",
 };

@@ -22,6 +22,39 @@ export default function HomePage() {
         <h2>{t.aboutTitle}</h2>
         <p>{t.aboutText}</p>
       </div>
+      <div>
+        <h2>{t.donate}</h2>
+        <p>{t.donateDescription}</p>
+        <ul>
+          <li>
+            {t.bank}
+            <ul>
+              <li>
+                <Link href="https://www.tinkoff.ru/cf/7aqoWFFtbYJ">
+                  Tinkoff
+                </Link>
+              </li>
+            </ul>
+          </li>
+          <li>
+            {t.crypto}
+            <ul>
+              <li>
+                <p>
+                  eth: <code>0x39F2b5ac0B4d869D06E910e2ebBF610A940c56F0</code>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <Link href="https://t.me/send?start=IV0Fabrrj5rn">
+                    Crypto bot
+                  </Link>
+                </p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </BasePageLayout>
   );
 }

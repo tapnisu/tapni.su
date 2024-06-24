@@ -35,6 +35,7 @@
 h1,
 h2,
 h3,
+h4,
 h5,
 h6 {
   text-align: center;
@@ -118,8 +119,12 @@ u {
   align-items: center;
 }
 
+ul {
+  margin: var(--gap-half) 0;
+}
+
 li {
-  margin: var(--gap-half);
+  margin: var(--gap-half) 0;
 }
 
 .text-center {
