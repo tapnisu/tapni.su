@@ -28,6 +28,17 @@ export default function BasePageLayout(props: BaseLayoutProps) {
 
         <meta name="description" content={descriptionFull} />
         <meta name="og:description" content={descriptionFull} />
+
+        <meta
+          name="theme-color"
+          content="#ffffff"
+          media="(prefers-color-scheme: light)"
+        />
+        <meta
+          name="theme-color"
+          content="#0f0f0f"
+          media="(prefers-color-scheme: dark)"
+        />
       </Head>
 
       <div className={`${styles.basePageLayout} ${props.className}`} {...props}>
