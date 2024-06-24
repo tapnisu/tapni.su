@@ -41,11 +41,6 @@ export default function HomePage() {
             <ul>
               <li>
                 <p>
-                  eth: <code>0x39F2b5ac0B4d869D06E910e2ebBF610A940c56F0</code>
-                </p>
-              </li>
-              <li>
-                <p>
                   <Link href="https://t.me/send?start=IV0Fabrrj5rn">
                     Crypto bot
                   </Link>
