@@ -42,7 +42,7 @@ const nextConfig = {
       },
       {
         source: "/discord",
-        destination: "https://discord.com/users/586128640136445964",
+        destination: "https://discord.gg/SxNAVg8a",
         permanent: true,
       },
       {
