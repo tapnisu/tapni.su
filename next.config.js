@@ -52,7 +52,7 @@ const nextConfig = {
       },
       {
         source: "/email",
-        destination: "mailto:0xalekseirybin@gmail.com",
+        destination: "mailto:aleksei@tapni.su",
         permanent: true,
       },
       {
