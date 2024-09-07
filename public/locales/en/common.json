@@ -1,4 +1,15 @@
 {
   "name": "Aleksei Rybin",
-  "about": "I am a 16-years-old developer from Russia. I started my programming journey in 2018. My first programming language was C#. Nowadays I usually use Rust and Typescript. I'll be glad to work with you!"
+  "about": "I am a 16-years-old developer from Russia. I started my programming journey in 2018. My first programming language was C#. Nowadays I usually use Rust and Typescript. I'll be glad to work with you!",
+  "projects": {
+    "title": "Projects",
+    "madeWith": "Made with",
+    "descriptions": {
+      "tapciifyWeb": "Website to convert your images to ASCII art",
+      "tapciify": "CLI tool that can let you view images/videos in terminal as ASCII",
+      "forwardingDiscordTelegram": "Selfbot to send your incoming Discord messages to Telegram",
+      "website": "My portfolio website (you are here right now)",
+      "leshapomogi": "Website with guides for my classmates"
+    }
+  }
 }

@@ -4,7 +4,7 @@ import Projects from "~/components/projects";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Tapnisu" },
+    { title: "Projects / Tapnisu" },
     {
       name: "description",
       content:
@@ -18,10 +18,8 @@ export default function Index() {
 
   return (
     <>
-      <h1 className="mb-4 text-3xl font-bold">{t("name")} (tapnisu)</h1>
-      <p className="mb-4">{t("about")}</p>
-      <h2 className="mb-4 text-2xl font-bold">{t("projects.title")}</h2>
-      <Projects amount={2} />
+      <h1 className="mb-4 text-3xl font-bold">{t("projects.title")}</h1>
+      <Projects />
     </>
   );
 }
