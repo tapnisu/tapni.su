@@ -1,5 +1,4 @@
 import type { MetaFunction } from "@remix-run/node";
-import { Button } from "~/components/ui/button";
 import { useTranslation } from "react-i18next";
 
 export const meta: MetaFunction = () => {
@@ -13,9 +12,9 @@ export default function Index() {
   const { t } = useTranslation();
 
   return (
-    <div>
-      <h1>{t("name")}</h1>
-      <Button>hi</Button>
-    </div>
+    <>
+      <h1 className="mb-4 text-3xl font-bold">{t("name")} (tapnisu)</h1>
+      <p className="mb-4">{t("about")}</p>
+    </>
   );
 }

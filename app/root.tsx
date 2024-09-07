@@ -75,9 +75,13 @@ export function App() {
         <PreventFlashOnWrongTheme ssrTheme={Boolean(data.theme)} />
         <Links />
       </head>
-      <body className="font-sans">
-        <Navbar />
-        <Outlet />
+      <body className="flex justify-center font-sans">
+        <div className="w-full max-w-[768px]">
+          <Navbar />
+          <div className="p-4">
+            <Outlet />
+          </div>
+        </div>
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
