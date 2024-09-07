@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { randomBytes } from "node:crypto";
 import {
   Card,
   CardHeader,
@@ -19,6 +20,8 @@ interface Project {
   madeWith: string[];
 }
 
+const randomHashForGithub = randomBytes(8).toString("hex");
+
 export default function Projects(props: ProjectsAttributes) {
   const { t } = useTranslation();
 
@@ -26,39 +29,42 @@ export default function Projects(props: ProjectsAttributes) {
     {
       name: "Tapciify web",
       href: "https://tapciify.ru",
-      // image: "https://tapciify.ru/og.png",
+      image: `https://opengraph.githubassets.com/${randomHashForGithub}/tapnisu/tapciify.ru`,
       description: t("projects.descriptions.tapciifyWeb"),
       madeWith: ["TypeScript", "Solid", "Vite", "Pico.css"],
     },
     {
       name: "leshapomogi.ru",
       href: "https://leshapomogi.ru",
-      // image: "https://leshapomogi.ru/og.png",
+      image: "https://leshapomogi.ru/og.png",
       description: t("projects.descriptions.leshapomogi"),
       madeWith: ["TypeScript", "Preact", "FreshJS", "TailwindCSS", "Deno"],
     },
     {
       name: "forwarding-discord-telegram",
       href: "https://github.com/tapnisu/forwarding-discord-telegram",
+      image: `https://opengraph.githubassets.com/${randomHashForGithub}/tapnisu/forwarding-discord-telegram`,
       description: t("projects.descriptions.forwardingDiscordTelegram"),
       madeWith: ["TypeScript"],
     },
     {
       name: "dsc-tg-forwarder",
       href: "https://github.com/tapnisu/dsc-tg-forwarder",
+      image: `https://opengraph.githubassets.com/${randomHashForGithub}/tapnisu/dsc-tg-forwarder`,
       description: t("projects.descriptions.forwardingDiscordTelegram"),
       madeWith: ["Rust"],
     },
     {
       name: "tapciify",
       href: "https://github.com/tapnisu/tapciify",
+      image: `https://opengraph.githubassets.com/${randomHashForGithub}/tapnisu/tapciify`,
       description: t("projects.descriptions.tapciify"),
       madeWith: ["Rust"],
     },
     {
       name: "tapni.su",
       href: "https://github.com/tapnisu/tapni.su",
-      // image: "/og.png",
+      image: "https://tapni.su/og.png",
       description: t("projects.descriptions.website"),
       madeWith: ["TypeScript", "Remix", "React"],
     },
@@ -66,7 +72,7 @@ export default function Projects(props: ProjectsAttributes) {
 
   return (
     <div {...props}>
-      <div>
+      <div className="grid grid-cols-2 gap-4">
         {projects.map(({ name, image, href, description, madeWith }, index) => (
           <Card key={index}>
             {image ? (
