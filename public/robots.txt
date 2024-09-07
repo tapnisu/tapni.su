@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://tapni.su
-
-# Sitemaps
-Sitemap: https://tapni.su/sitemap.xml
