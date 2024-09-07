@@ -19,6 +19,7 @@ import {
   ThemeProvider,
   useTheme,
 } from "remix-themes";
+import { Navbar } from "./components/navbar";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
@@ -74,7 +75,8 @@ export function App() {
         <PreventFlashOnWrongTheme ssrTheme={Boolean(data.theme)} />
         <Links />
       </head>
-      <body>
+      <body className="font-sans">
+        <Navbar />
         <Outlet />
         <ScrollRestoration />
         <Scripts />
