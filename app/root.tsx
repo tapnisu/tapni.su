@@ -71,6 +71,14 @@ export function App() {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="theme-color" content="#688ce2" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <meta name="og:image" content="https://tapni.su/og.png" />
+        <meta name="og:url" content="https://tapni.su/" />
+        <meta name="twitter:image" content="https://tapni.su/og.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@tapnisu" />
         <Meta />
         <PreventFlashOnWrongTheme ssrTheme={Boolean(data.theme)} />
         <Links />
