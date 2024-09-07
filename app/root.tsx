@@ -1,8 +1,8 @@
 import { useChangeLanguage } from "remix-i18next/react";
 import { useTranslation } from "react-i18next";
 import i18next from "~/i18next.server";
+import clsx from "clsx";
 import {
-  json,
   Links,
   LiveReload,
   Meta,
@@ -13,14 +13,25 @@ import {
 } from "@remix-run/react";
 import { LinksFunction, LoaderFunctionArgs } from "@remix-run/node";
 import stylesheet from "~/tailwind.css?url";
+import { themeSessionResolver } from "./sessions.server";
+import {
+  PreventFlashOnWrongTheme,
+  ThemeProvider,
+  useTheme,
+} from "remix-themes";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
 ];
 
 export async function loader({ request }: LoaderFunctionArgs) {
+  const { getTheme } = await themeSessionResolver(request);
   const locale = await i18next.getLocale(request);
-  return json({ locale });
+
+  return {
+    theme: getTheme(),
+    locale,
+  };
 }
 
 export const handle = {
@@ -31,10 +42,21 @@ export const handle = {
   i18n: "common",
 };
 
-export default function Root() {
+export default function AppWithProviders() {
+  const data = useLoaderData<typeof loader>();
+  return (
+    <ThemeProvider specifiedTheme={data.theme} themeAction="/action/set-theme">
+      <App />
+    </ThemeProvider>
+  );
+}
+
+export function App() {
+  const data = useLoaderData<typeof loader>();
+  const [theme] = useTheme();
+
   // Get the locale from the loader
   const { locale } = useLoaderData<typeof loader>();
-
   const { i18n } = useTranslation();
 
   // This hook will change the i18n instance language to the current locale
@@ -44,9 +66,12 @@ export default function Root() {
   useChangeLanguage(locale);
 
   return (
-    <html lang={locale} dir={i18n.dir()}>
+    <html lang={locale} className={clsx(theme)} dir={i18n.dir()}>
       <head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
+        <PreventFlashOnWrongTheme ssrTheme={Boolean(data.theme)} />
         <Links />
       </head>
       <body>

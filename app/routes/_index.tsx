@@ -1,6 +1,7 @@
 import type { MetaFunction } from "@remix-run/node";
 import { Button } from "~/components/ui/button";
 import { useTranslation } from "react-i18next";
+import { ModeToggle } from "~/components/mode-toggle";
 
 export const meta: MetaFunction = () => {
   return [
@@ -14,6 +15,7 @@ export default function Index() {
 
   return (
     <div className="font-sans p-4">
+      <ModeToggle />
       <h1>{t("name")}</h1>
       <Button>hi</Button>
     </div>
