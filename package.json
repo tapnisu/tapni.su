@@ -3,7 +3,9 @@
   "sideEffects": false,
   "type": "module",
   "scripts": {
-    "build": "remix vite:build",
+    "build": "build:sitemap && build:remix",
+    "build:remix": "remix vite:build",
+    "build:sitemap": "remix-sitemap",
     "dev": "remix vite:dev",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "format": "prettier . --ignore-path .gitignore --check",
@@ -30,6 +32,7 @@
     "react-dom": "^18.3.1",
     "react-i18next": "^15.0.1",
     "remix-i18next": "^6.3.0",
+    "remix-sitemap": "^3.2.0",
     "remix-themes": "^1.5.0",
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7"
