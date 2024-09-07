@@ -3,7 +3,7 @@
   "sideEffects": false,
   "type": "module",
   "scripts": {
-    "build": "build:sitemap && build:remix",
+    "build": "remix-sitemap && remix vite:build",
     "build:remix": "remix vite:build",
     "build:sitemap": "remix-sitemap",
     "dev": "remix vite:dev",
