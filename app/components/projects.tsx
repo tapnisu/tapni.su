@@ -73,8 +73,10 @@ export default function Projects(props: ProjectsAttributes) {
               <img src={image} alt={description} className="rounded-t-xl" />
             ) : null}
             <CardHeader>
-              <CardTitle className="underline-offset-4 hover:underline">
-                <a href={href}>{name}</a>
+              <CardTitle>
+                <a href={href} className="underline-offset-4 hover:underline">
+                  {name}
+                </a>
               </CardTitle>
             </CardHeader>
             <CardContent>{description}</CardContent>

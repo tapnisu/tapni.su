@@ -11,5 +11,9 @@
       "website": "My portfolio website (you are here right now)",
       "leshapomogi": "Website with guides for my classmates"
     }
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark"
   }
 }

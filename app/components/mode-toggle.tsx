@@ -8,9 +8,11 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
+import { useTranslation } from "react-i18next";
 
 export function ModeToggle() {
   const [, setTheme] = useTheme();
+  const { t } = useTranslation();
 
   return (
     <DropdownMenu>
@@ -23,10 +25,10 @@ export function ModeToggle() {
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <DropdownMenuItem onClick={() => setTheme(Theme.LIGHT)}>
-          Light
+          {t("theme.light")}
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setTheme(Theme.DARK)}>
-          Dark
+          {t("theme.dark")}
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
