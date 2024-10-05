@@ -1,36 +1,59 @@
 {
   "name": "tapni.su",
-  "version": "1.0.0",
+  "sideEffects": false,
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build && next-sitemap",
-    "start": "next start",
-    "lint": "next lint",
-    "fmt:write": "prettier --write ."
+    "build": "remix vite:build",
+    "build:remix": "remix vite:build",
+    "sitemap": "remix-sitemap",
+    "dev": "remix vite:dev",
+    "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
+    "format": "prettier . --ignore-path .gitignore --check",
+    "format:write": "prettier . --ignore-path .gitignore --write",
+    "start": "remix-serve ./build/server/index.js",
+    "typecheck": "tsc"
   },
   "dependencies": {
-    "next": "^14.2.4",
-    "next-sitemap": "^4.2.3",
-    "next-themes": "^0.3.0",
-    "normalize.css": "^8.0.1",
+    "@remix-run/node": "^2.12.1",
+    "@remix-run/react": "^2.12.1",
+    "@remix-run/serve": "^2.12.1",
+    "clsx": "^2.1.1",
+    "i18next": "^23.15.2",
+    "i18next-browser-languagedetector": "^8.0.0",
+    "i18next-fs-backend": "^2.3.2",
+    "i18next-http-backend": "^2.6.2",
+    "isbot": "^4.4.0",
+    "lucide-react": "^0.439.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-icons": "^5.2.1",
-    "react-typed": "^2.0.12",
-    "sharp": "^0.33.4"
+    "react-i18next": "^15.0.2",
+    "remix-i18next": "^6.4.1",
+    "remix-sitemap": "^3.2.0",
+    "remix-themes": "^1.5.1"
   },
   "devDependencies": {
-    "@types/node": "^20.14.2",
-    "@types/react": "^18.3.3",
+    "@remix-run/dev": "^2.12.1",
+    "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.0",
-    "autoprefixer": "^10.4.19",
-    "eslint": "^8.57.0",
-    "eslint-config-next": "^14.2.4",
-    "postcss": "^8.4.38",
-    "postcss-nesting": "^12.1.5",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.1",
+    "eslint-import-resolver-typescript": "^3.6.3",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.0",
+    "eslint-plugin-react": "^7.37.1",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "postcss": "^8.4.47",
+    "postcss-nesting": "^13.0.0",
     "postcss-viewport-unit-fallback": "^1.0.1",
-    "prettier": "^3.3.2",
-    "typescript": "^5.4.5"
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.8",
+    "vite-tsconfig-paths": "^4.3.2"
   },
-  "packageManager": "pnpm@9.3.0+sha512.ee7b93e0c2bd11409c6424f92b866f31d3ea1bef5fbe47d3c7500cdc3c9668833d2e55681ad66df5b640c61fa9dc25d546efa54d76d7f8bf54b13614ac293631"
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "packageManager": "pnpm@9.9.0+sha512.60c18acd138bff695d339be6ad13f7e936eea6745660d4cc4a776d5247c540d0edee1a563695c183a66eb917ef88f2b4feb1fc25f32a7adcadc7aaf3438e99c1"
 }

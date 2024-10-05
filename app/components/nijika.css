@@ -1,0 +1,10 @@
+.nijika {
+  image-rendering: pixelated;
+
+  border-radius: var(--border-radius);
+  outline: var(--image-border-width) solid var(--image-border-color);
+  outline-offset: calc(-1 * var(--image-border-width));
+
+  width: 100%;
+  aspect-ratio: 3;
+}
