@@ -4,7 +4,6 @@ import i18next from "~/i18next.server";
 import clsx from "clsx";
 import {
   Links,
-  LiveReload,
   Meta,
   Outlet,
   Scripts,
@@ -12,7 +11,6 @@ import {
   useLoaderData,
 } from "@remix-run/react";
 import { LinksFunction, LoaderFunctionArgs } from "@remix-run/node";
-import stylesheet from "~/global.css?url";
 import { themeSessionResolver } from "./sessions.server";
 import {
   PreventFlashOnWrongTheme,
@@ -21,10 +19,16 @@ import {
 } from "remix-themes";
 import { Navbar } from "./components/navbar";
 
+import stylesheet from "~/global.css?url";
+
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
-  { rel: "preconnect", href: "https://fonts.googleapis.com" },
+  {
+    rel: "preconnect",
+    href: "https://fonts.gstatic.com",
+    crossOrigin: "anonymous",
+  },
   {
     rel: "stylesheet",
     href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
@@ -90,15 +94,15 @@ export function App() {
         <Links />
       </head>
       <body>
-        <div>
+        <div className="root__content">
           <Navbar />
-          <div>
+          <main>
             <Outlet />
-          </div>
+          </main>
+          <footer></footer>
         </div>
         <ScrollRestoration />
         <Scripts />
-        <LiveReload />
       </body>
     </html>
   );

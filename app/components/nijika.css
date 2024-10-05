@@ -1,0 +1,7 @@
+.nijika {
+  border-radius: var(--border-radius);
+  image-rendering: pixelated;
+
+  width: 100%;
+  height: 25dvh;
+}

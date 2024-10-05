@@ -1,5 +1,6 @@
 import type { MetaFunction } from "@remix-run/node";
 import { useTranslation } from "react-i18next";
+import { Nijika } from "~/components/nijika";
 import Projects from "~/components/projects";
 import { getAge } from "~/lib/utils";
 
@@ -20,10 +21,15 @@ export default function Index() {
 
   return (
     <>
-      <h1>{t("name")} (tapnisu)</h1>
-      <p>{t("about").replace("{age}", age)}</p>
-      <h2>{t("projects.title")}</h2>
-      <Projects amount={2} />
+      <div>
+        <Nijika />
+        <h1>{t("name")} (tapnisu)</h1>
+        <p>{t("about").replace("{age}", age)}</p>
+      </div>
+      <div>
+        <h2>{t("projects.title")}</h2>
+        <Projects amount={2} />
+      </div>
     </>
   );
 }

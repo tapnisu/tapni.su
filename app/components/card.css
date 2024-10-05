@@ -1,0 +1,33 @@
+.card__base {
+  background: var(--bg-2);
+
+  border-radius: var(--border-radius);
+  padding: var(--gap);
+
+  display: flex;
+  flex-flow: column;
+}
+
+.card__base > * + * {
+  margin-top: var(--gap);
+}
+
+.card__image {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+
+  text-align: center;
+}
+
+.card__text {
+  flex: 1 1 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card__comments {
+  color: var(--text-2);
+}
