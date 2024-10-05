@@ -24,6 +24,9 @@ export default function Projects(props: ProjectsAttributes) {
     {
       name: "forwarding-discord-telegram",
       href: "https://github.com/tapnisu/forwarding-discord-telegram",
+      image:
+        "https://opengraph.githubassets.com/9a206ef0cf666e24f5618d6c1a23001fb904cfbdcc3dbb399898752235ff7a55/tapnisu/forwarding-discord-telegram",
+      imageColor: "#ffffff",
       description: t("projects.descriptions.forwardingDiscordTelegram"),
       madeWith: ["TypeScript"],
     },

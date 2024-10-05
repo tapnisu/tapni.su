@@ -4,6 +4,9 @@
   --gap: 1rem;
   --gap-double: 2rem;
 
+  --image-border-color: #fff4;
+  --image-border-width: 3px;
+
   --border-radius: 12px;
   --blur-radius: 4px;
 
@@ -12,9 +15,9 @@
   --black: #0f0f0f;
   --black-2: #272727;
   --black-3: #606060;
-  --accent: #68cefd;
+  --accent: #e2d07b;
   --white: #ffffff;
-  --while-2: #f2f2f2cb;
+  --while-2: #c4c4c4;
 
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
