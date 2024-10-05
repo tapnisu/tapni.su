@@ -1,6 +1,10 @@
-import { clsx, type ClassValue } from "clsx";
-import { twMerge } from "tailwind-merge";
+/**
+ * Get tapnisu's age
+ * @returns tapnisu's age
+ */
+export function getAge() {
+  const birthday = new Date("2007-11-03");
+  const age = new Date(Date.now() - birthday.getTime()).getFullYear() - 1970;
 
-export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs));
+  return age.toString();
 }

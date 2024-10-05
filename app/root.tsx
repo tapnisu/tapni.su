@@ -23,6 +23,12 @@ import { Navbar } from "./components/navbar";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
+  { rel: "preconnect", href: "https://fonts.googleapis.com" },
+  { rel: "preconnect", href: "https://fonts.googleapis.com" },
+  {
+    rel: "stylesheet",
+    href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
+  },
 ];
 
 export async function loader({ request }: LoaderFunctionArgs) {
@@ -83,10 +89,10 @@ export function App() {
         <PreventFlashOnWrongTheme ssrTheme={Boolean(data.theme)} />
         <Links />
       </head>
-      <body className="flex justify-center font-sans">
-        <div className="w-full max-w-[768px]">
+      <body>
+        <div>
           <Navbar />
-          <div className="p-4">
+          <div>
             <Outlet />
           </div>
         </div>
