@@ -20,8 +20,6 @@ export function Card(props: CardProps) {
         <img
           src={props.image}
           className="card__image"
-          width={props["image-width"]}
-          height={props["image-height"]}
           alt={props.title}
           style={{
             aspectRatio:
@@ -33,13 +31,11 @@ export function Card(props: CardProps) {
         />
       ) : null}
 
-      <div>
+      <div className="card__text">
         <div>
           {props.href ? <a href={props.href}>{props.title}</a> : props.title}
         </div>
-
-        <p className="card__text">{props.description}</p>
-
+        <p>{props.description}</p>
         <div className="card__comments">{props.comments}</div>
       </div>
     </div>
