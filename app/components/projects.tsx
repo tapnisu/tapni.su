@@ -1,11 +1,5 @@
 import { useTranslation } from "react-i18next";
-import {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardContent,
-  CardFooter,
-} from "./ui/card";
+import { Card } from "./card";
 
 interface ProjectsAttributes extends React.HTMLAttributes<HTMLDivElement> {
   amount?: number;
@@ -32,7 +26,7 @@ export default function Projects(props: ProjectsAttributes) {
     {
       name: "leshapomogi.ru",
       href: "https://leshapomogi.ru",
-      // image: "https://leshapomogi.ru/og.png",
+      image: "https://leshapomogi.ru/og.png",
       description: t("projects.descriptions.leshapomogi"),
       madeWith: ["TypeScript", "Preact", "FreshJS", "TailwindCSS", "Deno"],
     },
@@ -65,26 +59,16 @@ export default function Projects(props: ProjectsAttributes) {
 
   return (
     <div {...props}>
-      <div className="grid md:grid-cols-2 gap-4">
-        {projects.map(({ name, image, href, description, madeWith }, index) => (
-          <Card key={index}>
-            {image ? (
-              <img src={image} alt={description} className="rounded-t-xl" />
-            ) : null}
-            <CardHeader>
-              <CardTitle>
-                <a href={href} className="underline-offset-4 hover:underline">
-                  {name}
-                </a>
-              </CardTitle>
-            </CardHeader>
-            <CardContent>{description}</CardContent>
-            <CardFooter>
-              <p>{`${t("projects.madeWith")} ${madeWith.join(", ")}`}</p>
-            </CardFooter>
-          </Card>
-        ))}
-      </div>
+      {projects.map(({ name, image, href, description, madeWith }, index) => (
+        <Card
+          title={name}
+          href={href}
+          description={description}
+          image={image}
+          comments={madeWith.join(", ")}
+          key={index}
+        />
+      ))}
     </div>
   );
 }

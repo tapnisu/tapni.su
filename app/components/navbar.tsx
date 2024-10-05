@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
 import { ModeToggle } from "./mode-toggle";
-import { buttonVariants } from "./ui/button";
 
 export interface Link {
   title: string;
@@ -16,14 +15,10 @@ export function Navbar() {
   ];
 
   return (
-    <nav className="w-full flex flex-row justify-between items-center p-4">
+    <nav>
       <div>
         {links.map((link, index) => (
-          <a
-            className={buttonVariants({ variant: "link" })}
-            href={link.href}
-            key={index}
-          >
+          <a href={link.href} key={index}>
             {link.title}
           </a>
         ))}
