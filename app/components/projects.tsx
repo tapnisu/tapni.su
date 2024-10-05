@@ -54,7 +54,7 @@ export default function Projects(props: ProjectsAttributes) {
       name: "tapni.su",
       href: "https://github.com/tapnisu/tapni.su",
       image: "https://tapni.su/og.png",
-      imageColor: "#06060c",
+      imageColor: "#e2d07b",
       description: t("projects.descriptions.website"),
       madeWith: ["TypeScript", "Remix", "React"],
     },
