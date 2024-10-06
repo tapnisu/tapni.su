@@ -1,5 +1,6 @@
 .nijika {
   image-rendering: pixelated;
+  background-color: var(--accent);
 
   border-radius: var(--border-radius);
   outline: var(--image-border-width) solid var(--image-border-color);

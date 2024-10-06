@@ -24,11 +24,7 @@ export function ModeToggle(props: React.HTMLAttributes<HTMLButtonElement>) {
       className={clsx("mode-toggle", props.className)}
       {...props}
     >
-      {theme == Theme.LIGHT ? (
-        <Sun style={{ height: "100%" }} />
-      ) : (
-        <Moon style={{ height: "100%" }} />
-      )}
+      {theme == Theme.LIGHT ? <Sun /> : <Moon />}
     </button>
   );
 }

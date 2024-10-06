@@ -24,3 +24,7 @@
     background: var(--accent);
   }
 }
+
+.mode-toggle > * {
+  height: 100%;
+}

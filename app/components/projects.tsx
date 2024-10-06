@@ -77,8 +77,8 @@ export default function Projects(props: ProjectsAttributes) {
             href={href}
             description={description}
             image={image}
-            image-width={1280}
-            image-height={720}
+            image-width={1200}
+            image-height={600}
             image-color={imageColor}
             comments={madeWith.join(", ")}
             key={index}
