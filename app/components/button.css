@@ -1,0 +1,30 @@
+.button {
+  font-family: inherit;
+
+  color: var(--bg);
+  background: var(--text);
+
+  font-weight: 600;
+
+  padding: var(--gap);
+
+  border-radius: var(--border-radius);
+  border: none;
+
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+
+  cursor: pointer;
+
+  &:active {
+    background: var(--accent);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .button:hover {
+    background: var(--accent);
+  }
+}

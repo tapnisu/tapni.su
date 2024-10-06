@@ -1,11 +1,13 @@
 import { Theme, useTheme } from "remix-themes";
-import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
+import { Moon, Sun } from "lucide-react";
+import clsx from "clsx";
 
-export function ModeToggle(props: React.HTMLAttributes<HTMLSelectElement>) {
+import "./mode-toggle.css";
+
+export function ModeToggle(props: React.HTMLAttributes<HTMLButtonElement>) {
   const [mounted, setMounted] = useState(false);
   const [theme, setTheme] = useTheme();
-  const { t } = useTranslation();
 
   useEffect(() => {
     setMounted(true);
@@ -14,15 +16,19 @@ export function ModeToggle(props: React.HTMLAttributes<HTMLSelectElement>) {
   if (!mounted) return null;
 
   return (
-    <select
-      name="theme"
-      aria-label="theme"
-      value={theme!}
-      onChange={(e) => setTheme(e.target.value as Theme)}
+    <button
+      onClick={(e) => {
+        setTheme(theme == Theme.LIGHT ? Theme.DARK : Theme.LIGHT);
+        props.onClick?.(e);
+      }}
+      className={clsx("mode-toggle", props.className)}
       {...props}
     >
-      <option value={Theme.LIGHT}>{t("theme.light")}</option>
-      <option value={Theme.DARK}>{t("theme.dark")}</option>
-    </select>
+      {theme == Theme.LIGHT ? (
+        <Sun style={{ height: "100%" }} />
+      ) : (
+        <Moon style={{ height: "100%" }} />
+      )}
+    </button>
   );
 }

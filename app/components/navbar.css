@@ -2,13 +2,15 @@
   background: var(--bg-2);
   border-radius: var(--border-radius);
 
+  height: 3.25em;
+
   display: flex;
   justify-content: space-between;
   flex-direction: row;
 }
 
 .nav > * {
-  margin: var(--gap-half) var(--gap);
+  margin: var(--gap-half);
 
   display: flex;
   align-content: center;
@@ -17,7 +19,10 @@
 
 .nav__link {
   border-radius: var(--border-radius);
-  display: inline-block;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   padding: var(--gap-half) var(--gap);
 
