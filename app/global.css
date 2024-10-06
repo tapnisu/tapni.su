@@ -73,7 +73,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
 
-  padding: 0 var(--gap);
+  padding: var(--gap);
 }
 
 .root__content > * + * {
