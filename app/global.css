@@ -76,8 +76,8 @@ body {
   padding: var(--gap);
 }
 
-.root__content > * + * {
-  margin-top: var(--gap) 0;
+.root__content > main {
+  margin: var(--gap) 0;
 }
 
 a {
