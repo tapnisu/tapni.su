@@ -14,11 +14,11 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@remix-run/node": "^2.12.1",
-    "@remix-run/react": "^2.12.1",
-    "@remix-run/serve": "^2.12.1",
+    "@remix-run/node": "^2.13.1",
+    "@remix-run/react": "^2.13.1",
+    "@remix-run/serve": "^2.13.1",
     "clsx": "^2.1.1",
-    "i18next": "^23.15.2",
+    "i18next": "^23.16.0",
     "i18next-browser-languagedetector": "^8.0.0",
     "i18next-fs-backend": "^2.3.2",
     "i18next-http-backend": "^2.6.2",
@@ -26,15 +26,15 @@
     "lucide-react": "^0.439.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-i18next": "^15.0.2",
+    "react-i18next": "^15.0.3",
     "remix-i18next": "^6.4.1",
     "remix-sitemap": "^3.2.0",
     "remix-themes": "^1.5.1"
   },
   "devDependencies": {
-    "@remix-run/dev": "^2.12.1",
+    "@remix-run/dev": "^2.13.1",
     "@types/react": "^18.3.11",
-    "@types/react-dom": "^18.3.0",
+    "@types/react-dom": "^18.3.1",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
     "autoprefixer": "^10.4.20",
@@ -48,12 +48,12 @@
     "postcss-nesting": "^13.0.0",
     "postcss-viewport-unit-fallback": "^1.0.1",
     "prettier": "^3.3.3",
-    "typescript": "^5.6.2",
-    "vite": "^5.4.8",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.9",
     "vite-tsconfig-paths": "^4.3.2"
   },
   "engines": {
     "node": ">=20.0.0"
   },
-  "packageManager": "pnpm@9.9.0+sha512.60c18acd138bff695d339be6ad13f7e936eea6745660d4cc4a776d5247c540d0edee1a563695c183a66eb917ef88f2b4feb1fc25f32a7adcadc7aaf3438e99c1"
+  "packageManager": "pnpm@9.12.1+sha512.e5a7e52a4183a02d5931057f7a0dbff9d5e9ce3161e33fa68ae392125b79282a8a8a470a51dfc8a0ed86221442eb2fb57019b0990ed24fab519bf0e1bc5ccfc4"
 }
