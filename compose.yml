@@ -1,6 +1,8 @@
 services:
   frontend:
     image: tapnisu/tapni.su:main
+    ports:
+      - 3000:3000
     labels:
       - "com.centurylinklabs.watchtower.enable=true"
     restart: unless-stopped
