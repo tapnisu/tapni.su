@@ -11,7 +11,6 @@ services:
       - "--label-enable"
       - "--interval"
       - "30"
-      - "--rolling-restart"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     restart: unless-stopped
