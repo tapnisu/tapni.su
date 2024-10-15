@@ -2,7 +2,7 @@ services:
   frontend:
     image: tapnisu/tapni.su:main
     labels:
-      - com.centurylinklabs.watchtower.enable=true
+      - "com.centurylinklabs.watchtower.enable=true"
     restart: unless-stopped
 
   watchtower:
@@ -11,6 +11,7 @@ services:
       - "--label-enable"
       - "--interval"
       - "30"
+      - "--cleanup"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     restart: unless-stopped
