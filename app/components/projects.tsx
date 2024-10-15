@@ -28,7 +28,7 @@ export default function Projects(props: ProjectsAttributes) {
         "https://opengraph.githubassets.com/9a206ef0cf666e24f5618d6c1a23001fb904cfbdcc3dbb399898752235ff7a55/tapnisu/forwarding-discord-telegram",
       imageColor: "#ffffff",
       description: t("projects.descriptions.forwardingDiscordTelegram"),
-      madeWith: ["TypeScript"],
+      madeWith: ["TypeScript", "Grammy", "discord.js-selfbot-v13"],
     },
     {
       name: "leshapomogi.ru",
