@@ -18,7 +18,9 @@
   width: 100%;
   height: auto;
 
-  border-radius: var(--border-radius);
+  border-radius: calc(
+    var(--border-radius) - var(--gap) + var(--image-border-width)
+  );
   outline: var(--image-border-width) solid var(--image-border-color);
   outline-offset: calc(-1 * var(--image-border-width));
 

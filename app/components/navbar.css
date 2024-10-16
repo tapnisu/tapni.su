@@ -2,7 +2,7 @@
   background: var(--bg-2);
   border-radius: var(--border-radius);
 
-  height: 3.25em;
+  height: 50px;
 
   display: flex;
   justify-content: space-between;

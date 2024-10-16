@@ -1,13 +1,13 @@
 :root {
   /* Spacing */
-  --gap-half: 0.5rem;
-  --gap: 1rem;
-  --gap-double: 2rem;
+  --gap-half: 8px;
+  --gap: 16px;
+  --gap-double: 32px;
 
   --image-border-color: #fff4;
   --image-border-width: 3px;
 
-  --border-radius: 12px;
+  --border-radius: 25px;
   --blur-radius: 4px;
 
   --app-width: 768px;
@@ -77,7 +77,11 @@ body {
 }
 
 .root__content > main {
-  margin: var(--gap) 0;
+  margin: var(--gap-double) 0;
+}
+
+.root__content > main > * + * {
+  margin-top: var(--gap-double);
 }
 
 a {
@@ -113,14 +117,6 @@ u {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-ul {
-  margin: var(--gap-half) 0;
-}
-
-li {
-  margin: var(--gap-half) 0;
 }
 
 .text-center {
