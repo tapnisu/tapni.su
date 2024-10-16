@@ -18,6 +18,7 @@ import {
   useTheme,
 } from "remix-themes";
 import { Navbar } from "./components/navbar";
+import { Footer } from "./components/footer";
 
 import stylesheet from "~/global.css?url";
 
@@ -99,7 +100,7 @@ export function App() {
           <main>
             <Outlet />
           </main>
-          <footer></footer>
+          <Footer />
         </div>
         <ScrollRestoration />
         <Scripts />
