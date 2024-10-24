@@ -6,7 +6,6 @@ ENV PATH="$PNPM_HOME:$PATH"
 
 WORKDIR /app
 
-RUN apk add --no-cache ffmpeg
 COPY package.json pnpm-lock.yaml /app/
 RUN corepack enable && corepack prepare
 
