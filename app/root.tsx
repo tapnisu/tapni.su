@@ -9,6 +9,8 @@ import {
   Scripts,
   ScrollRestoration,
   useLoaderData,
+  useRouteError,
+  useRouteLoaderData,
 } from "@remix-run/react";
 import { LinksFunction, LoaderFunctionArgs } from "@remix-run/node";
 import { themeSessionResolver } from "./sessions.server";
@@ -67,18 +69,12 @@ export function App() {
   const data = useLoaderData<typeof loader>();
   const [theme] = useTheme();
 
-  // Get the locale from the loader
-  const { locale } = useLoaderData<typeof loader>();
   const { i18n } = useTranslation();
 
-  // This hook will change the i18n instance language to the current locale
-  // detected by the loader, this way, when we do something to change the
-  // language, this locale will change and i18next will load the correct
-  // translation files
-  useChangeLanguage(locale);
+  useChangeLanguage(data.locale);
 
   return (
-    <html lang={locale} className={clsx(theme)} dir={i18n.dir()}>
+    <html lang={data.locale} className={clsx(theme)} dir={i18n.dir()}>
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -99,6 +95,60 @@ export function App() {
           <Navbar />
           <main>
             <Outlet />
+          </main>
+          <Footer />
+        </div>
+        <ScrollRestoration />
+        <Scripts />
+      </body>
+    </html>
+  );
+}
+
+export function ErrorBoundary() {
+  const data = useRouteLoaderData<typeof loader>("root")!;
+
+  return (
+    <ThemeProvider specifiedTheme={data.theme} themeAction="/action/set-theme">
+      <ErrorHtml />
+    </ThemeProvider>
+  );
+}
+
+function ErrorHtml() {
+  const data = useRouteLoaderData<typeof loader>("root")!;
+  const error = useRouteError();
+
+  const { i18n } = useTranslation();
+
+  useChangeLanguage(data.locale);
+
+  const [theme] = useTheme();
+
+  return (
+    <html lang={data.locale} className={clsx(theme)} dir={i18n.dir()}>
+      <head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="theme-color" content="#688ce2" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <meta name="og:image" content="https://tapni.su/og.png" />
+        <meta name="og:url" content="https://tapni.su/" />
+        <meta name="twitter:image" content="https://tapni.su/og.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@tapnisu" />
+        <Meta />
+        <PreventFlashOnWrongTheme ssrTheme={Boolean(data.theme)} />
+        <Links />
+      </head>
+      <body>
+        <div className="root__content">
+          <Navbar />
+          <main>
+            <h1>
+              {error.status} {error.statusText}
+            </h1>
           </main>
           <Footer />
         </div>
