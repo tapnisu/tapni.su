@@ -34,7 +34,7 @@ export default function Projects(props: ProjectsAttributes) {
       name: "leshapomogi.ru",
       href: "https://leshapomogi.ru",
       image: "https://leshapomogi.ru/og.png",
-      imageColor: "#11191f",
+      imageColor: "#020306",
       description: t("projects.descriptions.leshapomogi"),
       madeWith: ["TypeScript", "Preact", "FreshJS", "TailwindCSS", "Deno"],
     },
