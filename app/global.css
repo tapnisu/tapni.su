@@ -18,7 +18,7 @@
   --black-3: #606060;
   --accent: #e2d07b;
   --white: #ffffff;
-  --while-2: #ebebeb;
+  --white-2: #ebebeb;
 
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -33,7 +33,7 @@
   --text-2: var(--black-3);
 
   --bg: var(--white);
-  --bg-2: var(--while-2);
+  --bg-2: var(--white-2);
 }
 
 .dark,
@@ -41,7 +41,7 @@
   color-scheme: dark;
 
   --text: var(--white);
-  --text-2: var(--while-2);
+  --text-2: var(--white-2);
 
   --bg: var(--black);
   --bg-2: var(--black-2);

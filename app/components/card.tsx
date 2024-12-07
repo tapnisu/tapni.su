@@ -1,6 +1,7 @@
 import clsx from "clsx";
 
 import "./card.css";
+import { Button } from "./button";
 
 export interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
   title: string;
@@ -38,6 +39,18 @@ export function Card(props: CardProps) {
         </div>
         <div className="card__comments">{props.comments}</div>
       </div>
+
+      {props.href ? (
+        <a href={props.href}>
+          <Button
+            style={{
+              width: "100%",
+            }}
+          >
+            Перейти
+          </Button>
+        </a>
+      ) : null}
     </div>
   );
 }
