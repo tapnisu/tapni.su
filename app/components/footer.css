@@ -1,19 +1,7 @@
 .footer {
+  padding: var(--gap);
+
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.footer > ul {
-  padding: 0;
-  list-style-type: none;
-  overflow: hidden;
-}
-
-.footer > ul > li {
-  float: left;
-}
-
-.footer > ul > li + li {
-  margin-left: var(--gap);
 }

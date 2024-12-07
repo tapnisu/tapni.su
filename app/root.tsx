@@ -157,9 +157,9 @@ function Layout({ data, children }: LayoutProps) {
       </head>
       <body>
         <div className="root__content">
-          <Navbar />
+          <Navbar style={{ marginTop: "var(--gap-half)" }} />
           <main>{children}</main>
-          <Footer />
+          <Footer style={{ marginBottom: "var(--gap-half)" }} />
         </div>
         <ScrollRestoration />
         <Scripts />

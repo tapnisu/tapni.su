@@ -13,6 +13,9 @@
       "leshapomogi": "Website with guides for my classmates"
     }
   },
+  "footer": {
+    "sourceCode": "Source code is available on GitHub"
+  },
   "theme": {
     "theme": "Theme",
     "light": "Light",
