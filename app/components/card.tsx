@@ -31,11 +31,11 @@ export function Card(props: CardProps) {
         />
       ) : null}
 
-      <div className="card__text">
+      <div className="card__content">
         <div>
           {props.href ? <a href={props.href}>{props.title}</a> : props.title}
+          <p>{props.description}</p>
         </div>
-        <p>{props.description}</p>
         <div className="card__comments">{props.comments}</div>
       </div>
     </div>

@@ -28,7 +28,7 @@ export default function Projects(props: ProjectsAttributes) {
         "https://opengraph.githubassets.com/9a206ef0cf666e24f5618d6c1a23001fb904cfbdcc3dbb399898752235ff7a55/tapnisu/forwarding-discord-telegram",
       imageColor: "#ffffff",
       description: t("projects.descriptions.forwardingDiscordTelegram"),
-      madeWith: ["TypeScript", "Grammy", "discord.js-selfbot-v13"],
+      madeWith: ["TypeScript"],
     },
     {
       name: "leshapomogi.ru",
@@ -36,7 +36,7 @@ export default function Projects(props: ProjectsAttributes) {
       image: "https://leshapomogi.ru/og.png",
       imageColor: "#020306",
       description: t("projects.descriptions.leshapomogi"),
-      madeWith: ["TypeScript", "Preact", "FreshJS", "TailwindCSS", "Deno"],
+      madeWith: ["TypeScript", "FreshJS", "TailwindCSS"],
     },
     {
       name: "tapciify",
@@ -56,7 +56,7 @@ export default function Projects(props: ProjectsAttributes) {
       image: "https://tapni.su/og.png",
       imageColor: "#e2d07b",
       description: t("projects.descriptions.website"),
-      madeWith: ["TypeScript", "Remix", "React"],
+      madeWith: ["TypeScript", "Remix"],
     },
     {
       name: "Tapciify web",
@@ -64,7 +64,7 @@ export default function Projects(props: ProjectsAttributes) {
       image: "https://tapciify.ru/og.png",
       imageColor: "#18232c",
       description: t("projects.descriptions.tapciifyWeb"),
-      madeWith: ["TypeScript", "Solid", "Vite", "Pico.css"],
+      madeWith: ["TypeScript", "Solid", "Pico.css"],
     },
   ].slice(0, props.amount);
 

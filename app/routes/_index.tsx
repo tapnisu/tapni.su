@@ -25,6 +25,25 @@ export default function Index() {
         <Nijika />
         <h1>{t("name")} (tapnisu)</h1>
         <p>{t("about").replace("{age}", age)}</p>
+
+        <h2>{t("contact")}</h2>
+        <ul>
+          <li>
+            GitHub: <a href="https://github.com/tapnisu">@tapnisu</a>
+          </li>
+          <li>
+            X: <a href="https://x.com/tapnisu">@tapnisu</a>
+          </li>
+          <li>
+            Telegram: <a href="https://t.me/tapnisu">@tapnisu</a>
+          </li>
+          <li>
+            Discord: <code>tapnisu</code>
+          </li>
+          <li>
+            Email: <code>aleksei@tapni.su</code>
+          </li>
+        </ul>
       </div>
       <div>
         <h2>{t("projects.title")}</h2>

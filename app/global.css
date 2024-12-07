@@ -1,5 +1,6 @@
 :root {
   /* Spacing */
+  --gap-quarter: 4px;
   --gap-half: 8px;
   --gap: 16px;
   --gap-double: 32px;
@@ -121,4 +122,16 @@ u {
 
 .text-center {
   text-align: center;
+}
+
+li {
+  padding: var(--gap-quarter) 0;
+}
+
+code {
+  font-family: "JetBrains Mono", monospace;
+  padding: 2px;
+  background-color: var(--black-2);
+  color: var(--white-2);
+  border-radius: 5px;
 }
