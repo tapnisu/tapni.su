@@ -67,9 +67,9 @@ export default function AppWithProviders() {
   const data = useLoaderData<typeof loader>();
   return (
     <ThemeProvider specifiedTheme={data.theme} themeAction="/action/set-theme">
-      <Layout data={data}>
+      <LayoutElement data={data}>
         <Outlet />
-      </Layout>
+      </LayoutElement>
     </ThemeProvider>
   );
 }
@@ -78,9 +78,9 @@ export function App() {
   const data = useLoaderData<typeof loader>();
 
   return (
-    <Layout data={data}>
+    <LayoutElement data={data}>
       <Outlet />
-    </Layout>
+    </LayoutElement>
   );
 }
 
@@ -100,12 +100,14 @@ export function ErrorBoundary() {
         theme: Theme.DARK,
       };
 
+  const { t } = useTranslation();
+
   return (
     <ThemeProvider
       specifiedTheme={dataFallback.theme}
       themeAction="/action/set-theme"
     >
-      <Layout data={dataFallback}>
+      <LayoutElement data={dataFallback}>
         <div
           style={{
             display: "flex",
@@ -119,10 +121,16 @@ export function ErrorBoundary() {
               : "Unknown error"}
           </h1>
           <a href="/">
-            <Button>Back</Button>
+            <Button
+              style={{
+                textTransform: "capitalize",
+              }}
+            >
+              {t("back")}
+            </Button>
           </a>
         </div>
-      </Layout>
+      </LayoutElement>
     </ThemeProvider>
   );
 }
@@ -131,7 +139,7 @@ interface LayoutProps extends HTMLAttributes<HTMLElement> {
   data: SerializeFrom<typeof loader>;
 }
 
-function Layout({ data, children }: LayoutProps) {
+function LayoutElement({ data, children }: LayoutProps) {
   const { i18n } = useTranslation();
 
   useChangeLanguage(data.locale);
