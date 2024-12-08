@@ -1,0 +1,16 @@
+.code-snippet-copy {
+  display: inline-flex;
+}
+
+.code-snippet-copy__icon {
+  min-width: 16px;
+  min-height: 16px;
+  padding: 4px;
+
+  color: var(--text-2);
+  cursor: pointer;
+}
+
+.code-snippet-copy__icon:hover {
+  color: var(--accent);
+}
