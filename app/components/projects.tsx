@@ -33,7 +33,7 @@ export default function Projects(props: ProjectsAttributes) {
     {
       name: "leshapomogi.ru",
       href: "https://leshapomogi.ru",
-      image: "https://leshapomogi.ru/og.png",
+      image: "https://leshapomogi.ru/og.jpg",
       imageColor: "#020306",
       description: t("projects.descriptions.leshapomogi"),
       madeWith: ["TypeScript", "FreshJS", "TailwindCSS"],
@@ -53,7 +53,7 @@ export default function Projects(props: ProjectsAttributes) {
     {
       name: "tapni.su",
       href: "https://github.com/tapnisu/tapni.su",
-      image: "https://tapni.su/og.png",
+      image: "https://tapni.su/og.jpg",
       imageColor: "#e2d07b",
       description: t("projects.descriptions.website"),
       madeWith: ["TypeScript", "Remix"],
@@ -61,7 +61,7 @@ export default function Projects(props: ProjectsAttributes) {
     {
       name: "Tapciify web",
       href: "https://tapciify.ru",
-      image: "https://tapciify.ru/og.png",
+      image: "https://tapciify.ru/og.jpg",
       imageColor: "#18232c",
       description: t("projects.descriptions.tapciifyWeb"),
       madeWith: ["TypeScript", "Solid", "Pico.css"],
