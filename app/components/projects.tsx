@@ -61,7 +61,7 @@ export default function Projects(props: ProjectsAttributes) {
     {
       name: "Tapciify web",
       href: "https://tapciify.ru",
-      image: "https://tapciify.ru/og.jpg",
+      image: "https://tapciify.ru/og.webp",
       imageColor: "#18232c",
       description: t("projects.descriptions.tapciifyWeb"),
       madeWith: ["TypeScript", "Solid", "Pico.css"],
