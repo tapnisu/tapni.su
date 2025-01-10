@@ -130,8 +130,4 @@ li {
 
 code {
   font-family: "JetBrains Mono", monospace;
-  padding: 2px;
-  background-color: var(--black-2);
-  color: var(--white-2);
-  border-radius: 5px;
 }

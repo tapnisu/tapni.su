@@ -1,6 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
 import { useTranslation } from "react-i18next";
-import { CodeSnippetCopy } from "~/components/codeSnippetCopy";
 import { Nijika } from "~/components/nijika";
 import Projects from "~/components/projects";
 import { getAge } from "~/lib/utils";
@@ -39,14 +38,10 @@ export default function Index() {
             Telegram: <a href="https://t.me/tapnisu">@tapnisu</a>
           </li>
           <li>
-            Discord:{" "}
-            <CodeSnippetCopy text-to-copy="tapnisu">tapnisu</CodeSnippetCopy>
+            Email: <a href="mailto:aleksei@tapni.su">aleksei@tapni.su</a>
           </li>
           <li>
-            Email:{" "}
-            <CodeSnippetCopy text-to-copy="aleksei@tapni.su">
-              aleksei@tapni.su
-            </CodeSnippetCopy>
+            Discord: <code>tapnisu</code>
           </li>
         </ul>
       </div>
