@@ -7,7 +7,7 @@ ENV PATH="$PNPM_HOME:$PATH"
 WORKDIR /app
 
 COPY package.json pnpm-lock.yaml /app/
-RUN corepack enable && corepack prepare
+RUN npm install --global corepack@latest && corepack enable && corepack prepare --activate
 
 FROM base AS prod-deps
 RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --prod --frozen-lockfile
