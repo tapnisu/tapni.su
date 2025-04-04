@@ -10,7 +10,6 @@ import {
   ScrollRestoration,
   useLoaderData,
   useRouteError,
-  useRouteLoaderData,
   LinksFunction,
   LoaderFunctionArgs,
 } from "react-router";
@@ -18,7 +17,6 @@ import {
 import { themeSessionResolver } from "./sessions.server";
 import {
   PreventFlashOnWrongTheme,
-  Theme,
   ThemeProvider,
   useTheme,
 } from "remix-themes";
@@ -26,7 +24,7 @@ import { Navbar } from "./components/navbar";
 import { Footer } from "./components/footer";
 
 import stylesheet from "~/global.css?url";
-import { Button } from "./components/button";
+import errorStylesheet from "~/error.css?url";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
@@ -111,48 +109,77 @@ export function App() {
 }
 
 interface Error {
-  status?: number;
-  statusText?: string;
+  status: number;
+  statusText: string;
 }
 
 export function ErrorBoundary() {
-  const data = useRouteLoaderData<typeof loader>("root");
   const error = useRouteError() as Error;
 
-  const dataFallback = data ?? {
-    locale: "en",
-    theme: Theme.DARK,
-  };
+  const credits = [
+    ["Tapnisu - creating this awful website", "https://tapni.su/"],
+    ["Remix Run - creating react-router", "https://reactrouter.com/"],
+  ];
 
-  const { t } = useTranslation();
+  if (Math.round(error.status / 100) === 4)
+    credits.push(["And You - causing this error", "http://192.168.0.1/"]);
 
   return (
-    <ThemeProvider
-      specifiedTheme={dataFallback.theme}
-      themeAction="/action/set-theme"
-    >
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-        }}
-      >
-        <h1 style={{ textAlign: "center" }}>
-          {error.status && error.statusText
-            ? `${error.status} ${error.statusText}`
-            : "Unknown error"}
-        </h1>
-        <a href="/">
-          <Button
-            style={{
-              textTransform: "capitalize",
-            }}
-          >
-            {t("back")}
-          </Button>
-        </a>
-      </div>
-    </ThemeProvider>
+    <html lang="en">
+      <head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="theme-color" content="#688ce2" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <meta name="og:image" content="https://tapni.su/og.jpg" />
+        <meta name="og:url" content="https://tapni.su/" />
+        <meta name="twitter:image" content="https://tapni.su/og.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@tapnisu" />
+        <link rel="stylesheet" href={errorStylesheet} />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body>
+        <main>
+          <div className="card">
+            <h3 className="ending">ENDING</h3>
+            <h1 className="game-over">GAME OVER</h1>
+            <h2 className="reason">
+              {error.status && error.statusText
+                ? `${error.status} ${error.statusText}`
+                : "Unknown error"}
+            </h2>
+
+            <p className="staff">
+              Main Staff:
+              {credits.map(([title, url]) => (
+                <>
+                  <br />
+                  <a href={url} className="credits-link">
+                    {title}
+                  </a>
+                </>
+              ))}
+            </p>
+
+            <div className="return">
+              <a href="/">Return</a>
+            </div>
+          </div>
+        </main>
+        <ScrollRestoration />
+        <Scripts />
+      </body>
+    </html>
   );
 }

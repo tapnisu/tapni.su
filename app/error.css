@@ -1,0 +1,62 @@
+body {
+  background: #00f;
+  color: #fff;
+
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 768px;
+  width: 100%;
+}
+
+.card {
+  padding: 16px;
+}
+
+.ending {
+  font-size: 36px;
+  margin: 0;
+}
+
+.game-over {
+  font-size: 96px;
+  margin: 0;
+}
+
+.reason {
+  font-size: 36px;
+  margin: 0;
+}
+
+.staff {
+  font-size: 24px;
+  margin-top: 16px;
+}
+
+a {
+  color: #fff;
+
+  &:hover {
+    color: #ddd;
+  }
+}
+
+.return {
+  font-size: 24px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
