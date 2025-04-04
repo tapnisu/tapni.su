@@ -56,7 +56,7 @@ export default function Projects(props: ProjectsAttributes) {
       image: "https://tapni.su/og.jpg",
       imageColor: "#e2d07b",
       description: t("projects.descriptions.website"),
-      madeWith: ["TypeScript", "Remix"],
+      madeWith: ["TypeScript", "React Router"],
     },
     {
       name: "Tapciify web",

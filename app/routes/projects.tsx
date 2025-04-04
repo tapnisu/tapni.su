@@ -1,4 +1,4 @@
-import type { MetaFunction } from "@remix-run/node";
+import type { MetaFunction } from "react-router";
 import { useTranslation } from "react-i18next";
 import Projects from "~/components/projects";
 import { getAge } from "~/lib/utils";

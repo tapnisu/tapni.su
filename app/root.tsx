@@ -11,12 +11,10 @@ import {
   useLoaderData,
   useRouteError,
   useRouteLoaderData,
-} from "@remix-run/react";
-import {
   LinksFunction,
   LoaderFunctionArgs,
-  SerializeFrom,
-} from "@remix-run/node";
+} from "react-router";
+
 import { themeSessionResolver } from "./sessions.server";
 import {
   PreventFlashOnWrongTheme,
@@ -28,7 +26,6 @@ import { Navbar } from "./components/navbar";
 import { Footer } from "./components/footer";
 
 import stylesheet from "~/global.css?url";
-import { HTMLAttributes } from "react";
 import { Button } from "./components/button";
 
 export const links: LinksFunction = () => [
@@ -65,81 +62,16 @@ export const handle = {
 
 export default function AppWithProviders() {
   const data = useLoaderData<typeof loader>();
+
   return (
     <ThemeProvider specifiedTheme={data.theme} themeAction="/action/set-theme">
-      <LayoutElement data={data}>
-        <Outlet />
-      </LayoutElement>
+      <App />
     </ThemeProvider>
   );
 }
 
 export function App() {
   const data = useLoaderData<typeof loader>();
-
-  return (
-    <LayoutElement data={data}>
-      <Outlet />
-    </LayoutElement>
-  );
-}
-
-interface Error {
-  status?: number;
-  statusText?: string;
-}
-
-export function ErrorBoundary() {
-  const data = useRouteLoaderData<typeof loader>("root");
-  const error = useRouteError() as Error;
-
-  const dataFallback = data
-    ? data
-    : {
-        locale: "en",
-        theme: Theme.DARK,
-      };
-
-  const { t } = useTranslation();
-
-  return (
-    <ThemeProvider
-      specifiedTheme={dataFallback.theme}
-      themeAction="/action/set-theme"
-    >
-      <LayoutElement data={dataFallback}>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-          }}
-        >
-          <h1 style={{ textAlign: "center" }}>
-            {error.status && error.statusText
-              ? `${error.status} ${error.statusText}`
-              : "Unknown error"}
-          </h1>
-          <a href="/">
-            <Button
-              style={{
-                textTransform: "capitalize",
-              }}
-            >
-              {t("back")}
-            </Button>
-          </a>
-        </div>
-      </LayoutElement>
-    </ThemeProvider>
-  );
-}
-
-interface LayoutProps extends HTMLAttributes<HTMLElement> {
-  data: SerializeFrom<typeof loader>;
-}
-
-function LayoutElement({ data, children }: LayoutProps) {
   const { i18n } = useTranslation();
 
   useChangeLanguage(data.locale);
@@ -166,12 +98,61 @@ function LayoutElement({ data, children }: LayoutProps) {
       <body>
         <div className="root__content">
           <Navbar style={{ marginTop: "var(--gap-half)" }} />
-          <main>{children}</main>
+          <main>
+            <Outlet />
+          </main>
           <Footer style={{ marginBottom: "var(--gap-half)" }} />
         </div>
         <ScrollRestoration />
         <Scripts />
       </body>
     </html>
+  );
+}
+
+interface Error {
+  status?: number;
+  statusText?: string;
+}
+
+export function ErrorBoundary() {
+  const data = useRouteLoaderData<typeof loader>("root");
+  const error = useRouteError() as Error;
+
+  const dataFallback = data ?? {
+    locale: "en",
+    theme: Theme.DARK,
+  };
+
+  const { t } = useTranslation();
+
+  return (
+    <ThemeProvider
+      specifiedTheme={dataFallback.theme}
+      themeAction="/action/set-theme"
+    >
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        <h1 style={{ textAlign: "center" }}>
+          {error.status && error.statusText
+            ? `${error.status} ${error.statusText}`
+            : "Unknown error"}
+        </h1>
+        <a href="/">
+          <Button
+            style={{
+              textTransform: "capitalize",
+            }}
+          >
+            {t("back")}
+          </Button>
+        </a>
+      </div>
+    </ThemeProvider>
   );
 }

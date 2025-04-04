@@ -1,9 +1,7 @@
 import { PassThrough } from "stream";
-import {
-  createReadableStreamFromReadable,
-  type EntryContext,
-} from "@remix-run/node";
-import { RemixServer } from "@remix-run/react";
+import { createReadableStreamFromReadable } from "@react-router/node";
+import { type EntryContext } from "react-router";
+import { ServerRouter } from "react-router";
 import { isbot } from "isbot";
 import { renderToPipeableStream } from "react-dom/server";
 import { createInstance } from "i18next";
@@ -19,7 +17,7 @@ export default async function handleRequest(
   request: Request,
   responseStatusCode: number,
   responseHeaders: Headers,
-  remixContext: EntryContext
+  reactRouterContext: EntryContext
 ) {
   const callbackName = isbot(request.headers.get("user-agent"))
     ? "onAllReady"
@@ -27,7 +25,7 @@ export default async function handleRequest(
 
   const instance = createInstance();
   const lng = await i18next.getLocale(request);
-  const ns = i18next.getRouteNamespaces(remixContext);
+  const ns = i18next.getRouteNamespaces(reactRouterContext);
 
   await instance
     .use(initReactI18next) // Tell our instance to use react-i18next
@@ -44,7 +42,7 @@ export default async function handleRequest(
 
     const { pipe, abort } = renderToPipeableStream(
       <I18nextProvider i18n={instance}>
-        <RemixServer context={remixContext} url={request.url} />
+        <ServerRouter context={reactRouterContext} url={request.url} />
       </I18nextProvider>,
       {
         [callbackName]: () => {
