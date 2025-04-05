@@ -145,7 +145,12 @@ export function ErrorBoundary() {
           crossOrigin="anonymous"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+          rel="preload"
+          as="style"
+          href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap"
           rel="stylesheet"
         />
       </head>
@@ -163,12 +168,10 @@ export function ErrorBoundary() {
             <p className="staff">
               Main Staff:
               {credits.map(([title, url]) => (
-                <>
+                <a href={url} className="credits-link" key={title}>
                   <br />
-                  <a href={url} className="credits-link">
-                    {title}
-                  </a>
-                </>
+                  {title}
+                </a>
               ))}
             </p>
 
