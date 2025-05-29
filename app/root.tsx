@@ -89,6 +89,13 @@ export function App() {
         <meta name="twitter:image" content="https://tapni.su/og.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@tapnisu" />
+        <link rel="me" href="https://mastodon.social/@tapnisu">
+          Mastodon
+        </link>
+        <meta
+          name="fediverse:creator"
+          content="@tapnisu@mastodon.social"
+        ></meta>
         <Meta />
         <PreventFlashOnWrongTheme ssrTheme={Boolean(data.theme)} />
         <Links />
@@ -137,6 +144,13 @@ export function ErrorBoundary() {
         <meta name="twitter:image" content="https://tapni.su/og.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@tapnisu" />
+        <link rel="me" href="https://mastodon.social/@tapnisu">
+          Mastodon
+        </link>
+        <meta
+          name="fediverse:creator"
+          content="@tapnisu@mastodon.social"
+        ></meta>
         <link rel="stylesheet" href={errorStylesheet} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
