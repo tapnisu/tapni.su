@@ -1,4 +1,3 @@
-import { useChangeLanguage } from "remix-i18next/react";
 import { useTranslation } from "react-i18next";
 import i18next from "~/i18next.server";
 import clsx from "clsx";
@@ -72,7 +71,7 @@ export function App() {
   const data = useLoaderData<typeof loader>();
   const { i18n } = useTranslation();
 
-  useChangeLanguage(data.locale);
+  i18n.changeLanguage(data.locale);
 
   const [theme] = useTheme();
 
