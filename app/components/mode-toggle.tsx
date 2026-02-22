@@ -1,5 +1,5 @@
 import { Theme, useTheme } from "remix-themes";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import { Moon, Sun } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import clsx from "clsx";
@@ -7,15 +7,15 @@ import clsx from "clsx";
 import "./mode-toggle.css";
 
 export function ModeToggle(props: React.HTMLAttributes<HTMLButtonElement>) {
-  const [mounted, setMounted] = useState(false);
+  // const [mounted, setMounted] = useState(false);
   const [theme, setTheme] = useTheme();
   const { t } = useTranslation();
 
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+  // useEffect(() => {
+  //   setMounted(true);
+  // }, []);
 
-  if (!mounted) return null;
+  // if (!mounted) return null;
 
   return (
     <button
