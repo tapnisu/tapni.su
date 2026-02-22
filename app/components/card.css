@@ -14,8 +14,9 @@
   height: auto;
 
   border-radius: calc(
-    var(--border-radius) - var(--gap) + var(--image-border-width)
-  );
+      var(--border-radius) - var(--gap) + var(--image-border-width)
+    )
+    calc(var(--border-radius) - var(--gap) + var(--image-border-width)) 0 0;
   outline: var(--image-border-width) solid var(--image-border-color);
   outline-offset: calc(-1 * var(--image-border-width));
 
@@ -32,6 +33,10 @@
 
 .card__content > * + * {
   margin-top: var(--gap);
+}
+
+.card__content > p {
+  margin-bottom: 0;
 }
 
 .card__comments {
