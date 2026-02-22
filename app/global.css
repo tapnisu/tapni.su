@@ -16,7 +16,7 @@
   --black: #0f0f0f;
   --black-2: #272727;
   --black-3: #606060;
-  --accent: #e2d07b;
+  --accent: #133360;
   --white: #ffffff;
   --white-2: #ebebeb;
 
@@ -91,8 +91,8 @@ a {
   text-decoration: underline;
   text-underline-offset: 4px;
 
-  transition-property: color, background-color, border-color,
-    text-decoration-color, fill, stroke;
+  transition-property:
+    color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 

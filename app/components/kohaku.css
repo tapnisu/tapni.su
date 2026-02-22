@@ -1,5 +1,5 @@
-.nijika {
-  image-rendering: pixelated;
+.kohaku {
+  /* image-rendering: pixelated; */
   background-color: var(--accent);
 
   border-radius: var(--border-radius);

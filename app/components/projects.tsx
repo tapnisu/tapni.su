@@ -54,7 +54,7 @@ export default function Projects(props: ProjectsAttributes) {
       name: "tapni.su",
       href: "https://github.com/tapnisu/tapni.su",
       image: "https://tapni.su/og.jpg",
-      imageColor: "#e2d07b",
+      imageColor: "#133360",
       description: t("projects.descriptions.website"),
       madeWith: ["TypeScript", "React Router"],
     },
@@ -83,7 +83,7 @@ export default function Projects(props: ProjectsAttributes) {
             comments={madeWith.join(", ")}
             key={index}
           />
-        )
+        ),
       )}
     </div>
   );

@@ -1,6 +1,6 @@
 import type { MetaFunction } from "react-router";
 import { useTranslation } from "react-i18next";
-import { Nijika } from "~/components/nijika";
+import { Kohaku } from "~/components/kohaku";
 import Projects from "~/components/projects";
 
 export const meta: MetaFunction = () => {
@@ -19,7 +19,7 @@ export default function Index() {
   return (
     <>
       <div>
-        <Nijika />
+        <Kohaku />
         <h1>{t("name")} (tapnisu)</h1>
         <p>{t("about")}</p>
 

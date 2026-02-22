@@ -2,14 +2,9 @@
   background: var(--bg-2);
 
   border-radius: var(--border-radius);
-  padding: var(--gap);
 
   display: flex;
   flex-flow: column;
-}
-
-.card__base > * + * {
-  margin-top: var(--gap);
 }
 
 .card__image {
@@ -32,6 +27,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: var(--gap);
+}
+
+.card__content > * + * {
+  margin-top: var(--gap);
 }
 
 .card__comments {

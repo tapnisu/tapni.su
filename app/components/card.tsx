@@ -33,24 +33,23 @@ export function Card(props: CardProps) {
       ) : null}
 
       <div className="card__content">
-        <div>
-          {props.href ? <a href={props.href}>{props.title}</a> : props.title}
-          <p>{props.description}</p>
-        </div>
-        <div className="card__comments">{props.comments}</div>
-      </div>
+        {props.href ? <a href={props.href}>{props.title}</a> : props.title}
+        <p>{props.description}</p>
 
-      {props.href ? (
-        <a href={props.href}>
-          <Button
-            style={{
-              width: "100%",
-            }}
-          >
-            Перейти
-          </Button>
-        </a>
-      ) : null}
+        <div className="card__comments">{props.comments}</div>
+
+        {props.href ? (
+          <a href={props.href}>
+            <Button
+              style={{
+                width: "100%",
+              }}
+            >
+              Перейти
+            </Button>
+          </a>
+        ) : null}
+      </div>
     </div>
   );
 }
