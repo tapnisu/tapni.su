@@ -22,22 +22,7 @@
 
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-}
 
-.light,
-[data-theme="light"] {
-  color-scheme: light;
-
-  /* Colors */
-  --text: var(--black);
-  --text-2: var(--black-3);
-
-  --bg: var(--white);
-  --bg-2: var(--white-2);
-}
-
-.dark,
-[data-theme="dark"] {
   color-scheme: dark;
 
   --text: var(--white);

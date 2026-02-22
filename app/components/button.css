@@ -20,11 +20,13 @@
 
   &:active {
     background: var(--accent);
+    color: var(--white);
   }
 }
 
 @media (hover: hover) and (pointer: fine) {
   .button:hover {
     background: var(--accent);
+    color: var(--white);
   }
 }

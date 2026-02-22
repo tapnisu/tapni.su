@@ -13,12 +13,6 @@ import {
   LoaderFunctionArgs,
 } from "react-router";
 
-import { themeSessionResolver } from "./sessions.server";
-import {
-  PreventFlashOnWrongTheme,
-  ThemeProvider,
-  useTheme,
-} from "remix-themes";
 import { Navbar } from "./components/navbar";
 import { Footer } from "./components/footer";
 
@@ -40,11 +34,9 @@ export const links: LinksFunction = () => [
 ];
 
 export async function loader({ request }: LoaderFunctionArgs) {
-  const { getTheme } = await themeSessionResolver(request);
   const locale = await i18next.getLocale(request);
 
   return {
-    theme: getTheme(),
     locale,
   };
 }
@@ -57,26 +49,14 @@ export const handle = {
   i18n: "common",
 };
 
-export default function AppWithProviders() {
-  const data = useLoaderData<typeof loader>();
-
-  return (
-    <ThemeProvider specifiedTheme={data.theme} themeAction="/action/set-theme">
-      <App />
-    </ThemeProvider>
-  );
-}
-
-export function App() {
+export default function App() {
   const data = useLoaderData<typeof loader>();
   const { i18n } = useTranslation();
 
   i18n.changeLanguage(data.locale);
 
-  const [theme] = useTheme();
-
   return (
-    <html lang={data.locale} className={clsx(theme)} dir={i18n.dir()}>
+    <html lang={data.locale} dir={i18n.dir()}>
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -91,7 +71,6 @@ export function App() {
         <link rel="me" href="https://mastodon.social/@tapnisu" />
         <meta name="fediverse:creator" content="@tapnisu@mastodon.social" />
         <Meta />
-        <PreventFlashOnWrongTheme ssrTheme={Boolean(data.theme)} />
         <Links />
       </head>
       <body>

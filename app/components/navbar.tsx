@@ -1,5 +1,4 @@
 import { useTranslation } from "react-i18next";
-import { ModeToggle } from "./mode-toggle";
 import clsx from "clsx";
 
 import "./navbar.css";
@@ -27,9 +26,7 @@ export function Navbar(props: React.HTMLAttributes<HTMLDivElement>) {
         ))}
       </div>
 
-      <div>
-        <ModeToggle />
-      </div>
+      <div>{/*<ModeToggle />*/}</div>
     </nav>
   );
 }
