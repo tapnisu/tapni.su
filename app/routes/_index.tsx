@@ -1,4 +1,4 @@
-import type { MetaFunction } from "react-router";
+import { Link, type MetaFunction } from "react-router";
 import { useTranslation } from "react-i18next";
 import { Kohaku } from "~/components/kohaku";
 import Projects from "~/components/projects";
@@ -26,16 +26,16 @@ export default function Index() {
         <h2>{t("contact")}</h2>
         <ul>
           <li>
-            GitHub: <a href="https://github.com/tapnisu">@tapnisu</a>
+            GitHub: <Link to="https://github.com/tapnisu">@tapnisu</Link>
           </li>
           <li>
-            X: <a href="https://x.com/tapnisu">@tapnisu</a>
+            X: <Link to="https://x.com/tapnisu">@tapnisu</Link>
           </li>
           <li>
-            Telegram: <a href="https://t.me/tapnisu">@tapnisu</a>
+            Telegram: <Link to="https://t.me/tapnisu">@tapnisu</Link>
           </li>
           <li>
-            Email: <a href="mailto:aleksei@tapni.su">aleksei@tapni.su</a>
+            Email: <Link to="mailto:aleksei@tapni.su">aleksei@tapni.su</Link>
           </li>
           <li>
             Discord: <code>tapnisu</code>

@@ -1,7 +1,8 @@
 import clsx from "clsx";
+import { Button } from "./button";
+import { Link } from "react-router";
 
 import "./card.css";
-import { Button } from "./button";
 
 export interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
   title: string;
@@ -33,13 +34,13 @@ export function Card(props: CardProps) {
       ) : null}
 
       <div className="card__content">
-        {props.href ? <a href={props.href}>{props.title}</a> : props.title}
+        {props.href ? <Link to={props.href}>{props.title}</Link> : props.title}
         <p>{props.description}</p>
 
         <div className="card__comments">{props.comments}</div>
 
         {props.href ? (
-          <a href={props.href}>
+          <Link to={props.href}>
             <Button
               style={{
                 width: "100%",
@@ -47,7 +48,7 @@ export function Card(props: CardProps) {
             >
               Перейти
             </Button>
-          </a>
+          </Link>
         ) : null}
       </div>
     </div>

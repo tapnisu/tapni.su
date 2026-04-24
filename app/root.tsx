@@ -11,6 +11,7 @@ import {
   useRouteError,
   LinksFunction,
   LoaderFunctionArgs,
+  Link,
 } from "react-router";
 
 import { Navbar } from "./components/navbar";
@@ -150,15 +151,15 @@ export function ErrorBoundary() {
             <p className="staff">
               Main Staff:
               {credits.map(([title, url]) => (
-                <a href={url} className="credits-link" key={title}>
+                <Link to={url} className="credits-link" key={title}>
                   <br />
                   {title}
-                </a>
+                </Link>
               ))}
             </p>
 
             <div className="return">
-              <a href="/">Return</a>
+              <Link to="/">Return</Link>
             </div>
           </div>
         </main>
