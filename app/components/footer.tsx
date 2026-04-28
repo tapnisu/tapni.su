@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router";
 
 import "./footer.css";
 
@@ -9,9 +8,7 @@ export function Footer(props: React.HTMLAttributes<HTMLDivElement>) {
 
   return (
     <footer className={clsx("footer", props.className)} {...props}>
-      <Link to="https://github.com/tapnisu/tapni.su">
-        {t("footer.sourceCode")}
-      </Link>
+      <a href="https://github.com/tapnisu/tapni.su">{t("footer.sourceCode")}</a>
     </footer>
   );
 }
