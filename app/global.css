@@ -37,7 +37,7 @@
 ::selection {
   text-shadow: none;
   background: var(--accent);
-  color: var(--bg);
+  color: var(--text);
 }
 
 body {
