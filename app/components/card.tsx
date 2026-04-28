@@ -2,6 +2,7 @@ import clsx from "clsx";
 
 import "./card.css";
 import { Button } from "./button";
+import { useTranslation } from "react-i18next";
 
 export interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
   title: string;
@@ -15,6 +16,8 @@ export interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 export function Card(props: CardProps) {
+  const { t } = useTranslation();
+
   return (
     <div className={clsx("card__base", props.className)} {...props}>
       {props.image ? (
@@ -45,7 +48,7 @@ export function Card(props: CardProps) {
                 width: "100%",
               }}
             >
-              Перейти
+              {t("checkout")}
             </Button>
           </a>
         ) : null}
