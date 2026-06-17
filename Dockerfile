@@ -1,4 +1,4 @@
-FROM node:20-alpine3.20 AS base
+FROM node:24-alpine3.24 AS base
 LABEL authors="tapnisu"
 
 ENV PNPM_HOME="/pnpm"
