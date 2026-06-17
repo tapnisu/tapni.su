@@ -11,38 +11,38 @@
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
-    "@react-router/fs-routes": "^7.14.2",
-    "@react-router/node": "^7.14.2",
-    "@react-router/serve": "^7.14.2",
+    "@react-router/fs-routes": "^7.18.0",
+    "@react-router/node": "^7.18.0",
+    "@react-router/serve": "^7.18.0",
     "clsx": "^2.1.1",
     "i18next": "^25.10.10",
     "i18next-browser-languagedetector": "^8.2.1",
-    "i18next-fs-backend": "^2.6.5",
+    "i18next-fs-backend": "^2.6.6",
     "i18next-http-backend": "^3.0.6",
-    "isbot": "^5.1.39",
+    "isbot": "^5.1.43",
     "lucide-react": "^0.562.0",
-    "react": "^19.2.5",
-    "react-dom": "^19.2.5",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
     "react-i18next": "^16.6.6",
-    "react-router": "^7.14.2",
-    "react-router-dom": "^7.14.2",
+    "react-router": "^7.18.0",
+    "react-router-dom": "^7.18.0",
     "remix-i18next": "^7.5.0"
   },
   "devDependencies": {
-    "@react-router/dev": "^7.14.2",
-    "@types/react": "^19.2.14",
+    "@react-router/dev": "^7.18.0",
+    "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
     "autoprefixer": "^10.5.0",
-    "postcss": "^8.5.12",
+    "postcss": "^8.5.15",
     "postcss-nesting": "^13.0.2",
     "postcss-viewport-unit-fallback": "^1.0.1",
-    "prettier": "^3.8.3",
+    "prettier": "^3.8.4",
     "typescript": "^5.9.3",
-    "vite": "^7.3.2",
+    "vite": "^7.3.5",
     "vite-tsconfig-paths": "^6.1.1"
   },
   "engines": {
     "node": ">=20.0.0"
   },
-  "packageManager": "pnpm@10.7.1+sha512.2d92c86b7928dc8284f53494fb4201f983da65f0fb4f0d40baafa5cf628fa31dae3e5968f12466f17df7e97310e30f343a648baea1b9b350685dafafffdf5808"
+  "packageManager": "pnpm@10.34.3+sha512.f2c531b08829d7be7f03c90addc266615f9c5477463e4bf1d275cb263ce9ea57cf0d5599110d94649a9bb3fed9f0b5efcea74a7016b61532a24cb9ad87860c1d"
 }
